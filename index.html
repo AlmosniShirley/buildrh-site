@@ -212,6 +212,8 @@
     border: 1px solid var(--line); padding: 22px; min-width: 0;
     display: flex; flex-direction: column; gap: 10px;
   }
+  .case .client-row { display: flex; align-items: center; gap: 8px; }
+  .case .client-row img { height: 20px; width: auto; display: block; }
   .case .client { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; }
   .case .ctx { font-size: 0.85rem; color: var(--ink-muted); }
   .case .num {
@@ -243,6 +245,29 @@
     padding: 9px 16px; background: var(--surface-alt); border-radius: 3px; text-decoration: none;
   }
   a.tool-chip:hover { color: var(--accent); }
+  .logo-chip {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #fff; border-radius: 3px; padding: 9px 16px; text-decoration: none;
+  }
+  .logo-chip img { height: 18px; width: auto; display: block; }
+  .logo-chip span { font-family: var(--font-body); font-weight: 500; font-size: 0.88rem; color: #1a1a1a; }
+  .logo-chip:hover { opacity: 0.85; }
+
+  /* blog carousel */
+  .blog-heading { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-muted); margin: 28px 0 14px; }
+  .blog-card {
+    flex: 0 0 190px; min-width: 0; display: flex; flex-direction: column;
+    text-decoration: none; color: inherit; background: var(--surface-alt);
+    border: 1px solid var(--line); border-radius: 3px; overflow: hidden;
+  }
+  .blog-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+  .blog-card .meta { padding: 10px 12px 12px; }
+  .blog-card .b-title {
+    font-size: 0.8rem; font-weight: 600; line-height: 1.35; color: var(--ink);
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .blog-card .b-date { font-family: var(--font-mono); font-size: 0.66rem; color: var(--ink-muted); margin-top: 8px; }
+  .blog-card:hover { border-color: var(--accent); }
 
   /* contenu */
   .content-links { display: grid; gap: 14px; margin-top: 22px; }
@@ -439,13 +464,13 @@
         <div class="profiles">1 Analytics Engineer, 1 Référent technique itinérant, 1 Ingénieur DevOps.</div>
       </div>
       <div class="case">
-        <div class="client">Pix</div>
+        <div class="client-row"><img src="assets/logos/pix.svg" alt="Pix"><div class="client">Pix</div></div>
         <div class="ctx">Scalabilité plateforme — passage à 9M d'utilisateurs</div>
         <div class="num">21<span>recrutements tous profils</span></div>
         <div class="profiles">PO, RSSI, DevOps, Dev Fullstack JS.</div>
       </div>
       <div class="case">
-        <div class="client">Ilek</div>
+        <div class="client-row"><img src="assets/logos/ilek.svg" alt="Ilek"><div class="client">Ilek</div></div>
         <div class="ctx">Scale-up (levée de fonds)</div>
         <div class="num">6<span>recrutements</span></div>
         <div class="profiles">Développeurs seniors.</div>
@@ -490,8 +515,13 @@
     </div>
     <p style="color:var(--ink-muted); max-width:58ch; margin:0 0 4px;">J'échange et je partage avec deux communautés professionnelles.</p>
     <div class="tools">
-      <a class="tool-chip" href="https://takomu.ai/" target="_blank" rel="noopener">TAKOMU — IA</a>
-      <a class="tool-chip" href="https://www.arboriia.tech/" target="_blank" rel="noopener">Arboriia</a>
+      <a class="logo-chip" href="https://takomu.ai/" target="_blank" rel="noopener">
+        <img src="assets/logos/takomu.svg" alt="TAKOMU">
+        <span>TAKOMU — IA</span>
+      </a>
+      <a class="logo-chip" href="https://www.arboriia.tech/" target="_blank" rel="noopener">
+        <img src="assets/logos/arboriia.svg" alt="Arboriia" style="height:14px;">
+      </a>
     </div>
   </section>
 
@@ -513,6 +543,77 @@
         <span class="name">Blog — Prompt Humain</span>
         <span class="url">prompt-humain.ghost.io</span>
       </a>
+    </div>
+
+    <div class="blog-heading">Derniers articles — Prompt Humain</div>
+    <div class="marquee">
+      <div class="marquee-track" id="blog-track">
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/" target="_blank" rel="noopener">
+          <img src="assets/blog/1.jpg" alt="">
+          <div class="meta"><div class="b-title">IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle</div><div class="b-date">1 sept. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/" target="_blank" rel="noopener">
+          <img src="assets/blog/2.png" alt="">
+          <div class="meta"><div class="b-title">"IA générative en entreprise : ce n'est pas juste un outil en plus" — témoignage de Jérôme Duchemin, DSI d'ACS</div><div class="b-date">24 août 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/" target="_blank" rel="noopener">
+          <img src="assets/blog/3.jpg" alt="">
+          <div class="meta"><div class="b-title">Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — entretien avec Mathilde Rigabert (CTPO)</div><div class="b-date">18 août 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/" target="_blank" rel="noopener">
+          <img src="assets/blog/4.png" alt="">
+          <div class="meta"><div class="b-title">Un an pour faire basculer plus de 300 ingénieurs vers l'IA — témoignage de Nicolas Martignole (Back Market)</div><div class="b-date">24 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ton-code-nest-pas-toi-mais-bientot-ce-sera-toujours-toi-qui-paiera-quand-lia-se-trompe/" target="_blank" rel="noopener">
+          <img src="assets/blog/5.jpg" alt="">
+          <div class="meta"><div class="b-title">Ton code n'est pas toi (mais bientôt, ce sera toujours toi) — qui paiera quand l'IA se trompe ?</div><div class="b-date">22 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/" target="_blank" rel="noopener">
+          <img src="assets/blog/6.png" alt="">
+          <div class="meta"><div class="b-title">"Sur une journée type, je code peut-être 10 % du temps" — interview de Cédric Locchi</div><div class="b-date">21 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/on-est-passes-de-driven-by-ai-a-ai-first-puis-a-ai-only-plongee-dans-la-transformation-ia-de-sfeir/" target="_blank" rel="noopener">
+          <img src="assets/blog/7.webp" alt="">
+          <div class="meta"><div class="b-title">"On est passés de driven by AI à AI first, puis à AI only" — plongée dans la transformation IA de SFEIR</div><div class="b-date">13 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/le-loup-et-le-chien/" target="_blank" rel="noopener">
+          <img src="assets/blog/8.jpg" alt="">
+          <div class="meta"><div class="b-title">Le Loup et le chien</div><div class="b-date">9 juil. 2026</div></div>
+        </a>
+
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/" target="_blank" rel="noopener">
+          <img src="assets/blog/1.jpg" alt="">
+          <div class="meta"><div class="b-title">IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle</div><div class="b-date">1 sept. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/" target="_blank" rel="noopener">
+          <img src="assets/blog/2.png" alt="">
+          <div class="meta"><div class="b-title">"IA générative en entreprise : ce n'est pas juste un outil en plus" — témoignage de Jérôme Duchemin, DSI d'ACS</div><div class="b-date">24 août 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/" target="_blank" rel="noopener">
+          <img src="assets/blog/3.jpg" alt="">
+          <div class="meta"><div class="b-title">Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — entretien avec Mathilde Rigabert (CTPO)</div><div class="b-date">18 août 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/" target="_blank" rel="noopener">
+          <img src="assets/blog/4.png" alt="">
+          <div class="meta"><div class="b-title">Un an pour faire basculer plus de 300 ingénieurs vers l'IA — témoignage de Nicolas Martignole (Back Market)</div><div class="b-date">24 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/ton-code-nest-pas-toi-mais-bientot-ce-sera-toujours-toi-qui-paiera-quand-lia-se-trompe/" target="_blank" rel="noopener">
+          <img src="assets/blog/5.jpg" alt="">
+          <div class="meta"><div class="b-title">Ton code n'est pas toi (mais bientôt, ce sera toujours toi) — qui paiera quand l'IA se trompe ?</div><div class="b-date">22 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/" target="_blank" rel="noopener">
+          <img src="assets/blog/6.png" alt="">
+          <div class="meta"><div class="b-title">"Sur une journée type, je code peut-être 10 % du temps" — interview de Cédric Locchi</div><div class="b-date">21 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/on-est-passes-de-driven-by-ai-a-ai-first-puis-a-ai-only-plongee-dans-la-transformation-ia-de-sfeir/" target="_blank" rel="noopener">
+          <img src="assets/blog/7.webp" alt="">
+          <div class="meta"><div class="b-title">"On est passés de driven by AI à AI first, puis à AI only" — plongée dans la transformation IA de SFEIR</div><div class="b-date">13 juil. 2026</div></div>
+        </a>
+        <a class="blog-card" href="https://prompt-humain.ghost.io/le-loup-et-le-chien/" target="_blank" rel="noopener">
+          <img src="assets/blog/8.jpg" alt="">
+          <div class="meta"><div class="b-title">Le Loup et le chien</div><div class="b-date">9 juil. 2026</div></div>
+        </a>
+      </div>
     </div>
   </section>
 
