@@ -214,6 +214,10 @@
   }
   .case .client-row { display: flex; align-items: center; gap: 8px; }
   .case .client-row img { height: 20px; width: auto; display: block; }
+  .case .client-row .logo-pill {
+    background: #fff; border-radius: 3px; padding: 3px 7px; display: inline-flex; align-items: center;
+  }
+  .case .client-row .logo-pill img { height: 14px; }
   .case .client { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; }
   .case .ctx { font-size: 0.85rem; color: var(--ink-muted); }
   .case .num {
@@ -446,19 +450,19 @@
     </div>
     <div class="cases">
       <div class="case">
-        <div class="client">Sunday</div>
+        <div class="client-row"><div class="client">Sunday</div></div>
         <div class="ctx">Contexte scale-up</div>
         <div class="num">18<span>recrutements en 3 mois</span></div>
         <div class="profiles">11 backend software engineer &amp; fullstack (seniors), 1 PM, 1 ITSM technical specialist, 1 IT automation &amp; IA specialist, 1 Head of Security, 1 Staff Mobile, 1 Analytics Engineer, 1 Engineering Manager.</div>
       </div>
       <div class="case">
-        <div class="client">DeepReach</div>
+        <div class="client-row"><span class="logo-pill"><img src="assets/logos/deepreach.png" alt="DeepReach"></span><div class="client">DeepReach</div></div>
         <div class="ctx">Création d'une équipe tech from scratch</div>
         <div class="num">20<span>recrutements en moins d'un an</span></div>
         <div class="profiles">Développeurs fullstack JS.</div>
       </div>
       <div class="case">
-        <div class="client">Elax Énergie</div>
+        <div class="client-row"><img src="assets/logos/elax.svg" alt="Elax Énergie" style="border-radius:3px;"><div class="client">Elax Énergie</div></div>
         <div class="ctx">Contexte de croissance (levée de fonds)</div>
         <div class="num">3<span>recrutements en 2 mois</span></div>
         <div class="profiles">1 Analytics Engineer, 1 Référent technique itinérant, 1 Ingénieur DevOps.</div>
@@ -476,7 +480,7 @@
         <div class="profiles">Développeurs seniors.</div>
       </div>
       <div class="case">
-        <div class="client">Moments Lab</div>
+        <div class="client-row"><span class="logo-pill"><img src="assets/logos/momentslab.png" alt="Moments Lab"></span><div class="client">Moments Lab</div></div>
         <div class="ctx">Changement de paradigme produit</div>
         <div class="num">3<span>recrutements réalisés</span></div>
         <div class="profiles">2 développeurs backend, 1 développeur frontend.</div>
