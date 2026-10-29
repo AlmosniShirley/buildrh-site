@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conditions générales — BUILD RH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF7F8;
+    --surface-alt: #F5E6EF;
+    --ink: #241A20;
+    --ink-muted: #7D6A75;
+    --accent: #D6197F;
+    --accent-2: #7A2C8C;
+    --line: #ECD4E3;
+    --on-accent: #FFF6FA;
+
+    --font-display: 'Fraunces', Georgia, 'Iowan Old Style', serif;
+    --font-body: 'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+    --font-logo: 'Open Sans', -apple-system, 'Segoe UI', sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1E1419; --surface-alt: #2C1C27; --ink: #F4E7EF; --ink-muted: #BB97AC;
+      --accent: #F156A8; --accent-2: #C77FE0; --line: #462B3F; --on-accent: #1E1419;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1E1419; --surface-alt: #2C1C27; --ink: #F4E7EF; --ink-muted: #BB97AC;
+    --accent: #F156A8; --accent-2: #C77FE0; --line: #462B3F; --on-accent: #1E1419;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+    z-index: 10; background: var(--bg);
+  }
+  a { color: inherit; }
+  .wrap { max-width: 680px; margin: 0 auto; padding-block: 48px 64px; }
+
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted);
+    text-decoration: none; margin-bottom: 36px;
+  }
+  .back:hover { color: var(--accent); }
+
+  .brand-tag {
+    font-family: var(--font-logo); font-weight: 800; color: var(--accent);
+    font-size: 1rem; margin-bottom: 8px;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 600; font-size: clamp(1.6rem, 4vw, 2.2rem);
+    line-height: 1.15; margin: 0 0 8px; text-wrap: balance;
+  }
+  .updated { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); margin-bottom: 40px; }
+
+  h2 {
+    font-family: var(--font-display); font-weight: 600; font-size: 1.25rem;
+    margin: 44px 0 14px; padding-top: 24px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { padding-top: 0; border-top: none; margin-top: 0; }
+  h3 {
+    font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--accent); margin: 26px 0 10px;
+  }
+  p { margin: 0 0 14px; font-size: 0.96rem; color: var(--ink); }
+  ul { margin: 0 0 14px; padding-left: 1.3em; font-size: 0.96rem; }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 600; }
+  .definitions p { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .definitions p:last-child { border-bottom: none; }
+  a.inline { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; Retour au site</a>
+
+  <div class="brand-tag">BUILD RH</div>
+  <h1>Conditions générales de vente et d'utilisation (CGVU)</h1>
+  <div class="updated">build-rh.io</div>
+
+  <div class="definitions">
+    <p><strong>Client</strong> — Tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site ou contracte avec BUILD RH.</p>
+    <p><strong>Prestations et Services</strong> — BUILD RH met à disposition des Clients des prestations de conseil en recrutement, de recrutement process outsourcing (RPO), d'optimisation des processus RH et d'intégration d'outils, incluant le cas échéant des solutions technologiques et d'intelligence artificielle.</p>
+    <p><strong>Contenu</strong> — Ensemble des éléments constituants l'information présente sur le Site, notamment textes, images, vidéos et éléments graphiques.</p>
+    <p><strong>Informations clients / Données personnelles</strong> — Désigne l'ensemble des données à caractère personnel définies par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679) et la loi Informatique et Libertés modifiée.</p>
+    <p><strong>Utilisateur</strong> — Internaute se connectant et utilisant le site https://build-rh.io/.</p>
+  </div>
+
+  <h2>1. Présentation du site internet</h2>
+  <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://build-rh.io/ l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+  <p><strong>Propriétaire</strong> — SAS BUILD RH – Capital social de 1 000 € – Numéro de TVA : FR02839929528 – Siège social : Ville d'Avray.</p>
+  <p><strong>Responsable publication</strong> — Shirley Almosni Chiche.</p>
+  <p><strong>Webmaster</strong> — Shirley Almosni Chiche – shirley.almosni@yahoo.fr</p>
+  <p><strong>Hébergeur</strong> — OVH – 2 rue Kellermann, 59100 Roubaix – 1007.</p>
+
+  <h2>2. Conditions générales d'utilisation du site et des services proposés</h2>
+  <p>Le Site constitue une œuvre de l'esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site sans autorisation expresse.</p>
+  <p>L'utilisation du site https://build-rh.io/ implique l'acceptation pleine et entière des conditions générales d'utilisation ci-après décrites. Ces conditions sont susceptibles d'être modifiées ou complétées à tout moment.</p>
+
+  <h2>3. Description des services fournis et usage de l'intelligence artificielle (IA)</h2>
+  <p>Le site et les prestations de BUILD RH ont pour objet de fournir une information et des services de conseil en ressources humaines et recrutement.</p>
+  <p><strong>Utilisation d'outils d'Intelligence Artificielle</strong> — Dans le cadre de ses prestations (optimisation de processus, sourcing, rédaction de scorecards ou d'évaluations), BUILD RH est susceptible d'utiliser des outils, agents conversationnels ou modèles d'intelligence artificielle avancés.</p>
+  <p><strong>Garantie de supervision humaine (Human-in-the-loop)</strong> — Conformément aux exigences réglementaires en vigueur (notamment le règlement européen sur l'intelligence artificielle - AI Act), l'ensemble des décisions stratégiques, des sélections de candidats, des grilles d'évaluation et des livrables fournis au Client font l'objet d'une validation et d'un contrôle humain systématique par BUILD RH. L'IA est utilisée comme un outil d'aide à la décision et d'optimisation, et ne se substitue jamais au jugement professionnel humain.</p>
+  <p><strong>Confidentialité des données et IA</strong> — BUILD RH veille à ce que les outils d'IA utilisés respectent la confidentialité des données transmises et ne procèdent à aucun apprentissage public ou non autorisé sur les données sensibles ou personnelles des Clients et des candidats.</p>
+
+  <h2>4. Limitations contractuelles sur les données techniques</h2>
+  <p>Le site Internet ne pourra être tenu responsable de dommages matériels liés à l'utilisation du site (incompatibilités, virus, matériel obsolète). L'hébergeur assure la continuité de son service 24h/24, tout en se réservant le droit d'interrompre le service pour des raisons de maintenance.</p>
+
+  <h2>5. Propriété intellectuelle et contrefaçons</h2>
+  <p>BUILD RH est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site (textes, images, graphismes, logos, vidéos, icônes, sons, méthodologies de recrutement et scorecards).</p>
+  <p>Toute reproduction, représentation, modification ou adaptation de tout ou partie de ces éléments est interdite sans autorisation écrite préalable. Toute exploitation non autorisée sera considérée comme constitutive d'une contrefaçon au sens des articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+
+  <h2>6. Limitations de responsabilité</h2>
+  <p>BUILD RH agit en tant qu'éditeur et prestataire de conseil. Sa responsabilité ne saurait être engagée en cas de dommages indirects (perte de marché, perte de chance, préjudice commercial).</p>
+  <p>Dans le cadre des prestations de recrutement, BUILD RH s'obligent à une obligation de moyens renforcée, les décisions finales d'embauche restant sous l'entière responsabilité du Client.</p>
+
+  <h2>7. Gestion des données personnelles et conformité RGPD</h2>
+  <p>Le traitement des données personnelles collectées via le site ou dans le cadre des missions de conseil obéit aux exigences du RGPD (Règlement UE 2016/679) et de la loi Informatique et Libertés.</p>
+
+  <h3>7.1 Responsable du traitement</h3>
+  <p>Le responsable du traitement des Données Personnelles est la société BUILD RH, représentée par Shirley Almosni Chiche.</p>
+
+  <h3>7.2 Finalités des données collectées</h3>
+  <p>Les données collectées le sont pour :</p>
+  <ul>
+    <li>La gestion de la relation client et la bonne exécution des prestations de conseil en recrutement.</li>
+    <li>La sécurité informatique et la prévention de la fraude.</li>
+    <li>L'amélioration de l'expérience utilisateur sur le site.</li>
+  </ul>
+
+  <h3>7.3 Droits des utilisateurs</h3>
+  <p>Conformément à la réglementation européenne, les utilisateurs disposent d'un droit d'accès (art. 15), de rectification (art. 16), d'effacement (art. 17), de limitation (art. 18), d'opposition (art. 21) et à la portabilité (art. 20) de leurs données. Pour exercer ces droits, l'Utilisateur peut contacter BUILD RH par écrit à : shirley.almosni@yahoo.fr ou déposer une réclamation auprès de la CNIL (<a class="inline" href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
+
+  <h3>7.4 Sécurité et confidentialité</h3>
+  <p>BUILD RH met en œuvre des mesures techniques et organisationnelles appropriées (pare-feu, pseudonymisation, chiffrement) pour garantir un niveau de sécurité adapté au risque et empêcher tout accès non autorisé, perte ou divulgation des données.</p>
+
+  <h2>8. Notification d'incident et brèche de sécurité</h2>
+  <p>En cas de violation de données à caractère personnel ou d'incident de sécurité avéré, BUILD RH s'engage à notifier l'incident aux autorités compétentes (CNIL) ainsi qu'aux Clients concernés dans les délais légaux requis, en prenant immédiatement toutes les mesures correctives nécessaires.</p>
+
+  <h2>9. Liens hypertextes et cookies</h2>
+  <p>Le site https://build-rh.io/ peut contenir des liens vers d'autres sites internet sur lesquels BUILD RH n'exerce aucun contrôle et décline toute responsabilité quant à leur contenu.</p>
+  <p><strong>Politique de cookies</strong> — Le site https://build-rh.io/ n'utilise pas de système de traceurs ou de cookies publicitaires nécessitant un consentement préalable, hormis les cookies techniques strictement nécessaires au fonctionnement du site.</p>
+</div>
+</body>
+</html>
