@@ -247,6 +247,10 @@ index_body = f"""<main id="main">
       <p><a class="link-arrow build" href="https://www.youtube.com/@TDArHH" rel="noopener">Voir la chaîne TDArH <span aria-hidden="true">↗</span></a></p>
     </div>
     <div class="videos">
+      <a class="video" href="https://www.youtube.com/watch?v=25oq2fsg19Y" rel="noopener">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/25oq2fsg19Y/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></span>
+        <span class="meta"><span class="t">TDAH et IA&nbsp;: coup de pouce ou piège à dispersion&nbsp;?</span><span class="d">16 nov. 2026 · YouTube</span></span>
+      </a>
       <a class="video" href="https://www.youtube.com/watch?v=iFMWrAi9kXc" rel="noopener">
         <span class="thumb"><img src="https://i.ytimg.com/vi/iFMWrAi9kXc/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></span>
         <span class="meta"><span class="t">Pourquoi j'ai créé cette chaîne et ce que vous allez y trouver</span><span class="d">16 nov. 2026 · YouTube</span></span>
