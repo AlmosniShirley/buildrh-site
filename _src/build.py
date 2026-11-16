@@ -229,7 +229,7 @@ index_body = f"""<main id="main">
     <div class="section-head">
       <span class="kicker">Prompt Humain, le blog</span>
       <h2 id="articles-title">Derniers articles</h2>
-      <p class="lead">Des entretiens avec des leaders tech sur l'IA, les métiers et l'organisation.</p>
+      <p class="lead">Entretiens et réflexions sur l'IA, l'organisation du travail et la neurodiversité.</p>
     </div>
     __POSTS_HOME__
     <div class="section-foot"><a class="link-arrow build" href="https://prompt-humain.ghost.io/" rel="noopener">Tous les articles <span aria-hidden="true">↗</span></a></div>
@@ -589,6 +589,9 @@ cases_body = f"""<main id="main">
 # À PROPOS
 # =====================================================================
 POSTS = [
+    ("ia-le-vrai-changement-ne-se-joue-pas-seulement-dans-le-code-mais-dans-lorganisation-du-travail/", "9.jpeg", "« IA : le vrai changement ne se joue pas seulement dans le code, mais dans l'organisation du travail »", "12 nov. 2026"),
+    ("je-ne-suis-pas-desorganisee-mon-cerveau-ne-fonctionne-pas-en-ligne-droite/", "10.jpeg", "« Je ne suis pas désorganisée : mon cerveau ne fonctionne pas en ligne droite »", "10 nov. 2026"),
+    ("quand-voir-les-problemes-devient-un-probleme-au-travail/", "11.jpg", "« Quand voir les problèmes devient un problème au travail »", "6 nov. 2026"),
     ("ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/", "1.jpg", "IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle", "1 sept. 2026"),
     ("ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/", "2.png", "« IA générative en entreprise : ce n'est pas juste un outil en plus » — Jérôme Duchemin, DSI d'ACS", "24 août 2026"),
     ("repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/", "3.jpg", "Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — Mathilde Rigabert (CTPO)", "18 août 2026"),
@@ -600,7 +603,7 @@ POSTS = [
 ]
 posts_html = '<div class="posts">\n' + "\n".join(
     f'<a class="post" href="https://prompt-humain.ghost.io/{u}" rel="noopener"><img src="/assets/blog/{img}" alt="" loading="lazy" decoding="async"><span class="meta"><span class="t">{t}</span><span class="d">{d}</span></span></a>'
-    for u, img, t, d in POSTS) + "\n</div>"
+    for u, img, t, d in POSTS[:8]) + "\n</div>"
 posts_home = '<div class="posts">\n' + "\n".join(
     f'<a class="post" href="https://prompt-humain.ghost.io/{u}" rel="noopener"><img src="/assets/blog/{img}" alt="" loading="lazy" decoding="async"><span class="meta"><span class="t">{t}</span><span class="d">{d}</span></span></a>'
     for u, img, t, d in POSTS[:4]) + "\n</div>"
@@ -680,7 +683,7 @@ about_body = f"""<main id="main">
     <div class="section-head">
       <span class="kicker">Contenu et prise de parole</span>
       <h2 id="blog-title">Prompt Humain, le blog</h2>
-      <p class="lead">Des entretiens avec des leaders tech sur l'IA, les métiers et l'organisation.</p>
+      <p class="lead">Entretiens et réflexions sur l'IA, l'organisation du travail et la neurodiversité.</p>
     </div>
     {posts_html}
     <div class="section-foot cta-row"><a class="link-arrow build" href="https://prompt-humain.ghost.io/" rel="noopener">Tous les articles <span aria-hidden="true">↗</span></a><a class="link-arrow" href="https://github.com/AlmosniShirley" rel="noopener">Projets et expérimentations sur GitHub <span aria-hidden="true">↗</span></a></div>
