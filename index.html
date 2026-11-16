@@ -3,909 +3,717 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>BUILD RH</title>
-<meta name="description" content="BUILD RH — recrutement IT freelance, 15 ans d'expérience sur les profils tech, startups et scale-up.">
+<title>Recrutement tech &amp; transitions professionnelles | BUILD RH</title>
+<meta name="description" content="BUILD RH aide les startups et scale-ups à recruter les bons profils tech, structurer leur recrutement et traiter les situations professionnelles sensibles avec CAP Bascule.">
+<link rel="canonical" href="https://build-rh.io/">
+<meta name="theme-color" content="#FBF7F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191115" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="BUILD RH">
+<meta property="og:title" content="Recrutement tech &amp; transitions professionnelles | BUILD RH">
+<meta property="og:description" content="BUILD RH aide les startups et scale-ups à recruter les bons profils tech, structurer leur recrutement et traiter les situations professionnelles sensibles avec CAP Bascule.">
+<meta property="og:url" content="https://build-rh.io/">
+<meta property="og:image" content="https://build-rh.io/assets/shirley.png">
+<meta property="og:image:alt" content="Shirley Almosni Chiche, fondatrice de BUILD RH">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
-<style>
-  /* layout: a case file / sourcing log — paper ground, stacked dossier sections, tabular stats */
-  :root {
-    --bg: #FBF7F8;
-    --surface-alt: #F5E6EF;
-    --ink: #241A20;
-    --ink-muted: #7D6A75;
-    --accent: #D6197F;
-    --accent-2: #7A2C8C;
-    --line: #ECD4E3;
-    --on-accent: #FFF6FA;
-
-    --font-display: 'Fraunces', Georgia, 'Iowan Old Style', serif;
-    --font-body: 'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif;
-    --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
-    --font-logo: 'Open Sans', -apple-system, 'Segoe UI', sans-serif;
-
-    color-scheme: light;
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://build-rh.io/#org",
+  "name": "BUILD RH",
+  "url": "https://build-rh.io/",
+  "image": "https://build-rh.io/assets/shirley.png",
+  "email": "shirley.chiche@buildrh.co",
+  "description": "Recrutement tech (RPO hybride, structuration du process) et accompagnement des transitions professionnelles sensibles avec CAP Bascule.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "France"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "FR"
+  },
+  "inLanguage": "fr",
+  "founder": {
+    "@type": "Person",
+    "name": "Shirley Almosni Chiche",
+    "jobTitle": "Recruteuse tech, fondatrice de BUILD RH",
+    "sameAs": [
+      "https://www.linkedin.com/in/shirley-almosni-chiche/",
+      "https://github.com/AlmosniShirley",
+      "https://prompt-humain.ghost.io/"
+    ]
+  },
+  "knowsAbout": [
+    "Recrutement tech",
+    "RPO",
+    "Process de recrutement",
+    "Transitions professionnelles"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Offres BUILD RH",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BUILD RH — RPO hybride",
+          "serviceType": "Recruitment Process Outsourcing",
+          "description": "RPO hybride : dispositif de recrutement intégré, orienté objectifs et impacts, avec un forfait qui combine un socle et une part liée aux recrutements signés."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "CAP Bascule",
+          "serviceType": "Accompagnement des transitions professionnelles",
+          "description": "Accompagnement externe et confidentiel, financé par l'entreprise : CAP Clarifier, CAP Traverser, CAP Rebond."
+        }
+      }
+    ]
   }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #1E1419;
-      --surface-alt: #2C1C27;
-      --ink: #F4E7EF;
-      --ink-muted: #BB97AC;
-      --accent: #F156A8;
-      --accent-2: #C77FE0;
-      --line: #462B3F;
-      --on-accent: #1E1419;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #1E1419;
-    --surface-alt: #2C1C27;
-    --ink: #F4E7EF;
-    --ink-muted: #BB97AC;
-    --accent: #F156A8;
-    --accent-2: #C77FE0;
-    --line: #462B3F;
-    --on-accent: #1E1419;
-    color-scheme: dark;
-  }
-
-  * { box-sizing: border-box; }
-
-  html, body { margin: 0; padding: 0; }
-
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--font-body);
-    font-size: 16px;
-    line-height: 1.55;
-    padding-left: max(16px, env(safe-area-inset-left, 0px));
-    padding-right: max(16px, env(safe-area-inset-right, 0px));
-  }
-
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0 0 auto;
-    height: env(safe-area-inset-top, 0px);
-    z-index: 10;
-    background: var(--bg);
-  }
-
-  a { color: inherit; }
-  h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; }
-
-  .wrap { max-width: 920px; margin: 0 auto; }
-
-  /* ---------- nav ---------- */
-  nav.topbar {
-    position: sticky;
-    top: env(safe-area-inset-top, 0px);
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding-block: 18px;
-    background: var(--bg);
-    border-bottom: 1px solid var(--line);
-  }
-  .brand {
-    font-family: var(--font-logo); color: var(--accent);
-    font-weight: 800; font-size: 1.15rem; line-height: 1; letter-spacing: 0.01em;
-  }
-  .navlinks {
-    display: flex;
-    gap: 22px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.86rem;
-  }
-  .navlinks a {
-    text-decoration: none;
-    color: var(--ink-muted);
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-  }
-  .navlinks a:hover, .navlinks a:focus-visible { color: var(--ink); border-color: var(--accent); }
-  @media (max-width: 620px) { .navlinks { display: none; } }
-  .nav-cta {
-    font-family: var(--font-body); font-weight: 600; font-size: 0.85rem;
-    background: var(--accent); color: var(--on-accent);
-    padding: 9px 16px; border-radius: 3px; text-decoration: none; white-space: nowrap;
-  }
-  .nav-cta:hover { opacity: 0.9; }
-
-  /* ---------- hero ---------- */
-  header.hero { padding-block: 56px 40px; }
-  .hero-intro { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-  .avatar {
-    display: inline-block; width: 56px; height: 56px; border-radius: 50%;
-    border: 2px solid var(--line); flex-shrink: 0;
-    overflow: hidden; position: relative;
-  }
-  .avatar img {
-    position: absolute; top: 50%; left: 50%;
-    width: 160%; height: 160%; object-fit: cover;
-    transform: translate(-50%, -50%);
-  }
-  .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 14px;
-  }
-  h1.title { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.08; max-width: 14ch; }
-  .lede {
-    margin-top: 18px;
-    max-width: 58ch;
-    font-size: 1.1rem;
-    color: var(--ink-muted);
-  }
-  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--font-body); font-weight: 600; font-size: 0.92rem;
-    padding: 11px 18px; border-radius: 3px; cursor: pointer; text-decoration: none;
-    border: 1px solid transparent;
-  }
-  .btn-primary { background: var(--accent); color: var(--on-accent); }
-  .btn-primary:hover { opacity: 0.92; }
-  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-  .btn-ghost:hover { border-color: var(--ink-muted); }
-
-  /* stat strip */
-  .statstrip {
-    margin-top: 44px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-  .stat { background: var(--bg); padding: 16px 18px; min-width: 0; }
-  .stat .num {
-    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
-    font-size: 1.7rem; font-weight: 500; color: var(--accent);
-  }
-  .stat .lbl { font-size: 0.8rem; color: var(--ink-muted); margin-top: 4px; }
-
-  /* ---------- generic section ---------- */
-  section { padding-block: 52px; border-top: 1px solid var(--line); }
-  .section-head { margin-bottom: 30px; }
-  .kicker {
-    font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--ink-muted); margin-bottom: 8px;
-  }
-  h2.section-title { font-size: clamp(1.5rem, 3vw, 2rem); }
-
-  /* forces grid */
-  .forces { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .force { background: var(--bg); padding: 22px; min-width: 0; }
-  .force svg { width: 26px; height: 26px; stroke: var(--accent); margin-bottom: 14px; }
-  .force h3 { font-size: 1rem; font-family: var(--font-body); font-weight: 600; margin-bottom: 8px; }
-  .force p { margin: 0; font-size: 0.92rem; color: var(--ink-muted); }
-
-  .values { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-  .value-chip {
-    font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.03em;
-    padding: 7px 14px; border: 1px solid var(--accent-2); color: var(--accent-2);
-    border-radius: 999px;
-  }
-
-  /* positionnement */
-  .pos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
-  .pos-card h3 { font-size: 0.95rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
-  .pos-card p { margin: 0 0 10px; font-size: 0.95rem; }
-  .pos-card .vs { color: var(--ink-muted); font-size: 0.85rem; }
-
-  /* achievements */
-  .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
-  .case {
-    border: 1px solid var(--line); padding: 22px; min-width: 0;
-    display: flex; flex-direction: column; gap: 10px;
-  }
-  .case .client-row { display: flex; align-items: center; gap: 8px; }
-  .case .client-row img { height: 20px; width: auto; display: block; }
-  .case .client-row .logo-pill {
-    background: #fff; border-radius: 3px; padding: 3px 7px; display: inline-flex; align-items: center;
-  }
-  .case .client-row .logo-pill img { height: 14px; }
-  .case .client { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; }
-  .case .ctx { font-size: 0.85rem; color: var(--ink-muted); }
-  .case .num {
-    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
-    font-size: 1.6rem; color: var(--accent); margin-top: 4px;
-  }
-  .case .num span { font-size: 0.8rem; color: var(--ink-muted); font-family: var(--font-body); display: block; margin-top: 2px; }
-  .case .profiles { font-size: 0.86rem; color: var(--ink); line-height: 1.5; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--line); }
-
-  /* mid-page contact CTA */
-  .cta-band { border-top: none; padding-block: 0 16px; }
-  .cta-band-inner {
-    background: var(--accent); color: var(--on-accent);
-    padding: 36px 28px; border-radius: 3px;
-    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;
-  }
-  .cta-band-inner h2 { color: var(--on-accent); font-size: clamp(1.25rem, 3vw, 1.7rem); max-width: 28ch; }
-  .cta-band-inner p { margin: 6px 0 0; color: var(--on-accent); opacity: 0.85; font-size: 0.92rem; }
-  .btn-oncolor {
-    background: var(--on-accent); color: var(--accent); font-weight: 600; font-family: var(--font-body);
-    padding: 12px 22px; border-radius: 3px; text-decoration: none; white-space: nowrap; font-size: 0.92rem;
-  }
-  .btn-oncolor:hover { opacity: 0.9; }
-
-  /* outils */
-  .tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-  .tool-chip {
-    font-family: var(--font-body); font-weight: 500; font-size: 0.88rem;
-    padding: 9px 16px; background: var(--surface-alt); border-radius: 3px; text-decoration: none;
-  }
-  a.tool-chip:hover { color: var(--accent); }
-  .logo-chip {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: #fff; border-radius: 3px; padding: 9px 16px; text-decoration: none;
-  }
-  .logo-chip img { height: 18px; width: auto; display: block; }
-  .logo-chip span { font-family: var(--font-body); font-weight: 500; font-size: 0.88rem; color: #1a1a1a; }
-  .logo-chip:hover { opacity: 0.85; }
-
-  /* blog carousel */
-  .blog-heading { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-muted); margin: 28px 0 14px; }
-  .blog-card {
-    flex: 0 0 190px; min-width: 0; display: flex; flex-direction: column;
-    text-decoration: none; color: inherit; background: var(--surface-alt);
-    border: 1px solid var(--line); border-radius: 3px; overflow: hidden;
-  }
-  .blog-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-  .blog-card .meta { padding: 10px 12px 12px; }
-  .blog-card .b-title {
-    font-size: 0.8rem; font-weight: 600; line-height: 1.35; color: var(--ink);
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .blog-card .b-date { font-family: var(--font-mono); font-size: 0.66rem; color: var(--ink-muted); margin-top: 8px; }
-  .blog-card:hover { border-color: var(--accent); }
-
-  /* contenu */
-  .content-links { display: grid; gap: 14px; margin-top: 22px; }
-  .content-link {
-    display: flex; justify-content: space-between; align-items: baseline;
-    padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; gap: 12px;
-  }
-  .content-link .name { font-weight: 600; min-width: 0; }
-  .content-link .url { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .content-link.is-link:hover .name { color: var(--accent); }
-
-  /* temoignages — marquee of small cards, click to read in full */
-  .marquee {
-    overflow: hidden; width: 100%;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
-    mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
-  }
-  .marquee-track { display: flex; gap: 14px; width: max-content; animation: testi-scroll 48s linear infinite; }
-  .marquee:hover .marquee-track, .marquee:focus-within .marquee-track { animation-play-state: paused; }
-  @keyframes testi-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  @media (prefers-reduced-motion: reduce) {
-    .marquee-track { animation: none; overflow-x: auto; }
-    .marquee { mask-image: none; -webkit-mask-image: none; }
-  }
-  .testi-card {
-    flex: 0 0 230px; min-width: 0; text-align: left; cursor: pointer;
-    background: var(--surface-alt); border: 1px solid var(--line); border-radius: 3px;
-    padding: 16px; display: flex; flex-direction: column; gap: 10px;
-    font-family: var(--font-body); color: inherit;
-  }
-  .testi-card:hover, .testi-card:focus-visible { border-color: var(--accent); outline: none; }
-  .testi-quote {
-    font-size: 0.82rem; line-height: 1.5; color: var(--ink);
-    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .testi-author .name { font-weight: 600; font-size: 0.8rem; }
-  .testi-author .role { font-family: var(--font-mono); font-size: 0.68rem; color: var(--ink-muted); margin-top: 2px; }
-  .testi-more { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent); }
-
-  .modal-overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.5);
-    display: flex; align-items: center; justify-content: center; z-index: 50;
-    padding: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
-  }
-  .modal-overlay[hidden] { display: none; }
-  .modal-box {
-    background: var(--bg); border: 1px solid var(--line); border-radius: 4px;
-    padding: 32px; max-width: 480px; width: 100%; max-height: 80vh; overflow-y: auto; position: relative;
-  }
-  .modal-close {
-    position: absolute; top: 10px; right: 10px; width: 32px; height: 32px;
-    background: none; border: none; font-size: 1.3rem; line-height: 1; cursor: pointer; color: var(--ink-muted);
-  }
-  .modal-close:hover { color: var(--ink); }
-  .modal-quote { font-size: 1rem; line-height: 1.6; color: var(--ink); }
-  .modal-quote::before {
-    content: "\201C"; font-family: var(--font-display); font-size: 2.2rem; color: var(--accent);
-    line-height: 0.6; display: block; margin-bottom: 10px;
-  }
-  .modal-author { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); }
-  .modal-author .name { font-weight: 600; font-size: 0.95rem; }
-  .modal-author .role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); margin-top: 2px; }
-
-  /* accessibilité — confort de lecture */
-  html[data-a11y-size="large"] { font-size: 115%; }
-  html[data-a11y-size="xlarge"] { font-size: 130%; }
-  body[data-a11y-spacing="loose"] { letter-spacing: 0.02em; word-spacing: 0.12em; line-height: 1.85; }
-  body[data-a11y-contrast="soft"] {
-    --bg: #FBF6E9; --surface-alt: #F3ECD4; --ink: #3A332A; --ink-muted: #756B57; --line: #E6DCC0;
-  }
-  body[data-a11y-motion="reduced"] .marquee-track { animation: none !important; }
-  body[data-a11y-motion="reduced"] .marquee { overflow-x: auto !important; mask-image: none !important; -webkit-mask-image: none !important; }
-
-  .a11y-btn {
-    position: fixed;
-    right: max(16px, env(safe-area-inset-right, 0px));
-    top: calc(70px + env(safe-area-inset-top, 0px));
-    z-index: 60; display: flex; align-items: center; justify-content: center;
-    width: 36px; height: 36px; padding: 0;
-    background: var(--bg); color: var(--ink-muted); border: 1px solid var(--line); border-radius: 50%;
-    font-family: var(--font-body); cursor: pointer;
-  }
-  .a11y-btn:hover, .a11y-btn[aria-expanded="true"] { color: var(--accent); border-color: var(--accent); }
-  .a11y-ico { font-family: var(--font-display); font-weight: 700; font-size: 0.72rem; line-height: 1; }
-  .a11y-btn-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
-
-  .a11y-panel {
-    position: fixed;
-    right: max(16px, env(safe-area-inset-right, 0px));
-    top: calc(70px + 36px + 8px + env(safe-area-inset-top, 0px));
-    z-index: 60; width: 280px; max-width: calc(100vw - 32px);
-    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 18px;
-    box-shadow: 0 10px 34px rgba(0,0,0,0.22);
-  }
-  .a11y-panel[hidden] { display: none; }
-  .a11y-panel-head {
-    display: flex; justify-content: space-between; align-items: center;
-    font-weight: 600; font-family: var(--font-display); font-size: 1rem; margin-bottom: 16px;
-  }
-  .a11y-panel-head button {
-    background: none; border: none; font-size: 1.3rem; line-height: 1; cursor: pointer; color: var(--ink-muted);
-  }
-  .a11y-panel-head button:hover { color: var(--ink); }
-  .a11y-group { margin-bottom: 14px; }
-  .a11y-label {
-    font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase;
-    letter-spacing: 0.04em; color: var(--ink-muted); margin-bottom: 7px;
-  }
-  .a11y-seg { display: flex; gap: 6px; }
-  .a11y-seg button {
-    flex: 1; padding: 8px 4px; font-size: 0.78rem; font-family: var(--font-body);
-    border: 1px solid var(--line); background: var(--surface-alt); color: var(--ink);
-    border-radius: 4px; cursor: pointer;
-  }
-  .a11y-seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-  .a11y-reset {
-    width: 100%; margin-top: 2px; padding: 9px; font-size: 0.78rem; font-family: var(--font-body); font-weight: 600;
-    border: 1px solid var(--line); background: transparent; color: var(--ink-muted); border-radius: 4px; cursor: pointer;
-  }
-  .a11y-reset:hover { color: var(--ink); border-color: var(--ink-muted); }
-
-  /* footer / contact */
-  footer {
-    border-top: 1px solid var(--line);
-    padding-block: 48px 40px;
-  }
-  .foot-note { font-size: 0.8rem; color: var(--ink-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-  .foot-legal { margin-top: 14px; font-size: 0.78rem; }
-  .foot-legal a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px solid var(--line); }
-  .foot-legal a:hover { color: var(--accent); border-color: var(--accent); }
-</style>
+}
+</script>
 </head>
 <body>
-
-<div class="wrap">
-  <nav class="topbar">
-    <div class="brand">BUILD RH</div>
-    <ul class="navlinks">
-      <li><a href="#forces">Expertise</a></li>
-      <li><a href="#positionnement">Positionnement</a></li>
-      <li><a href="#parcours">Parcours</a></li>
-      <li><a href="#outils">Outils</a></li>
-      <li><a href="#temoignages">Témoignages</a></li>
-      <li><a href="#contact">Contact</a></li>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="BUILD RH, accueil">BUILD RH</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="/" aria-current="page">Accueil</a></li>
+        <li><a href="/build-rh.html">BUILD RH</a></li>
+        <li><a href="/cap-bascule.html" class="nav-cap">CAP Bascule</a></li>
+        <li><a href="/cas-clients.html">Cas clients</a></li>
+        <li><a href="/a-propos.html">À propos</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-ink btn-sm header-cta" href="/contact.html">Parler d'une situation</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span class="label">Menu</span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <div class="paths">
+    <a class="path build" href="/contact.html?besoin=recrutement"><span class="tag tag-build">BUILD RH</span><strong>Recruter sans ralentir</strong></a>
+    <a class="path cap" href="/contact.html?besoin=situation"><span class="tag tag-cap">CAP Bascule</span><strong>Gérer une situation sensible</strong></a>
+  </div>
+  <nav aria-label="Navigation mobile">
+    <ul>
+      <li><a href="/" aria-current="page">Accueil</a></li>
+      <li><a href="/build-rh.html">BUILD RH</a></li>
+      <li><a href="/cap-bascule.html">CAP Bascule</a></li>
+      <li><a href="/cas-clients.html">Cas clients</a></li>
+      <li><a href="/a-propos.html">À propos</a></li>
+      <li><a href="/contact.html">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="mailto:shirley.chiche@buildrh.co">Me contacter</a>
   </nav>
+</div>
+<main id="main">
 
-  <header class="hero">
-    <div class="hero-intro">
-      <span class="avatar"><img src="assets/shirley.png" alt="Shirley, fondatrice de BUILD RH"></span>
-      <div class="eyebrow">Build RH — Recrutement IT en freelance</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Recrutement tech &amp; transitions professionnelles</span>
+      <h1>Sécuriser les moments où une équipe tech gagne — ou perd — de la vitesse.</h1>
+      <p class="lead">J'aide les startups, scale-ups et entreprises tech à faire entrer les bonnes personnes, puis à traiter les situations où une relation de travail ne tient plus comme prévu.</p>
+      <div class="cta-row">
+        <a class="btn btn-build" href="/build-rh.html">Recruter sans ralentir <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-cap" href="/cap-bascule.html">Gérer une situation sensible <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <p class="secondary"><a class="link-arrow" href="#cas-clients">Voir les cas clients <span aria-hidden="true">↓</span></a></p>
     </div>
-    <h1 class="title">Faire entrer les bonnes personnes, vite et sans rogner sur la qualité.</h1>
-    <p class="lede">Recruteuse IT depuis 15 ans, j'interviens en RPO comme en mission au succès auprès de startups et de scale-up tech — du sourcing jusqu'à la signature, avec une exigence constante sur l'expérience candidat.</p>
-    <div class="cta-row">
-      <a href="#contact" class="btn btn-primary">Me contacter</a>
-      <a href="#parcours" class="btn btn-ghost">Voir mon parcours</a>
-    </div>
-    <div class="statstrip">
-      <div class="stat"><div class="num">15 ans</div><div class="lbl">de recrutement IT</div></div>
-      <div class="stat"><div class="num">6</div><div class="lbl">missions phares détaillées plus bas</div></div>
-    </div>
-  </header>
+    <aside class="trajectory" aria-label="Où interviennent BUILD RH et CAP Bascule">
+      <span class="kicker">La vie d'une relation de travail</span>
+      <ol class="traj-list">
+        <li class="build"><span class="step">Un besoin s'ouvre</span><span class="who">Poste à créer, équipe à construire</span></li>
+        <li class="build"><span class="step">Sourcing, entretiens, closing</span><span class="who">Le bon profil, sans baisser la barre</span></li>
+        <li class="build"><span class="step">Prise de poste</span><span class="who">Ce qui a été promis rencontre le réel</span></li>
+        <li class="cap pivot"><span class="step">La relation bascule</span><span class="who">Doute, tension, période d'essai incertaine</span></li>
+        <li class="cap"><span class="step">Décider et traverser</span><span class="who">Rester, ajuster, partir ou rebondir</span></li>
+      </ol>
+      <div class="traj-legend"><span class="tag tag-build">BUILD RH · l'entrée</span><span class="tag tag-cap">CAP Bascule · le maintien et la sortie</span></div>
+    </aside>
+  </div>
+</section>
 
-  <section id="forces">
+<!-- 1. LES DEUX MOMENTS CRITIQUES -->
+<section class="section" id="moments" aria-labelledby="moments-title">
+  <div class="wrap">
     <div class="section-head">
-      <div class="kicker">Ce que j'apporte</div>
-      <h2 class="section-title">Mes forces</h2>
+      <span class="kicker">Deux moments critiques</span>
+      <h2 id="moments-title">Où en est votre équipe aujourd'hui&nbsp;?</h2>
     </div>
-    <div class="forces">
-      <div class="force">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="1.5"/><path d="M3 9.5h18"/><path d="M8 3v3M16 3v3"/><circle cx="12" cy="14.5" r="2.2"/></svg>
-        <h3>Machine à entretiens</h3>
-        <p>J'encaisse une charge importante de rendez-vous dans des contextes de scale-up où il faut délivrer vite et bien.</p>
-      </div>
-      <div class="force">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H4v6h5z"/><path d="M20 3h-5l5 5V3z"/><path d="M4 15l5 6h2l-1-6z"/><path d="M20 15h-5l1 6h2z"/></svg>
-        <h3>Le matching</h3>
-        <p>Expérience, agents IA et intelligence émotionnelle combinés pour amener les bonnes personnes dans le processus — tout le monde gagne du temps.</p>
-      </div>
-      <div class="force">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.5-9C.8 8.3 2.6 4.5 6.3 4a4.9 4.9 0 0 1 5.7 2.6A4.9 4.9 0 0 1 17.7 4c3.7.5 5.5 4.3 3.8 8-2.5 4.6-9.5 9-9.5 9z"/></svg>
-        <h3>Qualité &amp; expérience candidat</h3>
-        <p>Rythme, culture du feedback, annonces détaillées et transparentes — je mets un point d'honneur à soigner chaque étape du parcours candidat.</p>
-      </div>
-      <div class="force">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-        <h3>Conseil &amp; corporate hacking</h3>
-        <p>J'accompagne le changement et l'amélioration continue par l'immersion dans les équipes et l'audit — le freelancing comme démarche d'impact, pas de temps facturé.</p>
-      </div>
+    <div class="grid grid-2">
+      <article class="card moment build">
+        <span class="tag tag-build">BUILD RH</span>
+        <h3>Faire entrer les bonnes personnes</h3>
+        <p>Votre équipe doit grandir, mais vous ne voulez ni ralentir la roadmap ni baisser la barre sur les profils recrutés.</p>
+        <p class="when">Recrutements tech et stratégiques · RPO hybride · structuration du process</p>
+        <div class="card-foot"><a class="btn btn-build" href="/build-rh.html">Découvrir BUILD RH <span class="arrow" aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="card moment cap">
+        <span class="tag tag-cap">CAP Bascule</span>
+        <h3>Gérer une relation de travail qui bascule</h3>
+        <p>Une prise de poste ne fonctionne pas, une tension s'installe, une période d'essai devient incertaine ou un départ doit être préparé.</p>
+        <p class="when">Accompagnement externe et confidentiel · financé par l'entreprise · de 7 jours à 6 semaines</p>
+        <div class="card-foot"><a class="btn btn-cap" href="/cap-bascule.html">Découvrir CAP Bascule <span class="arrow" aria-hidden="true">→</span></a></div>
+      </article>
     </div>
-    <div class="values">
-      <span class="value-chip">Empathie</span>
-      <span class="value-chip">Satisfaction</span>
-      <span class="value-chip">Ténacité</span>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="positionnement">
+<!-- 2. LE COÛT DE L'INACTION -->
+<section class="section" aria-labelledby="cout-title">
+  <div class="wrap">
     <div class="section-head">
-      <div class="kicker">Comment je travaille</div>
-      <h2 class="section-title">Positionnement</h2>
+      <span class="kicker">Le coût de l'inaction</span>
+      <h2 id="cout-title">Ce qu'on laisse en attente finit par coûter de la vitesse.</h2>
+      <p class="lead">Ces coûts, toutes les équipes tech les connaissent. Ils sont simplement rarement regardés ensemble.</p>
     </div>
-    <div class="pos-grid">
-      <div class="pos-card">
-        <h3>Modalité d'engagement</h3>
-        <p><strong>RPO</strong> — j'opère comme un bras armé recrutement intégré à votre équipe, sur la durée.</p>
-        <p class="vs">— ou bien —</p>
-        <p><strong>Mission au succès</strong> — engagement ponctuel sur un ou plusieurs postes identifiés.</p>
-      </div>
-      <div class="pos-card">
-        <h3>Nature de l'intervention</h3>
-        <p><strong>Build</strong> — conception, amélioration et audit de votre process de recrutement.</p>
-        <p class="vs">— et / ou —</p>
-        <p><strong>Delivery</strong> — sourcing et chasse dans le dur, jusqu'au closing.</p>
-      </div>
-      <div class="pos-card">
-        <h3>Terrain de jeu</h3>
-        <p>L'univers <strong>tech</strong>, principalement pour des <strong>startups</strong> et des <strong>scale-up</strong> en forte croissance.</p>
-      </div>
+    <div class="costs">
+      <div class="cost"><span class="num">01</span><h3>Un poste vacant</h3><p>La roadmap attend. Les autres absorbent la charge, les arbitrages se repoussent.</p></div>
+      <div class="cost"><span class="num">02</span><h3>Un mauvais casting</h3><p>Du temps, de l'énergie managériale et de la crédibilité dépensés pour un recrutement qui ne tient pas.</p></div>
+      <div class="cost"><span class="num">03</span><h3>Une situation non traitée</h3><p>Elle finit par mobiliser le management, les RH et l'équipe, bien au-delà de la personne concernée.</p></div>
+      <div class="cost"><span class="num">04</span><h3>Un départ subi ou conflictuel</h3><p>Il entame la confiance de celles et ceux qui restent, et la marque employeur.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="parcours">
+<!-- 3. BUILD RH -->
+<section class="section alt" id="build-rh" aria-labelledby="build-title">
+  <div class="wrap">
     <div class="section-head">
-      <div class="kicker">Biggest achievements</div>
-      <h2 class="section-title">Parcours clients</h2>
+      <span class="kicker">BUILD RH · la stratégie à l'entrée</span>
+      <h2 id="build-title">Faire entrer les bonnes personnes, vite et sans rogner sur la qualité.</h2>
+      <p class="lead">Pour les startups, scale-ups et entreprises tech qui recrutent des profils techniques ou stratégiques, et qui veulent alléger la charge de leurs managers sans baisser leur niveau d'exigence.</p>
+    </div>
+    <div class="grid grid-3">
+  <article class="card offer-card">
+    <span class="tag tag-build">Build</span>
+    <h3>Construire le dispositif</h3>
+    <p>Vous recrutez, mais le process ne suit pas&nbsp;: délais qui s'allongent, entretiens inégaux, candidats qui décrochent.</p>
+    <ul>
+      <li>Conception ou refonte du process</li>
+      <li>Audit et rapport d'étonnement</li>
+      <li>Annonces, grilles d'entretien, expérience candidat</li>
+      <li>Accompagnement des managers et des équipes</li>
+    </ul>
+  </article>
+  <article class="card offer-card">
+    <span class="tag tag-build">Delivery</span>
+    <h3>Recruter, de bout en bout</h3>
+    <p>Le besoin est clair&nbsp;: il faut des personnes en poste, au bon niveau.</p>
+    <ul>
+      <li>Sourcing et chasse</li>
+      <li>Qualification et entretiens</li>
+      <li>Suivi des candidats et retours détaillés</li>
+      <li>Closing et négociation</li>
+    </ul>
+  </article>
+  <article class="card offer-card featured">
+    <span class="tag tag-build">Build + Delivery</span>
+    <h3>Structurer en recrutant</h3>
+    <p>Recruter maintenant, tout en posant des bases qui tiendront après la mission.</p>
+    <ul>
+      <li>Les recrutements avancent dès le démarrage</li>
+      <li>Le process s'améliore sur le terrain, pas sur le papier</li>
+      <li>Vos équipes gardent un dispositif réutilisable</li>
+    </ul>
+  </article>
+</div>
+    <h3 class="compare-title" id="formules">Un seul format d'engagement, deux natures d'intervention</h3>
+<div class="matrix">
+  <div class="matrix-col">
+    <span class="kicker">Le format d'engagement</span>
+    <div class="matrix-item">
+      <h4>RPO hybride</h4>
+      <p class="sub">Un dispositif intégré, orienté objectifs et impacts</p>
+      <p>Un bras armé recrutement intégré à votre équipe, sur la durée, avec un forfait qui marie les deux formats&nbsp;: un socle pour l'intégration et la structuration, une part liée à chaque recrutement signé, comme une mission au succès.</p>
+    </div>
+    <div class="matrix-item">
+      <h4>Ce qu'il prend à chacun</h4>
+      <p><strong>Au RPO classique</strong>&nbsp;: l'intégration dans vos équipes, la structuration et le pilotage, sur la durée.</p>
+      <p><strong>À la mission au succès</strong>&nbsp;: une rémunération qui avance avec les recrutements signés.</p>
+      <p><strong>Ce qu'il ajoute</strong>&nbsp;: une part liée aux impacts durables sur votre organisation.</p>
+    </div>
+  </div>
+  <div class="matrix-col">
+    <span class="kicker">Nature de l'intervention</span>
+    <div class="matrix-item">
+      <h4>Build</h4>
+      <p class="sub">Structurer et améliorer le recrutement</p>
+      <p>Conception, amélioration et audit du process, accompagnement des managers et des équipes.</p>
+    </div>
+    <div class="matrix-item">
+      <h4>Delivery</h4>
+      <p class="sub">Exécuter, du sourcing jusqu'au closing</p>
+      <p>Sourcing, chasse, qualification, entretiens et closing. Les deux natures se combinent&nbsp;: Build + Delivery.</p>
+    </div>
+  </div>
+</div>
+    <h3 class="compare-title">Le RPO hybride&nbsp;: le meilleur du RPO et de la mission au succès</h3>
+    <p class="muted" style="max-width:70ch">Un RPO qui ne facture pas seulement du temps de recrutement.</p>
+    <div class="hybrid" aria-label="Le RPO hybride combine le RPO et la mission au succès">
+  <div class="hy-part">
+    <span class="hy-label">Du RPO</span>
+    <strong>L'intégration</strong>
+    <p>Un bras armé recrutement dans votre équipe&nbsp;: structuration du process, pilotage, accompagnement des managers.</p>
+    <span class="hy-pay">→ rémunéré par un <b>socle</b></span>
+  </div>
+  <span class="hy-op" aria-hidden="true">+</span>
+  <div class="hy-part">
+    <span class="hy-label">De la mission au succès</span>
+    <strong>L'alignement sur les résultats</strong>
+    <p>Une part du forfait n'est due qu'à chaque recrutement signé, et pèse davantage sur les postes critiques.</p>
+    <span class="hy-pay">→ rémunéré <b>par recrutement</b></span>
+  </div>
+  <span class="hy-op" aria-hidden="true">+</span>
+  <div class="hy-part">
+    <span class="hy-label">En plus</span>
+    <strong>Les impacts durables</strong>
+    <p>Des recrutements rapides, les bonnes personnes dans le pipe, un process repris par l'équipe, des managers moins sollicités.</p>
+    <span class="hy-pay">→ une <b>part impact</b></span>
+  </div>
+  <span class="hy-op" aria-hidden="true">=</span>
+  <div class="hy-part hy-result">
+    <span class="hy-label">Le RPO hybride BUILD RH</span>
+    <strong>Socle + recrutements + impact</strong>
+    <p>Un seul forfait, défini ensemble au démarrage et adossé à vos objectifs.</p>
+  </div>
+</div>
+    <div class="forfait" id="forfait">
+  <div class="forfait-main">
+    <span class="kicker">Le modèle RPO hybride</span>
+    <h3>Un forfait construit sur vos objectifs, pas sur un nombre de jours à consommer.</h3>
+    <p>Nous définissons ensemble le problème à résoudre, les objectifs à atteindre et les impacts attendus. Le forfait est ensuite construit autour de ce cadre.</p>
+    <p class="forfait-note">Le niveau d'intervention, la durée, le périmètre, les indicateurs de suivi et le forfait sont clarifiés au démarrage. Le dispositif est suivi régulièrement et ajusté lorsque le contexte évolue.</p>
+  </div>
+  <div class="forfait-factors">
+    <p class="factors-title">Le forfait tient compte&nbsp;:</p>
+    <ul>
+      <li>du contexte de l'entreprise&nbsp;;</li>
+      <li>du nombre et de la criticité des recrutements&nbsp;;</li>
+      <li>des objectifs à atteindre&nbsp;;</li>
+      <li>des impacts attendus sur l'organisation&nbsp;;</li>
+      <li>du niveau de structuration nécessaire&nbsp;;</li>
+      <li>de l'autonomie des équipes&nbsp;;</li>
+      <li>de la durée et du périmètre de l'intervention.</li>
+    </ul>
+  </div>
+</div>
+    <p class="note">Exemple fictif&nbsp;: 8 recrutements en 4 mois en RPO hybride, 35&nbsp;000&nbsp;€&nbsp;HT au maximum si tous les objectifs sont atteints, contre environ 48&nbsp;000&nbsp;€ pour un RPO classique à temps plein. <a class="link-arrow build" href="/build-rh.html#exemple">Voir l'exemple détaillé</a></p>
+    <div class="section-foot cta-row"><a class="btn btn-build" href="/contact.html?besoin=recrutement">Parler d'un recrutement ou d'un besoin de structuration <span class="arrow" aria-hidden="true">→</span></a><a class="link-arrow" href="/build-rh.html">Tout sur BUILD RH</a></div>
+  </div>
+</section>
+
+<!-- 4. CAP BASCULE -->
+<section class="section cap-zone" id="cap-bascule" aria-labelledby="cap-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="color:var(--cap)">CAP Bascule · la stratégie à la sortie et au maintien</span>
+      <h2 id="cap-title">Quand le travail ne tient plus comme avant.</h2>
+      <p class="lead">Clarifier une situation professionnelle sensible, décider de la suite et traverser la transition proprement. L'entreprise finance l'accompagnement&nbsp;; la personne bénéficie d'un espace externe, confidentiel et neutre.</p>
+      <p class="muted mt-s">Co-porté par Shirley Almosni Chiche et Coralie Nohel.</p>
+    </div>
+    <div class="grid grid-3">
+  <article class="card parcours">
+    <span class="for">Encore en poste</span>
+    <h3>CAP Clarifier</h3>
+    <span class="duration">7 à 10 jours</span>
+    <p>Pour décider de rester, d'ajuster ou de partir, quand une personne ne sait plus où elle en est dans son poste.</p>
+    <p class="path-line">Cadrer → Éclairer → Décider</p>
+  </article>
+  <article class="card parcours">
+    <span class="for">Un départ se prépare</span>
+    <h3>CAP Traverser</h3>
+    <span class="duration">3 à 6 semaines</span>
+    <p>Pour préparer une sortie propre&nbsp;: fin de période d'essai, séparation, départ après plusieurs années.</p>
+    <p class="path-line">Cadrer → Éclairer → Décider → Préparer la sortie</p>
+  </article>
+  <article class="card parcours">
+    <span class="for">Après une rupture</span>
+    <h3>CAP Rebond</h3>
+    <span class="duration">3 à 6 semaines</span>
+    <p>Pour reconstruire la suite professionnelle, tirer les enseignements de la transition et préparer un nouveau projet.</p>
+    <p class="path-line">Cadrer → Éclairer → Décider → Construire la suite</p>
+  </article>
+</div>
+    <div class="principles">
+  <div class="principle"><strong>Confidentialité</strong><p>Aucun verbatim transmis, aucun compte rendu individuel envoyé automatiquement. Les règles sont fixées avant de commencer.</p></div>
+  <div class="principle"><strong>Neutralité</strong><p>Nous ne cherchons à convaincre personne de rester ou de partir. Chacun reste maître de sa décision.</p></div>
+  <div class="principle"><strong>Responsabilité</strong><p>L'entreprise reste responsable de ses décisions et de son management. Elle se donne un cadre pour les exercer.</p></div>
+  <div class="principle"><strong>Un espace externe</strong><p>La personne dispose d'un lieu hors de l'entreprise pour prendre du recul. Elle n'est ni évaluée ni surveillée.</p></div>
+</div>
+    <div class="isnot">
+  <span class="label">CAP Bascule n'est pas&nbsp;:</span>
+  <span class="x">une thérapie</span>
+  <span class="x">un conseil juridique</span>
+  <span class="x">un dispositif de surveillance</span>
+  <span class="x">un moyen de convaincre de rester ou de partir</span>
+</div>
+    <div class="section-foot cta-row"><a class="btn btn-cap" href="/contact.html?besoin=situation">Parler d'une situation sensible <span class="arrow" aria-hidden="true">→</span></a><a class="link-arrow cap" href="/cap-bascule.html">Tout sur CAP Bascule</a></div>
+  </div>
+</section>
+
+<!-- 5. LA SYNERGIE -->
+<section class="section" aria-labelledby="synergie-title">
+  <div class="wrap">
+    <span class="kicker">Pourquoi les deux</span>
+    <h2 id="synergie-title" class="synergy-quote"><span>Un recrutement ne se termine pas le jour de la signature.</span> <span>Une situation de départ ne commence pas toujours le jour de la rupture.</span></h2>
+    <p class="lead mt-m">Les deux offres restent distinctes&nbsp;: vous choisissez la porte d'entrée qui correspond à votre situation. Mais elles se répondent.</p>
+    <div class="bridges">
+      <div class="bridge">
+        <div class="route"><span class="tag tag-build">BUILD RH</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-cap">CAP Bascule</span></div>
+        <p><strong>Quand une prise de poste ne fonctionne pas.</strong> Si un recrutement ou une relation de travail se dégrade, CAP Bascule donne un cadre pour clarifier la situation plutôt que de la laisser s'enliser.</p>
+      </div>
+      <div class="bridge">
+        <div class="route"><span class="tag tag-cap">CAP Bascule</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-build">BUILD RH</span></div>
+        <p><strong>Quand un poste doit être remplacé.</strong> BUILD RH reprend le recrutement avec les enseignements de la situation précédente&nbsp;: ce qui était promis, ce qui manquait, ce qu'il faut vérifier autrement. Toujours dans le respect du cadre de confidentialité convenu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CAS CLIENTS -->
+<section class="section alt" id="cas-clients" aria-labelledby="cas-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Cas clients</span>
+      <h2 id="cas-title">Biggest achievements</h2>
+      <p class="lead">Six missions BUILD RH, avec le contexte, le besoin, l'intervention et le résultat.</p>
     </div>
     <div class="cases">
-      <div class="case">
-        <div class="client-row"><span class="logo-pill"><img src="assets/logos/sunday.png" alt="Sunday" style="height:16px;"></span><div class="client">Sunday</div></div>
-        <div class="ctx">Contexte scale-up</div>
-        <div class="num">18<span>recrutements en 3 mois</span></div>
-        <div class="profiles">11 backend software engineer &amp; fullstack (seniors), 1 PM, 1 ITSM technical specialist, 1 IT automation &amp; IA specialist, 1 Head of Security, 1 Staff Mobile, 1 Analytics Engineer, 1 Engineering Manager.</div>
-      </div>
-      <div class="case">
-        <div class="client-row"><span class="logo-pill"><img src="assets/logos/deepreach.png" alt="DeepReach"></span><div class="client">DeepReach</div></div>
-        <div class="ctx">Création d'une équipe tech from scratch</div>
-        <div class="num">20<span>recrutements en moins d'un an</span></div>
-        <div class="profiles">Développeurs fullstack JS.</div>
-      </div>
-      <div class="case">
-        <div class="client-row"><span class="logo-pill"><img src="assets/logos/elax.png" alt="Elax Énergie"></span><div class="client">Elax Énergie</div></div>
-        <div class="ctx">Contexte de croissance (levée de fonds)</div>
-        <div class="num">3<span>recrutements en 2 mois</span></div>
-        <div class="profiles">1 Analytics Engineer, 1 Référent technique itinérant, 1 Ingénieur DevOps.</div>
-      </div>
-      <div class="case">
-        <div class="client-row"><img src="assets/logos/pix.svg" alt="Pix"><div class="client">Pix</div></div>
-        <div class="ctx">Scalabilité plateforme — passage à 9M d'utilisateurs</div>
-        <div class="num">21<span>recrutements tous profils</span></div>
-        <div class="profiles">PO, RSSI, DevOps, Dev Fullstack JS.</div>
-      </div>
-      <div class="case">
-        <div class="client-row"><img src="assets/logos/ilek.svg" alt="Ilek"><div class="client">Ilek</div></div>
-        <div class="ctx">Scale-up (levée de fonds)</div>
-        <div class="num">6<span>recrutements</span></div>
-        <div class="profiles">Développeurs seniors.</div>
-      </div>
-      <div class="case">
-        <div class="client-row"><span class="logo-pill"><img src="assets/logos/momentslab.png" alt="Moments Lab"></span><div class="client">Moments Lab</div></div>
-        <div class="ctx">Changement de paradigme produit</div>
-        <div class="num">3<span>recrutements réalisés</span></div>
-        <div class="profiles">2 développeurs backend, 1 développeur frontend.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="cta-band-inner">
-      <div>
-        <h2>Un poste tech à pourvoir&nbsp;?</h2>
-        <p>Je réponds généralement sous 24h.</p>
-      </div>
-      <a href="#contact" class="btn-oncolor">Me contacter</a>
-    </div>
-  </section>
-
-  <section id="outils">
-    <div class="section-head">
-      <div class="kicker">Au quotidien</div>
-      <h2 class="section-title">Mes outils</h2>
-    </div>
-    <p style="color:var(--ink-muted); max-width:58ch; margin:0 0 4px;">Sourcing, matching assisté par IA et conduite d'entretiens — outillés du premier contact jusqu'à l'offre.</p>
-    <div class="tools">
-      <span class="tool-chip">LinkedIn Recruiter</span>
-      <span class="tool-chip">Jarvi</span>
-      <span class="tool-chip">Claude</span>
-      <span class="tool-chip">Dust</span>
-    </div>
-  </section>
-
-  <section id="communautes">
-    <div class="section-head">
-      <div class="kicker">J'en fais partie</div>
-      <h2 class="section-title">Communautés</h2>
-    </div>
-    <p style="color:var(--ink-muted); max-width:58ch; margin:0 0 4px;">J'échange et je partage avec deux communautés professionnelles.</p>
-    <div class="tools">
-      <a class="logo-chip" href="https://takomu.ai/" target="_blank" rel="noopener">
-        <img src="assets/logos/takomu.svg" alt="TAKOMU">
-        <span>TAKOMU — IA</span>
-      </a>
-      <a class="logo-chip" href="https://www.arboriia.tech/" target="_blank" rel="noopener">
-        <img src="assets/logos/arboriia.svg" alt="Arboriia" style="height:14px;">
-      </a>
-    </div>
-  </section>
-
-  <section id="contenu">
-    <div class="section-head">
-      <div class="kicker">Pour aller plus loin</div>
-      <h2 class="section-title">Contenu et prise de parole</h2>
-    </div>
-    <div class="content-links">
-      <a class="content-link is-link" href="https://github.com/AlmosniShirley" target="_blank" rel="noopener">
-        <span class="name">GitHub — mes projets et expérimentations</span>
-        <span class="url">github.com/AlmosniShirley</span>
-      </a>
-      <a class="content-link is-link" href="https://prompt-humain.ghost.io/" target="_blank" rel="noopener">
-        <span class="name">Blog — Prompt Humain</span>
-        <span class="url">prompt-humain.ghost.io</span>
-      </a>
-    </div>
-
-    <div class="blog-heading">Derniers articles — Prompt Humain</div>
-    <div class="marquee">
-      <div class="marquee-track" id="blog-track">
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/" target="_blank" rel="noopener">
-          <img src="assets/blog/1.jpg" alt="">
-          <div class="meta"><div class="b-title">IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle</div><div class="b-date">1 sept. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/" target="_blank" rel="noopener">
-          <img src="assets/blog/2.png" alt="">
-          <div class="meta"><div class="b-title">"IA générative en entreprise : ce n'est pas juste un outil en plus" — témoignage de Jérôme Duchemin, DSI d'ACS</div><div class="b-date">24 août 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/" target="_blank" rel="noopener">
-          <img src="assets/blog/3.jpg" alt="">
-          <div class="meta"><div class="b-title">Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — entretien avec Mathilde Rigabert (CTPO)</div><div class="b-date">18 août 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/" target="_blank" rel="noopener">
-          <img src="assets/blog/4.png" alt="">
-          <div class="meta"><div class="b-title">Un an pour faire basculer plus de 300 ingénieurs vers l'IA — témoignage de Nicolas Martignole (Back Market)</div><div class="b-date">24 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ton-code-nest-pas-toi-mais-bientot-ce-sera-toujours-toi-qui-paiera-quand-lia-se-trompe/" target="_blank" rel="noopener">
-          <img src="assets/blog/5.jpg" alt="">
-          <div class="meta"><div class="b-title">Ton code n'est pas toi (mais bientôt, ce sera toujours toi) — qui paiera quand l'IA se trompe ?</div><div class="b-date">22 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/" target="_blank" rel="noopener">
-          <img src="assets/blog/6.png" alt="">
-          <div class="meta"><div class="b-title">"Sur une journée type, je code peut-être 10 % du temps" — interview de Cédric Locchi</div><div class="b-date">21 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/on-est-passes-de-driven-by-ai-a-ai-first-puis-a-ai-only-plongee-dans-la-transformation-ia-de-sfeir/" target="_blank" rel="noopener">
-          <img src="assets/blog/7.webp" alt="">
-          <div class="meta"><div class="b-title">"On est passés de driven by AI à AI first, puis à AI only" — plongée dans la transformation IA de SFEIR</div><div class="b-date">13 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/le-loup-et-le-chien/" target="_blank" rel="noopener">
-          <img src="assets/blog/8.jpg" alt="">
-          <div class="meta"><div class="b-title">Le Loup et le chien</div><div class="b-date">9 juil. 2026</div></div>
-        </a>
-
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/" target="_blank" rel="noopener">
-          <img src="assets/blog/1.jpg" alt="">
-          <div class="meta"><div class="b-title">IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle</div><div class="b-date">1 sept. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/" target="_blank" rel="noopener">
-          <img src="assets/blog/2.png" alt="">
-          <div class="meta"><div class="b-title">"IA générative en entreprise : ce n'est pas juste un outil en plus" — témoignage de Jérôme Duchemin, DSI d'ACS</div><div class="b-date">24 août 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/" target="_blank" rel="noopener">
-          <img src="assets/blog/3.jpg" alt="">
-          <div class="meta"><div class="b-title">Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — entretien avec Mathilde Rigabert (CTPO)</div><div class="b-date">18 août 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/" target="_blank" rel="noopener">
-          <img src="assets/blog/4.png" alt="">
-          <div class="meta"><div class="b-title">Un an pour faire basculer plus de 300 ingénieurs vers l'IA — témoignage de Nicolas Martignole (Back Market)</div><div class="b-date">24 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/ton-code-nest-pas-toi-mais-bientot-ce-sera-toujours-toi-qui-paiera-quand-lia-se-trompe/" target="_blank" rel="noopener">
-          <img src="assets/blog/5.jpg" alt="">
-          <div class="meta"><div class="b-title">Ton code n'est pas toi (mais bientôt, ce sera toujours toi) — qui paiera quand l'IA se trompe ?</div><div class="b-date">22 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/" target="_blank" rel="noopener">
-          <img src="assets/blog/6.png" alt="">
-          <div class="meta"><div class="b-title">"Sur une journée type, je code peut-être 10 % du temps" — interview de Cédric Locchi</div><div class="b-date">21 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/on-est-passes-de-driven-by-ai-a-ai-first-puis-a-ai-only-plongee-dans-la-transformation-ia-de-sfeir/" target="_blank" rel="noopener">
-          <img src="assets/blog/7.webp" alt="">
-          <div class="meta"><div class="b-title">"On est passés de driven by AI à AI first, puis à AI only" — plongée dans la transformation IA de SFEIR</div><div class="b-date">13 juil. 2026</div></div>
-        </a>
-        <a class="blog-card" href="https://prompt-humain.ghost.io/le-loup-et-le-chien/" target="_blank" rel="noopener">
-          <img src="assets/blog/8.jpg" alt="">
-          <div class="meta"><div class="b-title">Le Loup et le chien</div><div class="b-date">9 juil. 2026</div></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="temoignages">
-    <div class="section-head">
-      <div class="kicker">Recommandations LinkedIn</div>
-      <h2 class="section-title">Témoignages</h2>
-    </div>
-    <div class="marquee" id="testi-marquee">
-      <div class="marquee-track" id="testi-track"></div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <div class="foot-note">
-      <span>BUILD RH — Shirley, recruteuse IT freelance</span>
-      <span>Paris · Tech · Startups &amp; scale-up</span>
-    </div>
-    <div class="foot-legal"><a href="conditions-generales.html">Conditions générales</a></div>
-  </footer>
+<article class="card case">
+  <div class="case-head"><h3>Sunday</h3><span class="case-logo"><img src="/assets/logos/sunday.png" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">18</span><span class="unit">recrutements<br>en 3 mois</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Scale-up.</dd></div>
+    <div><dt>Besoin</dt><dd>Recruter en parallèle des développeurs seniors et plusieurs rôles clés, sur un calendrier serré.</dd></div>
+    <div><dt>Intervention</dt><dd>Mission RPO de 3 mois (septembre à décembre 2025)&nbsp;: sourcing, entretiens et closing.</dd></div>
+    <div><dt>Résultat</dt><dd>11 backend et fullstack seniors, 1 PM, 1 ITSM technical specialist, 1 IT automation &amp; IA specialist, 1 Head of Security, 1 Staff Mobile, 1 Analytics Engineer, 1 Engineering Manager.</dd></div>
+  </dl>
+</article>
+<article class="card case">
+  <div class="case-head"><h3>Pix</h3><span class="case-logo"><img src="/assets/logos/pix.svg" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">21</span><span class="unit">recrutements<br>tous profils</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Scalabilité de la plateforme, avec le passage à 9 millions d'utilisateurs.</dd></div>
+    <div><dt>Besoin</dt><dd>Renforcer en même temps le produit, la sécurité, l'infrastructure et le développement.</dd></div>
+    <div><dt>Intervention</dt><dd>Mission RPO.</dd></div>
+    <div><dt>Résultat</dt><dd>Product Owners, RSSI, DevOps, développeurs fullstack JS juniors et seniors.</dd></div>
+  </dl>
+</article>
+<article class="card case">
+  <div class="case-head"><h3>DeepReach</h3><span class="case-logo"><img src="/assets/logos/deepreach.png" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">20</span><span class="unit">recrutements<br>en moins d'un an</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Création d'une équipe tech from scratch.</dd></div>
+    <div><dt>Besoin</dt><dd>Constituer une équipe de développement complète, sans base existante.</dd></div>
+    <div><dt>Intervention</dt><dd>Mission au succès.</dd></div>
+    <div><dt>Résultat</dt><dd>Une équipe de développeurs fullstack JS constituée.</dd></div>
+  </dl>
+</article>
+<article class="card case">
+  <div class="case-head"><h3>Elax Énergie</h3><span class="case-logo"><img src="/assets/logos/elax.png" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">3</span><span class="unit">recrutements<br>en 2 mois, et un audit</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Croissance après une levée de fonds.</dd></div>
+    <div><dt>Besoin</dt><dd>Recruter vite trois profils clés et fiabiliser le process de recrutement.</dd></div>
+    <div><dt>Intervention</dt><dd>Build + Delivery&nbsp;: audit du process et recrutements.</dd></div>
+    <div><dt>Résultat</dt><dd>1 Analytics Engineer, 1 référent technique itinérant, 1 ingénieur DevOps.</dd></div>
+  </dl>
+</article>
+<article class="card case">
+  <div class="case-head"><h3>Ilek</h3><span class="case-logo"><img src="/assets/logos/ilek.svg" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">6</span><span class="unit">recrutements<br>seniors</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Scale-up, après une levée de fonds.</dd></div>
+    <div><dt>Besoin</dt><dd>Renforcer l'équipe de développement avec des profils seniors.</dd></div>
+    <div><dt>Intervention</dt><dd>Mission au succès.</dd></div>
+    <div><dt>Résultat</dt><dd>6 développeurs seniors recrutés.</dd></div>
+  </dl>
+</article>
+<article class="card case">
+  <div class="case-head"><h3>Moments Lab</h3><span class="case-logo"><img src="/assets/logos/momentslab.png" alt="" loading="lazy" decoding="async"></span></div>
+  <p class="case-result"><span class="big">3</span><span class="unit">recrutements<br>réalisés</span></p>
+  <dl>
+    <div><dt>Contexte</dt><dd>Changement de paradigme produit.</dd></div>
+    <div><dt>Besoin</dt><dd>Recruter des développeurs capables de porter la nouvelle direction produit.</dd></div>
+    <div><dt>Intervention</dt><dd>Mission au succès.</dd></div>
+    <div><dt>Résultat</dt><dd>2 développeurs backend, 1 développeur frontend.</dd></div>
+  </dl>
+</article>
 </div>
+    <div class="section-foot"><a class="link-arrow build" href="/cas-clients.html">Cas clients et recommandations <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
 
-<button class="a11y-btn" id="a11y-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="a11y-panel">
-  <span class="a11y-ico">Aa</span>
-  <span class="a11y-btn-label">Confort de lecture</span>
+<!-- 7. MÉTHODE -->
+<section class="section" id="methode" aria-labelledby="methode-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Méthode</span>
+      <h2 id="methode-title">Comment ça marche</h2>
+      <p class="lead">Avant toute exécution, nous définissons ensemble le problème à résoudre, les objectifs et les impacts attendus. Le forfait vient ensuite.</p>
+    </div>
+    <ol class="method">
+  <li><strong>Comprendre le contexte</strong><p>L'entreprise, l'équipe, la roadmap, le marché visé et ce qui freine aujourd'hui.</p></li>
+  <li><strong>Définir les objectifs et les impacts attendus</strong><p>Ce qui doit avoir changé à la fin&nbsp;: postes pourvus, délais, charge des managers, qualité du process.</p></li>
+  <li><strong>Construire le périmètre du dispositif</strong><p>Build, Delivery ou les deux&nbsp;; rôles de chacun, rituels, outils, niveau d'autonomie visé.</p></li>
+  <li><strong>Définir le forfait et les indicateurs de suivi</strong><p>Un forfait adossé aux objectifs, et des indicateurs partagés pour suivre l'avancement.</p></li>
+  <li><strong>Exécuter, mesurer et ajuster</strong><p>Le dispositif est suivi régulièrement et ajusté lorsque le contexte évolue.</p></li>
+</ol>
+    <div class="method-cap">
+  <span class="tag tag-cap">CAP Bascule</span>
+  <span class="flow">Cadrer → Éclairer → Décider → Traverser</span>
+  <p>Pour CAP Bascule, la logique reste celle des quatre temps&nbsp;: chaque étape doit produire une clarification, une conversation ou une décision.</p>
+</div>
+  </div>
+</section>
+
+<!-- 8. À PROPOS -->
+<section class="section alt" id="a-propos" aria-labelledby="apropos-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">À propos</span>
+      <h2 id="apropos-title">Qui intervient</h2>
+    </div>
+    <div class="people">
+      <article class="card person">
+  <div class="photo"><img src="/assets/shirley.png" alt="Portrait de Shirley Almosni Chiche" width="610" height="546" loading="lazy" decoding="async"></div>
+  <div>
+    <h3>Shirley Almosni Chiche</h3>
+    <span class="role">Fondatrice de BUILD RH · co-fondatrice de CAP Bascule</span>
+    <p>Recruteuse tech depuis 15 ans, j'interviens auprès de startups et de scale-ups, dans des contextes où il faut délivrer vite sans baisser le niveau.</p>
+    <ul>
+      <li>Stratégie, process, relation et exécution&nbsp;: je travaille sur les quatre à la fois.</li>
+      <li>Autrice de trois livres sur le recrutement IT, intervenante en conférences tech.</li>
+      <li>L'IA fait partie de mes outils de sourcing et de matching&nbsp;: un levier pour gagner du temps, jamais un substitut au jugement.</li>
+    </ul>
+    <div class="cta-row"><a class="link-arrow build" href="/a-propos.html">Parcours complet <span aria-hidden="true">→</span></a><a class="link-arrow" href="https://www.linkedin.com/in/shirley-almosni-chiche/" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+      <article class="card person cap-person">
+  <div class="monogram" aria-hidden="true">CN</div>
+  <div>
+    <h3>Coralie Nohel</h3>
+    <span class="role">Co-fondatrice de CAP Bascule</span>
+    <p>Une expérience en recrutement IT et en ESN, dans des environnements où les sujets humains, techniques et business sont impossibles à séparer.</p>
+    <p><span class="todo">Bio détaillée de Coralie à compléter</span></p>
+    <div class="cta-row"><a class="link-arrow" href="https://www.linkedin.com/in/coralienohel/" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+    </div>
+    <h3 class="compare-title">Ce qu'en disent celles et ceux qui ont travaillé avec Shirley</h3>
+    <div class="quotes">
+<figure class="quote">
+  <blockquote><p class="mt-0">En tant que cliente de Shirley, j'ai beaucoup apprécié son travail. C'est grâce à sa rigueur, sa ténacité et sa connaissance du marché de l'IT que nous avons effectué de très beaux recrutements pour Arolla&nbsp;!</p></blockquote>
+  <figcaption><span class="name">Océane Roudier</span><span class="who">Collègue de Shirley, Arolla</span></figcaption>
+</figure>
+<figure class="quote">
+  <blockquote><p class="mt-0">J'ai eu la joie de travailler avec Shirley. C'est une personne très impliquée, professionnelle et avec un talent inné pour la performance. Elle connaît très bien l'écosystème de l'IT et n'a jamais été avare de conseil auprès de nos clients et des candidats.</p></blockquote>
+  <figcaption><span class="name">Olivier Moglia</span><span class="who">Founder &amp; CEO, Arolla</span></figcaption>
+</figure>
+<figure class="quote">
+  <blockquote><p class="mt-0">J'ai eu le plaisir de travailler avec Shirley lors de mon expérience chez Altimate. En véritable professionnelle du recrutement, elle a su comprendre mes attentes et me proposer systématiquement de très bons profils, que nous avons eu la chance d'intégrer. D'une efficacité redoutable, Shirley a toujours été disponible et à l'écoute de nos besoins, même les plus pressants, le tout dans une atmosphère de collaboration toujours très agréable.</p></blockquote>
+  <figcaption><span class="name">Nathalie Wirth Ikedjian</span><span class="who">Co-fondatrice, One RH &amp; One Portage · collègue de Shirley</span></figcaption>
+</figure>
+</div>
+    <div class="section-foot"><a class="link-arrow build" href="/a-propos.html#recommandations">Lire les 12 recommandations <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<!-- 9. CONTACT -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Contact</span>
+      <h2 id="contact-title">Par quoi voulez-vous commencer&nbsp;?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-aside">
+  <p>Deux portes d'entrée, un seul formulaire. Choisissez celle qui correspond à votre situation&nbsp;: la suite de l'échange sera adaptée.</p>
+  <ul class="checklist mt-m">
+    <li><strong>Recrutement ou structuration.</strong> Un premier échange pour comprendre le contexte, les postes et le calendrier.</li>
+    <li class="cap-item"><strong>Situation sensible.</strong> 30 minutes pour décrire la situation. Nous vous disons honnêtement si un accompagnement est pertinent.</li>
+  </ul>
+  <p class="direct">Vous préférez écrire directement&nbsp;: <a href="mailto:shirley.chiche@buildrh.co">shirley.chiche@buildrh.co</a></p>
+</div>
+      <div>
+  <form class="form" id="form-home" data-contact novalidate>
+    <div class="form-error-summary" role="alert" hidden></div>
+    <fieldset>
+      <legend>Votre demande concerne…</legend>
+      <div class="choices">
+        <label class="choice build">
+          <input type="radio" name="parcours" value="recrutement" aria-describedby="form-home-parcours-err">
+          <span class="box"><strong>J'ai un besoin de recrutement ou de structuration</strong><span>BUILD RH · un ou plusieurs postes, un process à construire ou à auditer</span></span>
+        </label>
+        <label class="choice cap">
+          <input type="radio" name="parcours" value="situation" aria-describedby="form-home-parcours-err">
+          <span class="box"><strong>Je veux parler d'une situation professionnelle sensible</strong><span>CAP Bascule · prise de poste difficile, période d'essai, départ, rebond</span></span>
+        </label>
+      </div>
+      <div class="field"><p class="err" id="form-home-parcours-err"></p></div>
+    </fieldset>
+
+    <div class="cap-warning" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      <p><strong>Pas de détail médical ni d'information trop sensible ici.</strong> Quelques lignes de contexte suffisent, sans nommer la personne si vous préférez. Le reste se dit pendant l'échange, dans un cadre confidentiel.</p>
+    </div>
+
+    <div class="fields">
+      <div class="field">
+        <label for="form-home-nom">Prénom et nom</label>
+        <input id="form-home-nom" name="nom" type="text" autocomplete="name" required aria-describedby="form-home-nom-err">
+        <p class="err" id="form-home-nom-err"></p>
+      </div>
+      <div class="field">
+        <label for="form-home-entreprise">Entreprise</label>
+        <input id="form-home-entreprise" name="entreprise" type="text" autocomplete="organization" required aria-describedby="form-home-entreprise-err">
+        <p class="err" id="form-home-entreprise-err"></p>
+      </div>
+      <div class="field">
+        <label for="form-home-role">Rôle</label>
+        <input id="form-home-role" name="role" type="text" autocomplete="organization-title" placeholder="CTO, DRH, fondatrice…" required aria-describedby="form-home-role-err">
+        <p class="err" id="form-home-role-err"></p>
+      </div>
+      <div class="field">
+        <label for="form-home-email">E-mail professionnel</label>
+        <input id="form-home-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="form-home-email-err">
+        <p class="err" id="form-home-email-err"></p>
+      </div>
+      <div class="field full">
+        <label for="form-home-besoin">Type de besoin</label>
+        <select id="form-home-besoin" name="besoin" required aria-describedby="form-home-besoin-err">
+          <option value="">Choisir…</option>
+          <optgroup label="Recrutement et structuration · BUILD RH" data-parcours="recrutement">
+            <option>Recruter un ou plusieurs profils tech</option>
+            <option>Mettre en place un RPO hybride sur plusieurs mois</option>
+            <option>Structurer, améliorer ou auditer le process de recrutement</option>
+            <option>Je ne sais pas encore</option>
+          </optgroup>
+          <optgroup label="Situation sensible · CAP Bascule" data-parcours="situation">
+            <option>Une personne en poste qui hésite à rester, ajuster ou partir</option>
+            <option>Une prise de poste ou une période d'essai incertaine</option>
+            <option>Un départ à préparer</option>
+            <option>Reconstruire la suite après une rupture</option>
+            <option>Je ne sais pas encore</option>
+          </optgroup>
+        </select>
+        <p class="err" id="form-home-besoin-err"></p>
+      </div>
+      <div class="field full">
+        <label for="form-home-message">Quelques lignes sur la situation</label>
+        <textarea id="form-home-message" name="message" rows="5" required aria-describedby="form-home-message-hint form-home-message-err"></textarea>
+        <span class="hint" id="form-home-message-hint">Le contexte, ce qui bloque, ce qui est déjà envisagé.</span>
+        <p class="err" id="form-home-message-err"></p>
+      </div>
+      <div class="field full">
+        <label for="form-home-urgence">Niveau d'urgence <span class="opt">(facultatif)</span></label>
+        <select id="form-home-urgence" name="urgence">
+          <option value="">Non précisé</option>
+          <option>Pas d'urgence particulière</option>
+          <option>Dans les prochaines semaines</option>
+          <option>Cette semaine</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-foot">
+      <button class="btn btn-ink" type="submit">Préparer mon message <span class="arrow" aria-hidden="true">→</span></button>
+      <small>Le bouton ouvre votre messagerie avec un e-mail pré-rempli, adressé à Shirley (et à Coralie pour CAP Bascule). Aucune donnée n'est enregistrée sur ce site.</small>
+    </div>
+  </form>
+
+  <div class="form form-done" hidden aria-live="polite">
+    <span class="tag tag-neutral">Message prêt</span>
+    <h3 class="mt-s">Votre messagerie devrait s'ouvrir.</h3>
+    <p>Relisez le message puis envoyez-le. Shirley répond généralement sous 24&nbsp;h.</p>
+    <div class="cta-row">
+      <a class="btn btn-ink btn-sm" data-mail-link href="mailto:shirley.chiche@buildrh.co">Rouvrir la messagerie</a>
+      <button class="btn btn-outline btn-sm" type="button" data-copy>Copier le message</button>
+      <button class="btn btn-outline btn-sm" type="button" data-back>Modifier</button>
+    </div>
+    <p class="mt-s">Rien ne s'ouvre&nbsp;? Écrivez directement à <a href="mailto:shirley.chiche@buildrh.co">shirley.chiche@buildrh.co</a>.</p>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/">BUILD RH</a>
+        <p class="tagline">Sécuriser les moments où une équipe tech gagne — ou perd — de la vitesse.</p>
+      </div>
+      <div>
+        <h2>BUILD RH</h2>
+        <ul>
+          <li><a href="/build-rh.html">Recrutement tech</a></li>
+          <li><a href="/build-rh.html#forfait">Le RPO hybride</a></li>
+          <li><a href="/cas-clients.html">Cas clients</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>CAP Bascule</h2>
+        <ul>
+          <li><a href="/cap-bascule.html">Les trois parcours</a></li>
+          <li><a href="/cap-bascule.html#confidentialite">Confidentialité</a></li>
+          <li><a href="https://almosnishirley.github.io/capbascule/" rel="noopener">Site CAP Bascule <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/contact.html">Formulaire de contact</a></li>
+          <li><a href="mailto:shirley.chiche@buildrh.co">shirley.chiche@buildrh.co</a></li>
+          <li><a href="https://www.linkedin.com/in/shirley-almosni-chiche/" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BUILD RH · Shirley Almosni Chiche · Paris</span>
+      <a href="/conditions-generales.html">Conditions générales</a>
+    </div>
+  </div>
+</footer>
+
+<button class="a11y-btn" id="a11y-toggle" type="button" title="Confort de lecture" aria-expanded="false" aria-controls="a11y-panel">
+  <span class="ico" aria-hidden="true">Aa</span><span class="sr-only">Confort de lecture</span>
 </button>
-
 <div class="a11y-panel" id="a11y-panel" hidden role="dialog" aria-label="Réglages de confort de lecture">
-  <div class="a11y-panel-head">
-    <span>Confort de lecture</span>
-    <button type="button" id="a11y-close" aria-label="Fermer">&times;</button>
-  </div>
-
-  <div class="a11y-group">
-    <div class="a11y-label">Taille du texte</div>
-    <div class="a11y-seg" data-a11y-control="size">
-      <button type="button" data-value="normal">A</button>
-      <button type="button" data-value="large">A+</button>
-      <button type="button" data-value="xlarge">A++</button>
-    </div>
-  </div>
-
-  <div class="a11y-group">
-    <div class="a11y-label">Espacement du texte</div>
-    <div class="a11y-seg" data-a11y-control="spacing">
-      <button type="button" data-value="normal">Normal</button>
-      <button type="button" data-value="loose">Confortable</button>
-    </div>
-  </div>
-
-  <div class="a11y-group">
-    <div class="a11y-label">Fond de lecture</div>
-    <div class="a11y-seg" data-a11y-control="contrast">
-      <button type="button" data-value="normal">Standard</button>
-      <button type="button" data-value="soft">Doux</button>
-    </div>
-  </div>
-
-  <div class="a11y-group">
-    <div class="a11y-label">Animations</div>
-    <div class="a11y-seg" data-a11y-control="motion">
-      <button type="button" data-value="normal">Activées</button>
-      <button type="button" data-value="reduced">Réduites</button>
-    </div>
-  </div>
-
+  <div class="a11y-head"><span>Confort de lecture</span><button type="button" id="a11y-close" aria-label="Fermer">&times;</button></div>
+  <div class="a11y-group"><div class="a11y-label" id="a11y-l1">Taille du texte</div>
+    <div class="a11y-seg" data-a11y-control="size" role="group" aria-labelledby="a11y-l1"><button type="button" data-value="normal">A</button><button type="button" data-value="large">A+</button><button type="button" data-value="xlarge">A++</button></div></div>
+  <div class="a11y-group"><div class="a11y-label" id="a11y-l2">Espacement du texte</div>
+    <div class="a11y-seg" data-a11y-control="spacing" role="group" aria-labelledby="a11y-l2"><button type="button" data-value="normal">Normal</button><button type="button" data-value="loose">Confortable</button></div></div>
+  <div class="a11y-group"><div class="a11y-label" id="a11y-l3">Fond de lecture</div>
+    <div class="a11y-seg" data-a11y-control="contrast" role="group" aria-labelledby="a11y-l3"><button type="button" data-value="normal">Standard</button><button type="button" data-value="soft">Doux</button></div></div>
+  <div class="a11y-group"><div class="a11y-label" id="a11y-l4">Animations</div>
+    <div class="a11y-seg" data-a11y-control="motion" role="group" aria-labelledby="a11y-l4"><button type="button" data-value="normal">Activées</button><button type="button" data-value="reduced">Réduites</button></div></div>
   <button type="button" id="a11y-reset" class="a11y-reset">Réinitialiser</button>
 </div>
 
-<div class="modal-overlay" id="testi-modal" hidden>
-  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-name">
-    <button class="modal-close" id="modal-close" type="button" aria-label="Fermer">&times;</button>
-    <div class="modal-quote" id="modal-quote"></div>
-    <div class="modal-author">
-      <div class="name" id="modal-name"></div>
-      <div class="role" id="modal-role"></div>
-    </div>
-  </div>
-</div>
-
-<script>
-  (function () {
-    var TESTIMONIALS = [
-      { quote: "Quelqu'un qui pèse très lourd dans le milieu du recrutement. Shirley sait fournir un travail sérieux et concis, elle ne fait pas les choses à moitié. Très bonne en communication elle saura très vite synthétiser un besoin et apportera une bonne visibilité à vos projets de recrutement. Au delà de ses capacités de recruteuse, c'est aussi un très bon agent de carrière qui fait preuve d'un bon relationnel.", name: "Jonathan Guazzelli", role: "Développeur Fullstack — client de Shirley" },
-      { quote: "Shirley fait preuve d'une empathie professionnelle rare dans le monde du travail 😀 Et en même temps, elle sait prendre du recul et dire à ses interlocuteurs ce qu'ils doivent entendre pour atteindre leurs objectifs et être heureux. On a besoin de plus de Shirleys ! 💙", name: "Damien Cavaillès", role: "Auteur & journaliste — a travaillé avec Shirley" },
-      { quote: "Shirley m'a vraiment donné envie d'en connaître plus sur les missions qu'elle me conseillait à l'époque. Ce n'est pas \"juste une placeuse\" : elle prend vraiment en compte les envies et les goûts de ses consultants, et sait différencier les bonnes missions des missions foireuses. Avec Shirley, une coopération de long terme peut s'installer, et non un one-shot lucratif court-termiste.", name: "Camille Khalaghi", role: "Développeur senior & chef de projet" },
-      { quote: "Grâce à sa sympathie, son dynamisme et son accueil, Shirley a réussi à m'enlever l'appréhension que l'on peut avoir lors d'une phase de recrutement. Relationnel et écoute plus qu'appréciable, surtout dans un marché où beaucoup nous considèrent comme un \"numéro\". Et en plus, notre rencontre s'est terminée avec une note positive... J'ai trouvé un poste qui me correspondait !", name: "Jonathan Eude", role: "Consultant / Chef de Projet / Développeur Freelance — client de Shirley" },
-      { quote: "J'ai eu la joie de travailler avec Shirley. C'est une personne très impliquée, professionnelle et avec un talent inné pour la performance. Elle connaît très bien l'écosystème de l'IT et n'a jamais été avare de conseil auprès de nos clients et des candidats.", name: "Olivier Moglia", role: "Founder & CEO, Arolla" },
-      { quote: "J'ai le plaisir de recommander Shirley, avec qui j'ai collaboré efficacement de 2011 à 2013, en tant que Responsable Recrutement et Mobilité Interne, dans le cadre de recrutement outsourcé chez Skillink, d'ingénieurs de développement .net / java, sur un marché tendu. Shirley a fait preuve de ténacité et de réactivité. Experte du sourcing et du web 2.0, elle a une véritable expertise technique des SI. J'ai pu apprécier sa perspicacité dans la compréhension des enjeux et l'évaluation des candidats, son sens du service, toujours à la recherche de solutions, pour valoriser tant le client que le candidat.", name: "Laure Bucas", role: "Responsable Recrutement/Formation, France Loisirs et Chapitre.com — cliente de Shirley" },
-      { quote: "Shirley est une professionnelle passionnée du recrutement \"geek\", comme il en existe peu ! Dotée d'un réel talent pour approcher les meilleurs profils IT et leur proposer des offres qui \"matchent\" à leurs attentes, elle sait aussi brillamment les conseiller, les orienter, les accompagner dans leurs carrières. Sa force est de toujours parfaitement s'identifier aux profils qu'elle recrute en sachant parler le même \"langage\" qu'eux. Active, motrice, disponible, toujours pleine d'initiatives, elle apporte une forte valeur ajoutée au sein d'une équipe RH / Recrutement.", name: "Sébastien Bronner", role: "Business Manager, Takima — même équipe que Shirley" },
-      { quote: "J'ai eu le plaisir de travailler avec Shirley lors de mon expérience chez Altimate. En véritable professionnelle du recrutement, elle a su comprendre mes attentes et me proposer systématiquement de très bons profils, que nous avons eu la chance d'intégrer. D'une efficacité redoutable, Shirley a toujours été disponible et à l'écoute de nos besoins, même les plus pressants, le tout dans une atmosphère de collaboration toujours très agréable.", name: "Nathalie Wirth Ikedjian", role: "Co-fondatrice, One RH & One Portage — cliente de Shirley" },
-      { quote: "Shirley est une personne avec laquelle j'ai eu plaisir à travailler. Intègre, professionnelle, Shirley est soucieuse d'un travail rendu bien fait ! C'est une personne qui apprécie particulièrement interagir avec ses collègues et être force de proposition. Elle peut être un atout essentiel dans l'entreprise par sa maîtrise des techniques de chasse et ses connaissances du marché IT.", name: "Ghalia Ghorab", role: "Responsable recrutement — même équipe que Shirley" },
-      { quote: "J'ai eu l'occasion de rencontrer Shirley en tant que candidat. Shirley fait partie de la nouvelle génération RH : pour moi elle est l'une des rares personnes capables d'avoir une aisance naturelle sur une multitude de domaines IT tout en ayant une excellente approche RH. Elle a su développer un important réseau composé des meilleurs acteurs de l'IT à Paris. Grâce à elle chaque candidat aura la chance de trouver son \"perfect match\".", name: "Zakaria El Marouri", role: "Senior Technical Lead, Agoda" },
-      { quote: "Shirley a développé un réseau hors du commun dans le milieu de l'informatique grâce à sa compréhension très fine des différents sujets. Elle est toujours de bon conseil et attentive aux souhaits de ses candidats.", name: "Aude Amarrurtu", role: "Insertion professionnelle" },
-      { quote: "En tant que cliente de Shirley, j'ai beaucoup apprécié son travail. C'est grâce à sa rigueur, sa ténacité et sa connaissance du marché de l'IT que nous avons effectué de très beaux recrutements pour Arolla !", name: "Océane Roudier", role: "Cliente de Shirley — Arolla" }
-    ];
-
-    function buildSet() {
-      var frag = document.createDocumentFragment();
-      TESTIMONIALS.forEach(function (t, i) {
-        var card = document.createElement('button');
-        card.type = 'button';
-        card.className = 'testi-card';
-        card.setAttribute('data-index', i);
-
-        var q = document.createElement('div');
-        q.className = 'testi-quote';
-        q.textContent = t.quote;
-
-        var author = document.createElement('div');
-        author.className = 'testi-author';
-        var name = document.createElement('div');
-        name.className = 'name';
-        name.textContent = t.name;
-        var role = document.createElement('div');
-        role.className = 'role';
-        role.textContent = t.role;
-        author.appendChild(name);
-        author.appendChild(role);
-
-        var more = document.createElement('div');
-        more.className = 'testi-more';
-        more.textContent = 'Lire la recommandation';
-
-        card.appendChild(q);
-        card.appendChild(author);
-        card.appendChild(more);
-        frag.appendChild(card);
-      });
-      return frag;
-    }
-
-    var track = document.getElementById('testi-track');
-    if (track) {
-      track.appendChild(buildSet());
-      track.appendChild(buildSet());
-      track.addEventListener('click', function (e) {
-        var btn = e.target.closest('.testi-card');
-        if (!btn) return;
-        openModal(Number(btn.getAttribute('data-index')));
-      });
-    }
-
-    var modal = document.getElementById('testi-modal');
-    function openModal(i) {
-      var t = TESTIMONIALS[i];
-      if (!t || !modal) return;
-      document.getElementById('modal-quote').textContent = t.quote;
-      document.getElementById('modal-name').textContent = t.name;
-      document.getElementById('modal-role').textContent = t.role;
-      modal.hidden = false;
-    }
-    function closeModal() { if (modal) modal.hidden = true; }
-
-    var closeBtn = document.getElementById('modal-close');
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-    if (modal) {
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal) closeModal();
-      });
-    }
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeModal();
-    });
-  })();
-</script>
-
-<script>
-  (function () {
-    var STORAGE_KEY = 'buildrh_a11y_v1';
-    var state = { size: 'normal', spacing: 'normal', contrast: 'normal', motion: 'normal' };
-
-    function load() {
-      try {
-        var raw = localStorage.getItem(STORAGE_KEY);
-        if (raw) {
-          var parsed = JSON.parse(raw);
-          for (var k in state) if (parsed[k]) state[k] = parsed[k];
-        }
-      } catch (e) {}
-    }
-    function save() {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
-    }
-    function apply() {
-      document.documentElement.setAttribute('data-a11y-size', state.size);
-      document.body.setAttribute('data-a11y-spacing', state.spacing);
-      document.body.setAttribute('data-a11y-contrast', state.contrast);
-      document.body.setAttribute('data-a11y-motion', state.motion);
-      var segs = document.querySelectorAll('.a11y-seg');
-      for (var i = 0; i < segs.length; i++) {
-        var control = segs[i].getAttribute('data-a11y-control');
-        var btns = segs[i].querySelectorAll('button');
-        for (var j = 0; j < btns.length; j++) {
-          btns[j].setAttribute('aria-pressed', btns[j].getAttribute('data-value') === state[control] ? 'true' : 'false');
-        }
-      }
-    }
-
-    load();
-    apply();
-
-    var toggle = document.getElementById('a11y-toggle');
-    var panel = document.getElementById('a11y-panel');
-    var closeBtn = document.getElementById('a11y-close');
-    var resetBtn = document.getElementById('a11y-reset');
-
-    function openPanel() { panel.hidden = false; toggle.setAttribute('aria-expanded', 'true'); }
-    function closePanel() { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); }
-
-    if (toggle) toggle.addEventListener('click', function () {
-      if (panel.hidden) openPanel(); else closePanel();
-    });
-    if (closeBtn) closeBtn.addEventListener('click', closePanel);
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !panel.hidden) closePanel();
-    });
-
-    var segs = document.querySelectorAll('.a11y-seg');
-    for (var i = 0; i < segs.length; i++) {
-      (function (seg) {
-        var control = seg.getAttribute('data-a11y-control');
-        var btns = seg.querySelectorAll('button');
-        for (var j = 0; j < btns.length; j++) {
-          btns[j].addEventListener('click', function () {
-            state[control] = this.getAttribute('data-value');
-            apply();
-            save();
-          });
-        }
-      })(segs[i]);
-    }
-
-    if (resetBtn) resetBtn.addEventListener('click', function () {
-      state = { size: 'normal', spacing: 'normal', contrast: 'normal', motion: 'normal' };
-      apply();
-      save();
-    });
-  })();
-</script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
