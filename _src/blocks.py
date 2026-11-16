@@ -163,12 +163,12 @@ FORFAIT = """<div class="forfait">
   </div>
 </div>"""
 
-RPO_STEPS = """<ol class="method">
-  <li><strong>Comprendre le contexte</strong><p>Immersion au sein de vos équipes&nbsp;: l'entreprise, la roadmap, les rôles à recruter et ce qui freine aujourd'hui.</p></li>
-  <li><strong>Définir les objectifs et les impacts attendus</strong><p>Ce qui doit avoir changé à la fin&nbsp;: postes pourvus, délais, charge des managers, qualité du process.</p></li>
-  <li><strong>Construire le périmètre du dispositif</strong><p>Build, Delivery ou les deux&nbsp;; rôles de chacun, rituels, outils, niveau d'autonomie visé.</p></li>
-  <li><strong>Définir le forfait et les indicateurs de suivi</strong><p>Un forfait adossé aux objectifs, et des indicateurs partagés pour suivre l'avancement.</p></li>
-  <li><strong>Exécuter, mesurer et ajuster</strong><p>Le dispositif est suivi régulièrement et ajusté lorsque le contexte évolue.</p></li>
+RPO_STEPS = """<ol class="method steps-linked">
+  <li><span class="step-tags"><span class="tag tag-neutral">Au démarrage</span></span><strong>Cadrer ensemble</strong><p>Objectifs, impacts attendus, périmètre, indicateurs de suivi et forfait sont définis avant de commencer.</p></li>
+  <li><span class="step-tags"><span class="tag tag-build">Immersion</span></span><strong>Comprendre</strong><p>Le contexte, les équipes et ce qu'il faut réussir sur chaque poste.</p></li>
+  <li><span class="step-tags"><span class="tag tag-build">Delivery</span><span class="tag tag-build">Build</span></span><strong>Recruter et renforcer, en parallèle</strong><p>Les recrutements avancent pendant que le process se renforce.</p></li>
+  <li><span class="step-tags"><span class="tag tag-neutral">Points de suivi</span></span><strong>Mesurer et ajuster</strong><p>Les indicateurs définis ensemble sont suivis&nbsp;; le périmètre est réajusté si le contexte évolue.</p></li>
+  <li class="step-key"><span class="step-tags"><span class="tag tag-build">Ancrage</span></span><strong>Transmettre et faire le bilan</strong><p>Outils et pratiques transmis, puis bilan d'impact partagé.</p></li>
 </ol>"""
 
 PARCOURS = """<div class="grid grid-3">
@@ -301,18 +301,16 @@ EXAMPLE = """<div class="example" id="exemple">
       <div class="ex-part"><span class="ex-label">Le socle</span><strong class="ex-amount">12&nbsp;000&nbsp;€&nbsp;HT</strong><span class="ex-detail">Pour l'immersion au sein des équipes, le cadrage du besoin, la structuration du process et le pilotage de la mission.</span></div>
       <div class="ex-part"><span class="ex-label">Les recrutements</span><strong class="ex-sub">Une part par recrutement signé</strong>
         <span class="ex-rate"><strong class="ex-amount">2&nbsp;000&nbsp;€&nbsp;HT</strong> par poste standard</span>
-        <span class="ex-rate"><strong class="ex-amount">4&nbsp;000&nbsp;€&nbsp;HT</strong> par poste stratégique ou critique pour l'organisation</span></div>
+        <span class="ex-rate"><strong class="ex-amount">4&nbsp;000&nbsp;€&nbsp;HT</strong> par poste stratégique ou critique pour l'organisation</span>
+        <div class="ex-mini">
+          <span class="ex-mini-title">Pour Nova&nbsp;:</span>
+          <span class="ex-mini-row"><span>6 postes standards × 2&nbsp;000&nbsp;€</span><b>12&nbsp;000&nbsp;€</b></span>
+          <span class="ex-mini-row"><span>2 postes stratégiques ou critiques × 4&nbsp;000&nbsp;€</span><b>8&nbsp;000&nbsp;€</b></span>
+          <span class="ex-mini-row ex-mini-sum"><span>Total possible lié aux recrutements</span><b>20&nbsp;000&nbsp;€&nbsp;HT</b></span>
+        </div></div>
       <div class="ex-part ex-key"><span class="ex-label">L'impact et l'ancrage</span><strong class="ex-amount">jusqu'à 8&nbsp;000&nbsp;€&nbsp;HT</strong><span class="ex-detail">Une part liée aux objectifs définis ensemble&nbsp;: délais de recrutement, réduction de la charge des managers et appropriation du process par l'équipe.</span></div>
     </div>
     <p class="ex-rule">Le niveau de chaque poste est défini ensemble au démarrage selon sa criticité pour l'organisation. La part correspondante est due uniquement lorsqu'un recrutement est signé. Si un recrutement est suspendu ou supprimé, la part correspondante n'est pas due.</p>
-    <div class="ex-calc">
-      <p class="ex-calc-title">Pour Nova&nbsp;:</p>
-      <ul>
-        <li><span>6 postes standards × 2&nbsp;000&nbsp;€&nbsp;HT</span><strong>12&nbsp;000&nbsp;€&nbsp;HT</strong></li>
-        <li><span>2 postes stratégiques ou critiques × 4&nbsp;000&nbsp;€&nbsp;HT</span><strong>8&nbsp;000&nbsp;€&nbsp;HT</strong></li>
-        <li class="sum"><span>Total possible lié aux recrutements</span><strong>20&nbsp;000&nbsp;€&nbsp;HT</strong></li>
-      </ul>
-    </div>
   </div>
   <div class="example-block">
     <ul class="ex-outcomes">
@@ -333,7 +331,7 @@ def _dim(n, verb, name, promise, intro, items, extra="", key=False, lead_in=""):
     cls = "card dim dim-key" if key else "card dim"
     li_intro = f'<p class="dim-listhead">{lead_in}</p>' if lead_in else ""
     return f"""<article class="{cls}">
-  <div class="dim-top"><span class="dim-num">{n}</span><span class="dim-verb">{verb}</span></div>
+  <div class="dim-top"><span class="dim-num">{n}</span></div>
   <h3>{name}</h3>
   <p class="dim-title">{promise}</p>
   <p class="dim-intro">{intro}</p>
@@ -355,7 +353,7 @@ DIMENSIONS = '<div class="dims">\n' + "\n".join([
   _dim("01", "Comprendre", "Immersion", "Comprendre ce qu'il faut réussir avant de chercher.",
        "L'intervention commence par une immersion au sein de vos équipes et dans votre environnement de travail.",
        ["La mission réelle du poste", "Les résultats attendus à 6 ou 12 mois", "Les critères indispensables", "Les signaux qui permettront de reconnaître le bon profil", "Les points de vigilance liés au contexte"],
-       extra=SCORECARD, lead_in="La scorecard du poste permet de clarifier&nbsp;:"),
+       lead_in="La scorecard du poste permet de clarifier&nbsp;:"),
   _dim("02", "Recruter", "Delivery", "Faire avancer les bons profils.",
        "Les recrutements avancent dès le début de la mission, avec un sourcing augmenté par l'IA et un suivi humain à chaque étape.",
        ["Sourcing et chasse ciblés", "Qualification et matching", "Coordination avec les managers", "Suivi candidat et closing"],
@@ -389,10 +387,10 @@ STACK = """<div class="stack">
 </div>"""
 
 DIMENSIONS_SHORT = """<div class="dims dims-short">
-  <div class="card dim"><div class="dim-top"><span class="dim-num">01</span><span class="dim-verb">Comprendre</span></div><h3>Immersion</h3><p>Comprendre ce qu'il faut réussir avant de chercher, au sein de vos équipes.</p></div>
-  <div class="card dim"><div class="dim-top"><span class="dim-num">02</span><span class="dim-verb">Recruter</span></div><h3>Delivery</h3><p>Faire avancer les bons profils dès le début, avec un sourcing augmenté par l'IA.</p></div>
-  <div class="card dim"><div class="dim-top"><span class="dim-num">03</span><span class="dim-verb">Décider</span></div><h3>Build</h3><p>Un process qui aide à décider&nbsp;: scorecards, critères clairs, rituels.</p></div>
-  <div class="card dim dim-key"><div class="dim-top"><span class="dim-num">04</span><span class="dim-verb">Transmettre</span></div><h3>Ancrage</h3><p>Ce qui reste après la mission&nbsp;: une capacité durable à recruter.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">01</span></div><h3>Immersion</h3><p>Comprendre ce qu'il faut réussir avant de chercher, au sein de vos équipes.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">02</span></div><h3>Delivery</h3><p>Faire avancer les bons profils dès le début, avec un sourcing augmenté par l'IA.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">03</span></div><h3>Build</h3><p>Un process qui aide à décider&nbsp;: scorecards, critères clairs, rituels.</p></div>
+  <div class="card dim dim-key"><div class="dim-top"><span class="dim-num">04</span></div><h3>Ancrage</h3><p>Ce qui reste après la mission&nbsp;: une capacité durable à recruter.</p></div>
 </div>"""
 
 CHANGE = """<div class="change">

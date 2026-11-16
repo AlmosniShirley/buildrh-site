@@ -64,7 +64,7 @@ index_body = f"""<main id="main">
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Recrutement tech &amp; transitions professionnelles</span>
-      <h1>Sécuriser les moments où une équipe tech gagne — ou perd — de la vitesse.</h1>
+      <h1>Sécuriser les moments où une équipe tech gagne ou perd de la vitesse.</h1>
       <p class="lead">J'aide les startups, scale-ups et entreprises tech à faire entrer les bonnes personnes, puis à traiter les situations où une relation de travail ne tient plus comme prévu.</p>
       <div class="cta-row">
         <a class="btn btn-build" href="/build-rh.html">Recruter sans ralentir <span class="arrow" aria-hidden="true">→</span></a>
@@ -72,7 +72,7 @@ index_body = f"""<main id="main">
       </div>
       <p class="secondary"><a class="link-arrow" href="#cas-clients">Voir les cas clients <span aria-hidden="true">↓</span></a></p>
     </div>
-    <aside class="trajectory" aria-label="Où interviennent BUILD RH et CAP Bascule">
+    <aside class="trajectory" aria-label="Où interviennent le RPO Impact et CAP Bascule">
       <span class="kicker">La vie d'une relation de travail</span>
       <ol class="traj-list">
         <li class="build"><span class="step">Un besoin s'ouvre</span><span class="who">Poste à créer, équipe à construire</span></li>
@@ -81,7 +81,7 @@ index_body = f"""<main id="main">
         <li class="cap pivot"><span class="step">La relation bascule</span><span class="who">Doute, tension, période d'essai incertaine</span></li>
         <li class="cap"><span class="step">Décider et traverser</span><span class="who">Rester, ajuster, partir ou rebondir</span></li>
       </ol>
-      <div class="traj-legend"><span class="tag tag-build">BUILD RH · l'entrée</span><span class="tag tag-cap">CAP Bascule · le maintien et la sortie</span></div>
+      <div class="traj-legend"><span class="tag tag-build">RPO Impact · l'entrée</span><span class="tag tag-cap">CAP Bascule · le maintien et la sortie</span></div>
     </aside>
   </div>
 </section>
@@ -95,11 +95,11 @@ index_body = f"""<main id="main">
     </div>
     <div class="grid grid-2">
       <article class="card moment build">
-        <span class="tag tag-build">BUILD RH</span>
+        <span class="tag tag-build">RPO Impact</span>
         <h3>Faire entrer les bonnes personnes</h3>
         <p>Votre équipe doit grandir, mais vous ne voulez ni ralentir la roadmap ni baisser la barre sur les profils recrutés.</p>
-        <p class="when">Recrutements tech et stratégiques · RPO Impact · immersion, delivery, build, ancrage</p>
-        <div class="card-foot"><a class="btn btn-build" href="/build-rh.html">Découvrir BUILD RH <span class="arrow" aria-hidden="true">→</span></a></div>
+        <p class="when">Recrutements tech et stratégiques · immersion, delivery, build, ancrage</p>
+        <div class="card-foot"><a class="btn btn-build" href="/build-rh.html">Découvrir le RPO Impact <span class="arrow" aria-hidden="true">→</span></a></div>
       </article>
       <article class="card moment cap">
         <span class="tag tag-cap">CAP Bascule</span>
@@ -169,12 +169,12 @@ index_body = f"""<main id="main">
     <p class="lead mt-m">Les deux offres restent distinctes&nbsp;: vous choisissez la porte d'entrée qui correspond à votre situation. Mais elles se répondent.</p>
     <div class="bridges">
       <div class="bridge">
-        <div class="route"><span class="tag tag-build">BUILD RH</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-cap">CAP Bascule</span></div>
+        <div class="route"><span class="tag tag-build">RPO Impact</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-cap">CAP Bascule</span></div>
         <p><strong>Quand une prise de poste ne fonctionne pas.</strong> Si un recrutement ou une relation de travail se dégrade, CAP Bascule donne un cadre pour clarifier la situation plutôt que de la laisser s'enliser.</p>
       </div>
       <div class="bridge">
-        <div class="route"><span class="tag tag-cap">CAP Bascule</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-build">BUILD RH</span></div>
-        <p><strong>Quand un poste doit être remplacé.</strong> BUILD RH reprend le recrutement avec les enseignements de la situation précédente&nbsp;: ce qui était promis, ce qui manquait, ce qu'il faut vérifier autrement. Toujours dans le respect du cadre de confidentialité convenu.</p>
+        <div class="route"><span class="tag tag-cap">CAP Bascule</span><span class="to" aria-hidden="true">→</span><span class="sr-only">mène vers</span><span class="tag tag-build">RPO Impact</span></div>
+        <p><strong>Quand un poste doit être remplacé.</strong> Le RPO Impact reprend le recrutement avec les enseignements de la situation précédente&nbsp;: ce qui était promis, ce qui manquait, ce qu'il faut vérifier autrement. Toujours dans le respect du cadre de confidentialité convenu.</p>
       </div>
     </div>
   </div>
@@ -283,9 +283,11 @@ build_body = f"""<main id="main">
       <span class="kicker">Ce que fait Shirley, concrètement</span>
       <h2 id="dims-title">Immersion, Delivery, Build, Ancrage</h2>
       <p class="lead">Une méthode de travail en quatre temps&nbsp;: l'immersion dans les équipes, l'exécution des recrutements, l'amélioration du process et la transmission d'une capacité durable à recruter.</p>
-      {FLOW}
     </div>
     {DIMENSIONS}
+    <h3 class="compare-title" id="deroule">Comment se déroule un RPO Impact</h3>
+    <p class="muted" style="max-width:70ch;margin-top:-8px">Les quatre dimensions ci-dessus, dans l'ordre où elles interviennent pendant la mission.</p>
+    {RPO_STEPS}
     {STACK}
   </div>
 </section>
@@ -312,8 +314,6 @@ build_body = f"""<main id="main">
     </div>
     {FORFAIT}
     {EXAMPLE}
-    <h3 class="compare-title">Comment se déroule un RPO Impact</h3>
-    {RPO_STEPS}
   </div>
 </section>
 

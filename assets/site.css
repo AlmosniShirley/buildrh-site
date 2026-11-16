@@ -835,12 +835,6 @@ body[data-a11y-motion="reduced"] *, body[data-a11y-motion="reduced"] *::before, 
 .sc-tag.sc-warn { background: var(--todo-bg); color: var(--todo); }
 @media (max-width: 420px) { .scorecard dl > div { grid-template-columns: 1fr; gap: 4px; } }
 
-.flow { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.flow li { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; padding: 6px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line-strong); }
-.flow li:last-child { background: var(--build); color: var(--on-build); border-color: var(--build); }
-.flow li + li::before { content: "→"; margin: 0 10px 0 -2px; color: var(--muted); font-family: var(--font-body); font-weight: 400; display: none; }
-.flow li:not(:last-child)::after { content: "→"; margin-left: 12px; color: var(--muted); font-family: var(--font-body); font-weight: 400; }
-.flow li:not(:last-child) { padding-right: 10px; }
 
 .stack { margin-top: clamp(36px, 5vw, 56px); padding: clamp(22px, 3.5vw, 36px); border-radius: 12px; background: var(--surface); border: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 20px clamp(24px, 4vw, 48px); align-items: start; }
 .stack-head h3 { font-size: clamp(1.35rem, 2.4vw, 1.7rem); margin-bottom: 10px; }
@@ -856,3 +850,14 @@ body[data-a11y-motion="reduced"] *, body[data-a11y-motion="reduced"] *::before, 
 .card p.dim-note { color: var(--ink); }
 .card .dim-capacity strong { color: var(--on-build); }
 .dims:not(.dims-short) { align-items: start; }
+.ex-mini { margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--line-strong); display: flex; flex-direction: column; gap: 3px; font-size: 0.78rem; color: var(--muted); }
+.ex-mini-title { font-weight: 600; color: var(--ink); }
+.ex-mini-row { display: flex; justify-content: space-between; gap: 10px; }
+.ex-mini-row b { white-space: nowrap; font-weight: 600; color: var(--ink); }
+.ex-mini-sum { border-top: 1px solid var(--line-strong); padding-top: 4px; margin-top: 2px; font-weight: 600; color: var(--ink); }
+.ex-mini-sum b { color: var(--build); }
+.steps-linked li::before { margin-bottom: 0; }
+.steps-linked li { display: flex; flex-direction: column; gap: 10px; }
+.steps-linked li strong { margin-bottom: 0; }
+.step-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.steps-linked .step-key { border-color: var(--build); box-shadow: inset 0 0 0 1px var(--build); }

@@ -3,7 +3,7 @@ FONTS = "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..1
 
 NAV = [
     ("index", "/", "Accueil", ""),
-    ("build-rh", "/build-rh.html", "BUILD RH", ""),
+    ("build-rh", "/build-rh.html", "RPO Impact", ""),
     ("cap-bascule", "/cap-bascule.html", "CAP Bascule", "nav-cap"),
     ("cas-clients", "/cas-clients.html", "Cas clients", ""),
     ("a-propos", "/a-propos.html", "À propos", ""),
@@ -68,7 +68,7 @@ def header(current):
 </header>
 <div class="mobile-menu" id="mobile-menu" hidden>
   <div class="paths">
-    <a class="path build" href="/contact.html?besoin=recrutement"><span class="tag tag-build">BUILD RH</span><strong>Recruter sans ralentir</strong></a>
+    <a class="path build" href="/contact.html?besoin=recrutement"><span class="tag tag-build">RPO Impact</span><strong>Recruter sans ralentir</strong></a>
     <a class="path cap" href="/contact.html?besoin=situation"><span class="tag tag-cap">CAP Bascule</span><strong>Gérer une situation sensible</strong></a>
   </div>
   <nav aria-label="Navigation mobile">
@@ -85,7 +85,7 @@ FOOTER = """<footer class="site-footer">
     <div class="footer-grid">
       <div>
         <a class="brand" href="/">BUILD RH</a>
-        <p class="tagline">Sécuriser les moments où une équipe tech gagne — ou perd — de la vitesse.</p>
+        <p class="tagline">Sécuriser les moments où une équipe tech gagne ou perd de la vitesse.</p>
       </div>
       <div>
         <h2>BUILD RH</h2>
