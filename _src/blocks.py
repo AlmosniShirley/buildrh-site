@@ -176,7 +176,7 @@ CAP_SITE = "https://almosnishirley.github.io/capbascule/"
 def person_shirley(short=True):
     more = '<a class="link-arrow build" href="/a-propos.html">Parcours complet <span aria-hidden="true">→</span></a>' if short else ''
     return f"""<article class="card person">
-  <div class="photo"><img src="/assets/shirley-portrait.png" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" loading="lazy" decoding="async"></div>
+  <div class="photo"><img src="/assets/shirley-portrait.jpg" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" loading="lazy" decoding="async"></div>
   <div>
     <h3>Shirley Almosni Chiche</h3>
     <span class="role">Fondatrice de BUILD RH · co-fondatrice de CAP Bascule</span>

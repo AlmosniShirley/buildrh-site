@@ -1,0 +1,27 @@
+# BUILD RH
+
+> BUILD RH sécurise les moments où une équipe tech gagne ou perd de la vitesse. Fondé par Shirley Almosni Chiche, recruteuse tech depuis 15 ans, BUILD RH aide les startups, scale-ups et entreprises tech à recruter les bons profils (RPO Impact) et à traiter les situations professionnelles sensibles (CAP Bascule). Basé à Paris, en français.
+
+## Offres
+
+- [RPO Impact](https://build-rh.io/build-rh.html) : un dispositif de recrutement en immersion, orienté résultats et conçu pour laisser une capacité durable. Quatre dimensions : Immersion (comprendre le contexte, la culture, les rôles et les blocages), Delivery (sourcing, chasse, qualification, entretiens, closing, avec un sourcing augmenté par l'IA et des décisions humaines), Build (scorecards de poste et de candidature, critères de décision, rituels, suivi du pipeline) et Ancrage (transmission des outils et des pratiques, autonomie des managers, bilan d'impact). Un forfait global construit autour des objectifs : un socle, une part par recrutement signé et une part liée aux impacts et à l'ancrage. Le RPO Impact ne facture pas des jours de recrutement.
+- [CAP Bascule](https://build-rh.io/cap-bascule.html) : accompagnement externe et confidentiel quand une relation de travail ne tient plus comme prévu. Co-porté par Shirley Almosni Chiche et Coralie Nohel. L'entreprise finance, la personne est accompagnée. Quatre temps : Cadrer, Éclairer, Décider, Traverser. Trois parcours : CAP Clarifier (7 à 10 jours), CAP Traverser et CAP Rebond (3 à 6 semaines). Ce n'est ni une thérapie, ni un conseil juridique, ni un dispositif de surveillance. Site dédié : https://almosnishirley.github.io/capbascule/
+
+## Cas clients
+
+- [Cas clients](https://build-rh.io/cas-clients.html) : Sunday (18 recrutements en 3 mois, mission RPO), Pix (21 recrutements, passage à 9 millions d'utilisateurs), DeepReach (20 recrutements en moins d'un an, équipe tech créée from scratch), Elax Énergie (3 recrutements en 2 mois et un audit), Ilek (6 recrutements seniors), Moments Lab (3 recrutements).
+
+## À propos
+
+- [Shirley Almosni Chiche](https://build-rh.io/a-propos.html) : 15 ans de recrutement IT auprès de startups et scale-ups. Autrice de « Les joies du recruteur », « Startuffe Nation » et « The Pragmatic Recruiter ». Intervenante à BlendWebMix, Sunny Tech, Devoxx et à la Journée de la Tech. LinkedIn : https://www.linkedin.com/in/shirley-almosni-chiche/
+- Coralie Nohel : co-fondatrice de CAP Bascule, expérience en recrutement IT et en ESN. LinkedIn : https://www.linkedin.com/in/coralienohel/
+
+## Engagement et contenus
+
+- Inclusion des personnes neuroatypiques : chaîne YouTube TDArH, https://www.youtube.com/@TDArHH
+- Blog Prompt Humain (IA, organisation du travail, neurodiversité) : https://prompt-humain.ghost.io/
+
+## Contact
+
+- [Formulaire de contact](https://build-rh.io/contact.html) : recrutement ou structuration (RPO Impact), ou situation professionnelle sensible (CAP Bascule).
+- E-mail : shirley.chiche@buildrh.co

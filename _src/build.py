@@ -14,7 +14,9 @@ ORG = {
     "@id": SITE + "/#org",
     "name": "BUILD RH",
     "url": SITE + "/",
-    "image": SITE + "/assets/shirley.png",
+    "image": SITE + "/assets/og-image.jpg",
+    "logo": SITE + "/assets/logo/buildrh-logo-couleur.png",
+    "sameAs": [SHIRLEY_LI, "https://www.youtube.com/@TDArHH", "https://prompt-humain.ghost.io/", "https://github.com/AlmosniShirley", CAP_SITE],
     "email": "shirley.chiche@buildrh.co",
     "description": "Recrutement tech (RPO Impact, structuration du process) et accompagnement des transitions professionnelles sensibles avec CAP Bascule.",
     "areaServed": {"@type": "Country", "name": "France"},
@@ -597,11 +599,11 @@ POSTS = [
     ("je-ne-suis-pas-desorganisee-mon-cerveau-ne-fonctionne-pas-en-ligne-droite/", "10.jpeg", "« Je ne suis pas désorganisée : mon cerveau ne fonctionne pas en ligne droite »", "10 nov. 2026"),
     ("quand-voir-les-problemes-devient-un-probleme-au-travail/", "11.jpg", "« Quand voir les problèmes devient un problème au travail »", "6 nov. 2026"),
     ("ia-et-developpement-pour-olivier-nouguier-lenjeu-est-de-garder-le-controle/", "1.jpg", "IA et développement : pour Olivier Nouguier, l'enjeu est de garder le contrôle", "1 sept. 2026"),
-    ("ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/", "2.png", "« IA générative en entreprise : ce n'est pas juste un outil en plus » — Jérôme Duchemin, DSI d'ACS", "24 août 2026"),
+    ("ia-generative-en-entreprise-ce-nest-pas-juste-un-outil-en-plus-cest-un-seisme-culturel-temoignage-de-jerome-duchemin-dsi-dacs/", "2.jpg", "« IA générative en entreprise : ce n'est pas juste un outil en plus » — Jérôme Duchemin, DSI d'ACS", "24 août 2026"),
     ("repenser-la-valeur-les-metiers-et-lorganisation-a-lere-de-lia-entretien-avec-mathilde-rigabert-ctpo/", "3.jpg", "Repenser la valeur, les métiers et l'organisation à l'ère de l'IA — Mathilde Rigabert (CTPO)", "18 août 2026"),
-    ("un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/", "4.png", "Un an pour faire basculer plus de 300 ingénieurs vers l'IA — Nicolas Martignole (Back Market)", "24 juil. 2026"),
+    ("un-an-pour-faire-basculer-plus-de-300-ingenieurs-vers-lia-il-etait-une-fois-le-temoignage-de-nicolas-martignole-back-market/", "4.jpg", "Un an pour faire basculer plus de 300 ingénieurs vers l'IA — Nicolas Martignole (Back Market)", "24 juil. 2026"),
     ("ton-code-nest-pas-toi-mais-bientot-ce-sera-toujours-toi-qui-paiera-quand-lia-se-trompe/", "5.jpg", "Ton code n'est pas toi (mais bientôt, ce sera toujours toi) — qui paiera quand l'IA se trompe ?", "22 juil. 2026"),
-    ("sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/", "6.png", "« Sur une journée type, je code peut-être 10 % du temps » — Cédric Locchi", "21 juil. 2026"),
+    ("sur-une-journee-type-je-code-peut-etre-10-du-temps-quelle-realite-derriere-le-mot-ia-interview-de-cedric-locchi/", "6.jpg", "« Sur une journée type, je code peut-être 10 % du temps » — Cédric Locchi", "21 juil. 2026"),
     ("on-est-passes-de-driven-by-ai-a-ai-first-puis-a-ai-only-plongee-dans-la-transformation-ia-de-sfeir/", "7.webp", "« On est passés de driven by AI à AI first, puis à AI only » — la transformation IA de SFEIR", "13 juil. 2026"),
     ("le-loup-et-le-chien/", "8.jpg", "Le Loup et le chien", "9 juil. 2026"),
 ]
@@ -626,7 +628,7 @@ about_body = f"""<main id="main">
   <div class="wrap two-col">
     <div>
       <div class="person" style="grid-template-columns:1fr">
-        <div class="photo" style="width:168px;height:168px"><img src="/assets/shirley-portrait.png" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" decoding="async"></div>
+        <div class="photo" style="width:168px;height:168px"><img src="/assets/shirley-portrait.jpg" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" decoding="async"></div>
       </div>
       <h2 id="shirley-title" class="mt-m" style="font-size:clamp(1.8rem,3.6vw,2.4rem)">Shirley Almosni Chiche</h2>
       <p class="muted mt-s">Fondatrice de BUILD RH · co-fondatrice de CAP Bascule · Paris</p>
@@ -773,7 +775,16 @@ PAGES = [
     ("404", "Page introuvable | BUILD RH", "Cette page n'existe pas ou a changé d'adresse.", nf_body, "", "", True),
 ]
 
+import html as _html, re as _re
+def faq_ld(body):
+    qa = _re.findall(r"<details><summary>(.*?)</summary><p>(.*?)</p></details>", body, _re.S)
+    if not qa: return ""
+    clean = lambda x: _html.unescape(_re.sub(r"<[^>]+>", "", x)).replace("\u00a0", " ").strip()
+    return ld({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": clean(q), "acceptedAnswer": {"@type": "Answer", "text": clean(r)}} for q, r in qa]})
+
 for name, title, desc, body, jsonld, cls, noindex in PAGES:
+    jsonld = jsonld + faq_ld(body)
     html = page(name, title, desc, body, current=name, jsonld=jsonld, body_class=cls, noindex=noindex)
     with open(os.path.join(OUT, f"{name}.html"), "w") as f:
         f.write(html)
