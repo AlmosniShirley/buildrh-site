@@ -23,7 +23,8 @@
 
   /* ---------- confort de lecture (repris de l'ancien site) ---------- */
   var KEY = 'buildrh_a11y_v1';
-  var state = { size: 'normal', spacing: 'normal', contrast: 'normal', motion: 'normal' };
+  var DEFAULTS = { size: 'normal', spacing: 'normal', contrast: 'normal', motion: 'normal', font: 'normal', guide: 'normal', focus: 'normal' };
+  var state = Object.assign({}, DEFAULTS);
   try {
     var raw = localStorage.getItem(KEY);
     if (raw) { var p = JSON.parse(raw); for (var k in state) if (p && p[k]) state[k] = p[k]; }
@@ -33,6 +34,15 @@
     document.body.setAttribute('data-a11y-spacing', state.spacing);
     document.body.setAttribute('data-a11y-contrast', state.contrast);
     document.body.setAttribute('data-a11y-motion', state.motion);
+    document.body.setAttribute('data-a11y-font', state.font);
+    document.body.setAttribute('data-a11y-guide', state.guide);
+    document.body.setAttribute('data-a11y-focus', state.focus);
+    if (state.font === 'lisible' && !document.getElementById('font-atkinson')) {
+      var l = document.createElement('link');
+      l.id = 'font-atkinson'; l.rel = 'stylesheet';
+      l.href = 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap';
+      document.head.appendChild(l);
+    }
     document.querySelectorAll('.a11y-seg').forEach(function (seg) {
       var c = seg.getAttribute('data-a11y-control');
       seg.querySelectorAll('button').forEach(function (b) {
@@ -57,9 +67,29 @@
       });
     });
     document.getElementById('a11y-reset').addEventListener('click', function () {
-      state = { size: 'normal', spacing: 'normal', contrast: 'normal', motion: 'normal' };
+      state = Object.assign({}, DEFAULTS);
       applyA11y(); saveA11y();
     });
+  }
+
+  /* ---------- guide de lecture : une bande claire suit le pointeur ---------- */
+  var guide = document.querySelector('.reading-guide');
+  if (guide) {
+    var top = guide.querySelector('.rg-top'), bottom = guide.querySelector('.rg-bottom');
+    var lastY = window.innerHeight / 3, BAND = 64, raf = 0;
+    var place = function () {
+      raf = 0;
+      top.style.height = Math.max(0, lastY - BAND / 2) + 'px';
+      bottom.style.top = (lastY + BAND / 2) + 'px';
+    };
+    var move = function (y) { lastY = y; if (!raf) raf = requestAnimationFrame(place); };
+    document.addEventListener('mousemove', function (e) { if (state.guide === 'on') move(e.clientY); }, { passive: true });
+    document.addEventListener('touchmove', function (e) { if (state.guide === 'on' && e.touches[0]) move(e.touches[0].clientY); }, { passive: true });
+    document.addEventListener('focusin', function (e) {
+      if (state.guide !== 'on' || !e.target.getBoundingClientRect) return;
+      var r = e.target.getBoundingClientRect(); move(r.top + r.height / 2);
+    });
+    place();
   }
 
   /* ---------- formulaire de contact ----------

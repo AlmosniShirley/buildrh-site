@@ -285,6 +285,14 @@ build_body = f"""<main id="main">
     <h1>RPO Impact&nbsp;: <em>recruter maintenant, renforcer durablement.</em></h1>
     <p class="lead">{SIGNATURE}</p>
     <div class="cta-row">{CTA_BUILD}<a class="link-arrow build" href="#forfait">Comment le forfait est construit <span aria-hidden="true">↓</span></a></div>
+    <aside class="tldr" aria-label="En bref">
+      <span class="kicker">En bref</span>
+      <ul>
+        <li>Un dispositif de recrutement en immersion&nbsp;: les recrutements avancent pendant que votre process se renforce.</li>
+        <li>Quatre dimensions&nbsp;: Immersion, Delivery, Build et Ancrage.</li>
+        <li>Un forfait global construit autour de vos objectifs&nbsp;: un socle, les recrutements signés, les impacts et l'ancrage obtenus.</li>
+      </ul>
+    </aside>
   </div>
 </section>
 
@@ -409,6 +417,14 @@ cap_body = f"""<main id="main">
     <h1>Quand le travail <em>ne tient plus comme avant.</em></h1>
     <p class="lead">Clarifier une situation professionnelle sensible, décider de la suite et traverser la transition proprement. Un accompagnement externe et confidentiel, financé par l'entreprise, pour la personne concernée.</p>
     <div class="cta-row">{CTA_CAP}<a class="btn btn-outline" href="{CAP_SITE}" rel="noopener">Site CAP Bascule <span aria-hidden="true">↗</span></a></div>
+    <aside class="tldr cap" aria-label="En bref">
+      <span class="kicker">En bref</span>
+      <ul>
+        <li>Un accompagnement externe et confidentiel, quand une relation de travail ne tient plus comme prévu.</li>
+        <li>L'entreprise finance, la personne est accompagnée. Ce n'est ni une thérapie, ni un conseil juridique.</li>
+        <li>Trois parcours&nbsp;: CAP Clarifier (7 à 10 jours), CAP Traverser et CAP Rebond (3 à 6 semaines).</li>
+      </ul>
+    </aside>
     <p class="muted mt-m">Co-porté par Shirley Almosni Chiche et Coralie Nohel.</p>
   </div>
 </section>

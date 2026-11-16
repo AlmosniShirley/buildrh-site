@@ -878,3 +878,28 @@ body[data-a11y-motion="reduced"] *, body[data-a11y-motion="reduced"] *::before, 
 .video .t { font-weight: 600; line-height: 1.35; }
 .video .d { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
 @media (max-width: 480px) { .video { grid-template-columns: 1fr; } }
+
+/* ---------- confort de lecture : nouveaux réglages ---------- */
+.a11y-help { font-size: 0.78rem; color: var(--muted); margin: 0 0 12px; line-height: 1.4; }
+body[data-a11y-font="lisible"] { --font-body: 'Atkinson Hyperlegible', -apple-system, 'Segoe UI', sans-serif; --font-display: 'Atkinson Hyperlegible', Georgia, serif; --font-mono: 'Atkinson Hyperlegible', monospace; }
+body[data-a11y-font="lisible"] h1, body[data-a11y-font="lisible"] h2, body[data-a11y-font="lisible"] h3 { letter-spacing: 0; }
+
+.reading-guide { display: none; position: fixed; inset: 0; z-index: 44; pointer-events: none; }
+body[data-a11y-guide="on"] .reading-guide { display: block; }
+.rg-top, .rg-bottom { position: absolute; left: 0; right: 0; background: rgba(20, 12, 16, 0.42); }
+.rg-top { top: 0; height: 0; }
+.rg-bottom { bottom: 0; top: 100%; }
+
+body[data-a11y-focus="on"] em, body[data-a11y-focus="on"] i, body[data-a11y-focus="on"] blockquote, body[data-a11y-focus="on"] .ex-disclaimer { font-style: normal !important; }
+body[data-a11y-focus="on"] p, body[data-a11y-focus="on"] li, body[data-a11y-focus="on"] dd { max-width: 62ch; }
+body[data-a11y-focus="on"] .post img, body[data-a11y-focus="on"] .video .thumb, body[data-a11y-focus="on"] .traj-legend { display: none; }
+body[data-a11y-focus="on"] .video { grid-template-columns: 1fr; }
+body[data-a11y-focus="on"] *, body[data-a11y-focus="on"] *::before, body[data-a11y-focus="on"] *::after { transition: none !important; animation: none !important; }
+body[data-a11y-focus="on"] .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg); }
+
+/* ---------- En bref ---------- */
+.tldr { margin-top: 28px; max-width: 760px; padding: 18px 22px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--build); }
+.tldr.cap { border-left-color: var(--cap); }
+.tldr .kicker { margin-bottom: 8px; }
+.tldr ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.tldr li { line-height: 1.5; }
