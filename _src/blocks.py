@@ -53,97 +53,11 @@ def cases_grid(subset=None):
     return '<div class="cases">\n' + "\n".join(case_card(c) for c in items) + "\n</div>"
 
 
-OFFERS = """<div class="grid grid-3">
-  <article class="card offer-card">
-    <span class="tag tag-build">Build</span>
-    <h3>Construire le dispositif</h3>
-    <p>Vous recrutez, mais le process ne suit pas&nbsp;: délais qui s'allongent, entretiens inégaux, candidats qui décrochent.</p>
-    <ul>
-      <li>Conception ou refonte du process</li>
-      <li>Audit et rapport d'étonnement</li>
-      <li>Annonces, grilles d'entretien, expérience candidat</li>
-      <li>Accompagnement des managers et des équipes</li>
-    </ul>
-  </article>
-  <article class="card offer-card">
-    <span class="tag tag-build">Delivery</span>
-    <h3>Recruter, de bout en bout</h3>
-    <p>Le besoin est clair&nbsp;: il faut des personnes en poste, au bon niveau.</p>
-    <ul>
-      <li>Sourcing et chasse</li>
-      <li>Qualification et entretiens</li>
-      <li>Suivi des candidats et retours détaillés</li>
-      <li>Closing et négociation</li>
-    </ul>
-  </article>
-  <article class="card offer-card featured">
-    <span class="tag tag-build">Build + Delivery</span>
-    <h3>Structurer en recrutant</h3>
-    <p>Recruter maintenant, tout en posant des bases qui tiendront après la mission.</p>
-    <ul>
-      <li>Les recrutements avancent dès le démarrage</li>
-      <li>Le process s'améliore sur le terrain, pas sur le papier</li>
-      <li>Vos équipes gardent un dispositif réutilisable</li>
-    </ul>
-  </article>
-</div>"""
 
-COMPARE = """<h3 class="compare-title" id="formules">Un seul format d'engagement, deux natures d'intervention</h3>
-<div class="matrix">
-  <div class="matrix-col">
-    <span class="kicker">Le format d'engagement</span>
-    <div class="matrix-item">
-      <h4>RPO impact</h4>
-      <p class="sub">Un dispositif intégré, orienté objectifs et impacts</p>
-      <p>Un bras armé recrutement intégré à votre équipe, sur la durée, avec un forfait qui marie les deux formats&nbsp;: un socle pour l'intégration et la structuration, une part liée à chaque recrutement signé, comme une mission au succès.</p>
-    </div>
-    <div class="matrix-item">
-      <h4>Ce qu'il prend à chacun</h4>
-      <p><strong>Au RPO classique</strong>&nbsp;: l'intégration dans vos équipes, la structuration et le pilotage, sur la durée.</p>
-      <p><strong>À la mission au succès</strong>&nbsp;: une rémunération qui avance avec les recrutements signés.</p>
-      <p><strong>Ce qu'il ajoute</strong>&nbsp;: une part liée aux impacts durables sur votre organisation.</p>
-    </div>
-  </div>
-  <div class="matrix-col">
-    <span class="kicker">Nature de l'intervention</span>
-    <div class="matrix-item">
-      <h4>Build</h4>
-      <p class="sub">Structurer et améliorer le recrutement</p>
-      <p>Conception, amélioration et audit du process, accompagnement des managers et des équipes.</p>
-    </div>
-    <div class="matrix-item">
-      <h4>Delivery</h4>
-      <p class="sub">Exécuter, du sourcing jusqu'au closing</p>
-      <p>Sourcing, chasse, qualification, entretiens et closing. Les deux natures se combinent&nbsp;: Build + Delivery.</p>
-    </div>
-  </div>
-</div>"""
 
-HYBRID = """<div class="hybrid" aria-label="Le RPO impact combine le RPO et la mission au succès">
-  <div class="hy-part">
-    <span class="hy-label">Du RPO</span>
-    <strong>L'intégration</strong>
-    <p>Un bras armé recrutement dans votre équipe&nbsp;: structuration du process, pilotage, accompagnement des managers.</p>
-    <span class="hy-pay">→ rémunéré par un <b>socle</b></span>
-  </div>
-  <div class="hy-part">
-    <span class="hy-label">De la mission au succès</span>
-    <strong>L'alignement sur les résultats</strong>
-    <p>Une part du forfait n'est due qu'à chaque recrutement signé, et pèse davantage sur les postes critiques.</p>
-    <span class="hy-pay">→ rémunéré <b>par recrutement</b></span>
-  </div>
-  <div class="hy-part">
-    <span class="hy-label">Vos objectifs</span>
-    <strong>Les impacts obtenus</strong>
-    <p>Une part importante du forfait, liée aux objectifs définis ensemble&nbsp;: délais de recrutement, charge des managers, appropriation du process.</p>
-    <span class="hy-pay">→ une <b>part impact</b></span>
-  </div>
-  <div class="hy-part hy-result">
-    <span class="hy-label">Le RPO impact BUILD RH</span>
-    <strong>Un forfait global construit autour de trois éléments&nbsp;:</strong>
-    <ul class="hy-list"><li>le dispositif mis en place&nbsp;;</li><li>les recrutements réalisés&nbsp;;</li><li>les impacts obtenus.</li></ul>
-  </div>
-</div>"""
+
+
+
 
 FORFAIT = """<div class="forfait">
   <div class="forfait-main">
@@ -213,9 +127,9 @@ ISNOT = """<div class="isnot">
 METHOD = """<ol class="method">
   <li><strong>Comprendre le contexte</strong><p>Immersion dans l'entreprise, l'équipe, la roadmap et le marché visé.</p></li>
   <li><strong>Clarifier le besoin</strong><p>Ce que le poste doit vraiment résoudre, le niveau attendu, ce qui est négociable et ce qui ne l'est pas.</p></li>
-  <li><strong>Construire ou renforcer le dispositif</strong><p>Annonce transparente, étapes du process, grilles d'entretien, rôle de chacun.</p></li>
+  <li><strong>Construire ou renforcer le dispositif</strong><p>Annonce transparente, étapes du process, scorecards, rôle de chacun.</p></li>
   <li><strong>Exécuter avec les équipes</strong><p>Sourcing, entretiens, comptes rendus détaillés, closing. Les managers interviennent là où ils apportent le plus.</p></li>
-  <li><strong>Mesurer et ajuster</strong><p>Suivi des candidats, retours qualitatifs et quantitatifs, ajustements jusqu'à l'intégration.</p></li>
+  <li><strong>Mesurer et ajuster</strong><p>Suivi des candidats, retours qualitatifs et quantitatifs, ajustements jusqu'à l'arrivée des personnes recrutées.</p></li>
 </ol>
 <div class="method-cap">
   <span class="tag tag-cap">CAP Bascule</span>
