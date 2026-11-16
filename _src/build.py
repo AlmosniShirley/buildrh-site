@@ -2,6 +2,7 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from partials import page, contact_form, CONTACT_ASIDE, SITE
 from blocks import *
+from guides import RPO as G_RPO, STARTUP as G_STARTUP, NEURO as G_NEURO
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 
@@ -768,10 +769,23 @@ PAGES = [
      cases_body, crumbs("Cas clients", "/cas-clients.html"), "", False),
     ("a-propos", "Shirley Almosni Chiche, recruteuse tech | BUILD RH",
      "15 ans de recrutement IT auprès de startups et scale-ups. Stratégie, process, relation et exécution. CAP Bascule co-porté avec Coralie Nohel.",
-     about_body, crumbs("À propos", "/a-propos.html"), "", False),
+     about_body, crumbs("À propos", "/a-propos.html") + ld({"@context": "https://schema.org", "@type": "Person", "name": "Shirley Almosni Chiche",
+        "jobTitle": "Recruteuse tech, fondatrice de BUILD RH", "worksFor": {"@id": SITE + "/#org"}, "image": SITE + "/assets/shirley-portrait.jpg",
+        "url": SITE + "/a-propos.html", "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"},
+        "knowsAbout": ["Recrutement tech", "RPO", "Process de recrutement", "Neurodiversité au travail", "IA et recrutement"],
+        "sameAs": [SHIRLEY_LI, "https://github.com/AlmosniShirley", "https://prompt-humain.ghost.io/", "https://www.youtube.com/@TDArHH"]}), "", False),
     ("contact", "Contact : recrutement ou situation sensible | BUILD RH",
      "Un besoin de recrutement, de structuration ou une situation professionnelle sensible ? Décrivez votre contexte en quelques lignes.",
      contact_body, crumbs("Contact", "/contact.html"), "", False),
+    ("rpo-recrutement-tech", "RPO recrutement tech : externaliser sans perdre la main | BUILD RH",
+     "Qu'est-ce qu'un RPO (Recruitment Process Outsourcing) ? Différences avec un cabinet, quand l'utiliser, et comment en faire une capacité durable avec le RPO Impact.",
+     G_RPO, crumbs("Guides", "/rpo-recrutement-tech.html") + ld({"@context": "https://schema.org", "@type": "Article", "headline": "RPO : externaliser le recrutement tech sans perdre la main", "inLanguage": "fr", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Shirley Almosni Chiche", "url": SITE + "/a-propos.html"}, "publisher": {"@id": SITE + "/#org"}, "mainEntityOfPage": SITE + "/rpo-recrutement-tech.html"}), "", False),
+    ("recrutement-tech-startup", "Recrutement tech en startup et scale-up à Paris | BUILD RH",
+     "Recruter des développeurs, profils data et product en startup ou scale-up : ce qui bloque, la méthode qui fonctionne, et des exemples concrets.",
+     G_STARTUP, crumbs("Guides", "/recrutement-tech-startup.html") + ld({"@context": "https://schema.org", "@type": "Article", "headline": "Recruter des profils tech en startup et en scale-up", "inLanguage": "fr", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Shirley Almosni Chiche", "url": SITE + "/a-propos.html"}, "publisher": {"@id": SITE + "/#org"}, "mainEntityOfPage": SITE + "/recrutement-tech-startup.html"}), "", False),
+    ("recrutement-inclusif-neurodiversite", "Recrutement inclusif et neurodiversité (TDAH) | BUILD RH",
+     "TDAH, dyslexie, autisme : ce qui exclut sans le vouloir dans un process de recrutement, et les pratiques concrètes pour recruter des profils neuroatypiques.",
+     G_NEURO, crumbs("Guides", "/recrutement-inclusif-neurodiversite.html") + ld({"@context": "https://schema.org", "@type": "Article", "headline": "Recrutement inclusif : ne plus passer à côté des profils neuroatypiques", "inLanguage": "fr", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Shirley Almosni Chiche", "url": SITE + "/a-propos.html"}, "publisher": {"@id": SITE + "/#org"}, "mainEntityOfPage": SITE + "/recrutement-inclusif-neurodiversite.html"}), "", False),
     ("404", "Page introuvable | BUILD RH", "Cette page n'existe pas ou a changé d'adresse.", nf_body, "", "", True),
 ]
 

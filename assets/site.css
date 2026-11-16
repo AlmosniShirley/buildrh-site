@@ -915,3 +915,11 @@ body[data-a11y-focus="on"] .site-header { backdrop-filter: none; -webkit-backdro
 @media (max-width: 400px) { .site-header .logo-img { height: 30px; } }
 .site-header .logo-img { height: 44px; }
 @media (max-width: 400px) { .site-header .logo-img { height: 38px; } }
+
+/* ---------- guides ---------- */
+.guide-meta { margin-top: 18px; font-size: 0.92rem; color: var(--muted); }
+.guide-sec { margin-bottom: clamp(36px, 5vw, 52px); }
+.guide-sec h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 16px; }
+.guide-sec p { max-width: 70ch; }
+.guide-sec a:not(.btn):not(.link-arrow) { color: var(--build); }
+.guide .checklist li { padding-top: 10px; padding-bottom: 10px; }

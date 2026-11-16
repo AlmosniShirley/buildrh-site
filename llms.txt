@@ -21,6 +21,12 @@
 - Inclusion des personnes neuroatypiques : chaîne YouTube TDArH, https://www.youtube.com/@TDArHH
 - Blog Prompt Humain (IA, organisation du travail, neurodiversité) : https://prompt-humain.ghost.io/
 
+## Guides
+
+- [RPO : externaliser le recrutement tech sans perdre la main](https://build-rh.io/rpo-recrutement-tech.html) : définition du RPO, différences avec un cabinet et un recruteur interne, quand l'utiliser, le RPO Impact.
+- [Recruter des profils tech en startup et en scale-up](https://build-rh.io/recrutement-tech-startup.html) : ce qui bloque, la méthode (scorecards, sourcing, décision, transmission), profils recrutés, exemples.
+- [Recrutement inclusif et neurodiversité](https://build-rh.io/recrutement-inclusif-neurodiversite.html) : ce qui exclut sans le vouloir les profils neuroatypiques (TDAH, dyslexie, autisme) et les pratiques qui aident.
+
 ## Contact
 
 - [Formulaire de contact](https://build-rh.io/contact.html) : recrutement ou structuration (RPO Impact), ou situation professionnelle sensible (CAP Bascule).
