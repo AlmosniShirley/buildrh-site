@@ -563,7 +563,7 @@ about_body = f"""<main id="main">
   <div class="wrap two-col">
     <div>
       <div class="person" style="grid-template-columns:1fr">
-        <div class="photo" style="width:168px;height:168px"><img src="/assets/shirley.png" alt="Portrait de Shirley Almosni Chiche" width="610" height="546" decoding="async"></div>
+        <div class="photo" style="width:168px;height:168px"><img src="/assets/shirley-portrait.png" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" decoding="async"></div>
       </div>
       <h2 id="shirley-title" class="mt-m" style="font-size:clamp(1.8rem,3.6vw,2.4rem)">Shirley Almosni Chiche</h2>
       <p class="muted mt-s">Fondatrice de BUILD RH · co-fondatrice de CAP Bascule · Paris</p>
@@ -615,7 +615,7 @@ about_body = f"""<main id="main">
 <section class="section cap-zone" aria-labelledby="coralie-title">
   <div class="wrap">
     <div class="section-head"><span class="kicker" style="color:var(--cap)">CAP Bascule</span><h2 id="coralie-title">Co-porté avec Coralie Nohel</h2></div>
-    <div class="people" style="grid-template-columns:minmax(0,1fr)">{PERSON_CORALIE}</div>
+    <div class="people" style="grid-template-columns:minmax(0,1fr)">{person_coralie(short=False)}</div>
   </div>
 </section>
 

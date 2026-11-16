@@ -262,7 +262,7 @@ CAP_SITE = "https://almosnishirley.github.io/capbascule/"
 def person_shirley(short=True):
     more = '<a class="link-arrow build" href="/a-propos.html">Parcours complet <span aria-hidden="true">→</span></a>' if short else ''
     return f"""<article class="card person">
-  <div class="photo"><img src="/assets/shirley.png" alt="Portrait de Shirley Almosni Chiche" width="610" height="546" loading="lazy" decoding="async"></div>
+  <div class="photo"><img src="/assets/shirley-portrait.png" alt="Portrait de Shirley Almosni Chiche" width="400" height="400" loading="lazy" decoding="async"></div>
   <div>
     <h3>Shirley Almosni Chiche</h3>
     <span class="role">Fondatrice de BUILD RH · co-fondatrice de CAP Bascule</span>
@@ -277,16 +277,28 @@ def person_shirley(short=True):
 </article>"""
 
 
-PERSON_CORALIE = f"""<article class="card person cap-person">
-  <div class="monogram" aria-hidden="true">CN</div>
+import os as _os
+_CORALIE_PHOTO = next((f for f in ("coralie.jpg", "coralie.png", "coralie.webp") if _os.path.exists(_os.path.join(_os.path.dirname(__file__), "..", "assets", f))), None)
+_CORALIE_VISUAL = (f'<div class="photo"><img src="/assets/{_CORALIE_PHOTO}" alt="Portrait de Coralie Nohel" loading="lazy" decoding="async"></div>'
+                   if _CORALIE_PHOTO else '<div class="monogram" aria-hidden="true">CN</div>')
+
+def person_coralie(short=True):
+    more = '<a class="link-arrow cap" href="/a-propos.html#coralie-title">Parcours complet <span aria-hidden="true">→</span></a>' if short else ''
+    return f"""<article class="card person cap-person">
+  {_CORALIE_VISUAL}
   <div>
     <h3>Coralie Nohel</h3>
-    <span class="role">Co-fondatrice de CAP Bascule</span>
-    <p>Une expérience en recrutement IT et en ESN, dans des environnements où les sujets humains, techniques et business sont impossibles à séparer.</p>
-    <p><span class="todo">Bio détaillée de Coralie à compléter</span></p>
-    <div class="cta-row"><a class="link-arrow" href="{CORALIE_LI}" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+    <span class="role">Co-fondatrice de CAP Bascule · ELLIPSE</span>
+    <p>Six années chez Zenika, puis consultante indépendante avec ELLIPSE&nbsp;: Coralie connaît de l'intérieur le recrutement IT et le monde des ESN, là où les sujets humains, techniques et business sont impossibles à séparer.</p>
+    <ul>
+      <li>Une lecture terrain des prises de poste, des missions et des relations de travail dans la tech.</li>
+      <li>Un regard extérieur et neutre, au service de la personne accompagnée comme de l'entreprise.</li>
+    </ul>
+    <div class="cta-row">{more}<a class="link-arrow" href="{CORALIE_LI}" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
   </div>
 </article>"""
+
+PERSON_CORALIE = person_coralie()
 
 # Exemple chiffré FICTIF (validé par Shirley comme illustration, montants indicatifs).
 EXAMPLE = """<div class="example" id="exemple">
