@@ -903,3 +903,15 @@ body[data-a11y-focus="on"] .site-header { backdrop-filter: none; -webkit-backdro
 .tldr .kicker { margin-bottom: 8px; }
 .tldr ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
 .tldr li { line-height: 1.5; }
+
+/* ---------- logo ---------- */
+.brand { display: inline-flex; align-items: center; }
+.logo-img { display: block; height: 35px; width: auto; }
+.site-footer .logo-img { height: 44px; }
+.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-light { display: none; } :root:not([data-theme="light"]) .logo-dark { display: block; } }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+@media (max-width: 400px) { .site-header .logo-img { height: 30px; } }
+.site-header .logo-img { height: 44px; }
+@media (max-width: 400px) { .site-header .logo-img { height: 38px; } }

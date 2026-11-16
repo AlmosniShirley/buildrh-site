@@ -33,7 +33,9 @@ def head(title, desc, path, jsonld="", noindex=False):
 <meta property="og:image" content="{SITE}/assets/shirley.png">
 <meta property="og:image:alt" content="Shirley Almosni Chiche, fondatrice de BUILD RH">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/logo/buildrh-avatar.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/logo/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
@@ -53,7 +55,7 @@ def header(current):
     return f"""<a class="skip" href="#main">Aller au contenu</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="BUILD RH, accueil">BUILD RH</a>
+    <a class="brand" href="/" aria-label="BUILD RH, accueil"><img class="logo-img logo-light" src="/assets/logo/buildrh-logo-couleur.svg" alt="BUILD RH" width="113" height="35"><img class="logo-img logo-dark" src="/assets/logo/buildrh-logo-blanc.svg" alt="" aria-hidden="true" width="113" height="35"></a>
     <nav class="main-nav" aria-label="Navigation principale">
       <ul>
         {chr(10).join('        ' + l for l in links).strip()}
@@ -84,7 +86,7 @@ FOOTER = """<footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="/">BUILD RH</a>
+        <a class="brand" href="/" aria-label="BUILD RH, accueil"><img class="logo-img logo-light" src="/assets/logo/buildrh-logo-couleur.svg" alt="BUILD RH" width="142" height="44"><img class="logo-img logo-dark" src="/assets/logo/buildrh-logo-blanc.svg" alt="" aria-hidden="true" width="142" height="44"></a>
         <p class="tagline">Sécuriser les moments où une équipe tech gagne ou perd de la vitesse.</p>
       </div>
       <div>
