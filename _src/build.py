@@ -282,9 +282,11 @@ build_body = f"""<main id="main">
     <div class="section-head">
       <span class="kicker">Ce que fait Shirley, concrètement</span>
       <h2 id="dims-title">Immersion, Delivery, Build, Ancrage</h2>
-      <p class="lead">Quatre dimensions menées ensemble&nbsp;: on comprend, on recrute, on renforce le process, et on transmet.</p>
+      <p class="lead">Une méthode de travail en quatre temps&nbsp;: l'immersion dans les équipes, l'exécution des recrutements, l'amélioration du process et la transmission d'une capacité durable à recruter.</p>
+      {FLOW}
     </div>
     {DIMENSIONS}
+    {STACK}
   </div>
 </section>
 

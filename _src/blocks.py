@@ -328,38 +328,71 @@ EXAMPLE = """<div class="example" id="exemple">
 # ---------------- RPO Impact ----------------
 SIGNATURE = "Un dispositif de recrutement en immersion, orienté résultats et conçu pour laisser une capacité durable."
 
-def _dim(n, name, title, intro, items, key=False):
+def _dim(n, verb, name, promise, intro, items, extra="", key=False, lead_in=""):
     lis = "".join(f"<li>{x}</li>" for x in items)
     cls = "card dim dim-key" if key else "card dim"
-    tag = '<span class="tag tag-build dim-flag">Ce qui reste après la mission</span>' if key else ""
+    li_intro = f'<p class="dim-listhead">{lead_in}</p>' if lead_in else ""
     return f"""<article class="{cls}">
-  <span class="dim-num">{n}</span>
-  <h3>{name}</h3>{tag}
-  <p class="dim-title">{title}</p>
-  <p>{intro}</p>
-  <ul>{lis}</ul>
+  <div class="dim-top"><span class="dim-num">{n}</span><span class="dim-verb">{verb}</span></div>
+  <h3>{name}</h3>
+  <p class="dim-title">{promise}</p>
+  <p class="dim-intro">{intro}</p>
+  {li_intro}<ul>{lis}</ul>
+  {extra}
 </article>"""
 
+SCORECARD = """<figure class="scorecard" aria-label="Exemple de scorecard de poste">
+  <figcaption><span>Scorecard du poste</span><span class="sc-ex">Exemple</span></figcaption>
+  <dl>
+    <div><dt>Mission</dt><dd>Construire et faire grandir l'équipe data</dd></div>
+    <div><dt>Résultats attendus</dt><dd><span class="sc-tag">Pipeline fiable</span><span class="sc-tag">Équipe autonome</span></dd></div>
+    <div><dt>Critères clés</dt><dd><span class="sc-tag">Expertise</span><span class="sc-tag">Leadership</span><span class="sc-tag">Contexte scale-up</span></dd></div>
+    <div><dt>Points de vigilance</dt><dd><span class="sc-tag sc-warn">Niveau d'autonomie</span><span class="sc-tag sc-warn">Capacité de transmission</span></dd></div>
+  </dl>
+</figure>"""
+
 DIMENSIONS = '<div class="dims">\n' + "\n".join([
-  _dim("01", "Immersion", "Comprendre avant de recruter.",
-       "L'intervention commence par une immersion au sein de vos équipes et dans votre environnement de travail, sur site lorsque cela est pertinent.",
-       ["Le contexte de l'entreprise et sa culture", "La roadmap et les équipes", "Les rôles à recruter", "Les modes de décision", "Les difficultés et les blocages du recrutement"]),
-  _dim("02", "Delivery", "Les recrutements avancent tout de suite.",
-       "Les postes prioritaires avancent dès le début de la mission.",
-       ["Sourcing et chasse", "Qualification et entretiens", "Coordination avec les managers", "Suivi candidat", "Closing"]),
-  _dim("03", "Build", "Le process se renforce en même temps.",
-       "Le process est amélioré sur le terrain, au contact des recrutements réels, et pas uniquement dans un document théorique.",
-       ["Structuration ou refonte du process", "Annonces et grilles d'entretien", "Répartition des rôles et rituels de décision", "Suivi des indicateurs", "Expérience candidat et accompagnement des managers"]),
-  _dim("04", "Ancrage", "Une capacité qui reste.",
+  _dim("01", "Comprendre", "Immersion", "Comprendre ce qu'il faut réussir avant de chercher.",
+       "L'intervention commence par une immersion au sein de vos équipes et dans votre environnement de travail.",
+       ["La mission réelle du poste", "Les résultats attendus à 6 ou 12 mois", "Les critères indispensables", "Les signaux qui permettront de reconnaître le bon profil", "Les points de vigilance liés au contexte"],
+       extra=SCORECARD, lead_in="La scorecard du poste permet de clarifier&nbsp;:"),
+  _dim("02", "Recruter", "Delivery", "Faire avancer les bons profils.",
+       "Les recrutements avancent dès le début de la mission, avec un sourcing augmenté par l'IA et un suivi humain à chaque étape.",
+       ["Sourcing et chasse ciblés", "Qualification et matching", "Coordination avec les managers", "Suivi candidat et closing"],
+       extra='<p class="dim-note">L\'IA accélère la recherche et l\'analyse. Les décisions restent humaines.</p>'),
+  _dim("03", "Décider", "Build", "Un process qui aide à décider.",
+       "Le process est amélioré sur le terrain, au contact des recrutements réels.",
+       ["Scorecards de poste et de candidature partagées", "Critères de décision clairs et observables", "Rôles et rituels de décision", "Suivi du pipeline, des délais et des conversions", "Expérience candidat et accompagnement des managers"]),
+  _dim("04", "Transmettre", "Ancrage", "Ce qui reste après la mission.",
        "À la fin de la mission, votre équipe conserve une capacité durable à recruter.",
-       ["Transmission des outils et des pratiques", "Autonomie progressive des managers", "Un process réutilisable après la mission", "Des recommandations pour la suite", "Les points de vigilance clarifiés"], key=True),
+       ["Outils et pratiques transmis", "Scorecards, rituels et documentation réutilisables", "Autonomie progressive des managers", "Process réutilisable après la mission", "Bilan d'impact et recommandations pour la suite"],
+       extra='<p class="dim-capacity"><strong>Une capacité qui reste.</strong> Votre équipe dispose d\'un process, d\'outils et de critères de décision qu\'elle peut continuer à utiliser.</p>', key=True),
 ]) + "\n</div>"
 
+FLOW = """<ol class="flow" aria-label="Le fil conducteur du RPO Impact">
+  <li>Comprendre</li><li>Recruter</li><li>Décider</li><li>Transmettre</li>
+</ol>"""
+
+STACK = """<div class="stack">
+  <div class="stack-head">
+    <span class="kicker">Une stack augmentée par l'IA</span>
+    <h3>Des outils au service de la méthode</h3>
+    <p>Les outils accélèrent la recherche, l'analyse, la rédaction et la transmission. Le jugement, la relation et la décision restent humains.</p>
+  </div>
+  <ul class="stack-tools">
+    <li><strong>Dust</strong><span>Rechercher, contextualiser, structurer</span></li>
+    <li><strong>Claude</strong><span>Analyser, synthétiser, challenger</span></li>
+    <li><strong>ChatGPT</strong><span>Explorer, rédiger, prototyper</span></li>
+    <li><strong>VSCode</strong><span>Automatiser, connecter, outiller</span></li>
+  </ul>
+  <p class="stack-foot">L'IA accélère le travail. Elle ne remplace ni la compréhension du contexte, ni la qualité du jugement.</p>
+</div>"""
+
 DIMENSIONS_SHORT = """<div class="dims dims-short">
-  <div class="card dim"><span class="dim-num">01</span><h3>Immersion</h3><p>Au sein de vos équipes, pour comprendre le contexte, la culture et les blocages.</p></div>
-  <div class="card dim"><span class="dim-num">02</span><h3>Delivery</h3><p>Les recrutements prioritaires avancent dès le début&nbsp;: sourcing, entretiens, closing.</p></div>
-  <div class="card dim"><span class="dim-num">03</span><h3>Build</h3><p>Le process se renforce sur le terrain, au contact des recrutements réels.</p></div>
-  <div class="card dim dim-key"><span class="dim-num">04</span><h3>Ancrage</h3><p>Outils et pratiques transmis&nbsp;: votre équipe garde une capacité durable à recruter.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">01</span><span class="dim-verb">Comprendre</span></div><h3>Immersion</h3><p>Comprendre ce qu'il faut réussir avant de chercher, au sein de vos équipes.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">02</span><span class="dim-verb">Recruter</span></div><h3>Delivery</h3><p>Faire avancer les bons profils dès le début, avec un sourcing augmenté par l'IA.</p></div>
+  <div class="card dim"><div class="dim-top"><span class="dim-num">03</span><span class="dim-verb">Décider</span></div><h3>Build</h3><p>Un process qui aide à décider&nbsp;: scorecards, critères clairs, rituels.</p></div>
+  <div class="card dim dim-key"><div class="dim-top"><span class="dim-num">04</span><span class="dim-verb">Transmettre</span></div><h3>Ancrage</h3><p>Ce qui reste après la mission&nbsp;: une capacité durable à recruter.</p></div>
 </div>"""
 
 CHANGE = """<div class="change">
