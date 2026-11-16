@@ -16,7 +16,7 @@ ORG = {
     "url": SITE + "/",
     "image": SITE + "/assets/shirley.png",
     "email": "shirley.chiche@buildrh.co",
-    "description": "Recrutement tech (RPO hybride, structuration du process) et accompagnement des transitions professionnelles sensibles avec CAP Bascule.",
+    "description": "Recrutement tech (RPO Impact, structuration du process) et accompagnement des transitions professionnelles sensibles avec CAP Bascule.",
     "areaServed": {"@type": "Country", "name": "France"},
     "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"},
     "inLanguage": "fr",
@@ -26,8 +26,8 @@ ORG = {
     "hasOfferCatalog": {
         "@type": "OfferCatalog", "name": "Offres BUILD RH",
         "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "BUILD RH — RPO hybride", "serviceType": "Recruitment Process Outsourcing",
-             "description": "RPO hybride : dispositif de recrutement intégré, orienté objectifs et impacts, avec un forfait qui combine un socle et une part liée aux recrutements signés."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "BUILD RH — RPO Impact", "serviceType": "Recruitment Process Outsourcing",
+             "description": "Un dispositif de recrutement en immersion, orienté résultats et conçu pour laisser une capacité durable : immersion, delivery, build et ancrage, avec un forfait global construit autour des objectifs."}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CAP Bascule", "serviceType": "Accompagnement des transitions professionnelles",
              "description": "Accompagnement externe et confidentiel, financé par l'entreprise : CAP Clarifier, CAP Traverser, CAP Rebond."}},
         ],
@@ -98,7 +98,7 @@ index_body = f"""<main id="main">
         <span class="tag tag-build">BUILD RH</span>
         <h3>Faire entrer les bonnes personnes</h3>
         <p>Votre équipe doit grandir, mais vous ne voulez ni ralentir la roadmap ni baisser la barre sur les profils recrutés.</p>
-        <p class="when">Recrutements tech et stratégiques · RPO hybride · structuration du process</p>
+        <p class="when">Recrutements tech et stratégiques · RPO Impact · immersion, delivery, build, ancrage</p>
         <div class="card-foot"><a class="btn btn-build" href="/build-rh.html">Découvrir BUILD RH <span class="arrow" aria-hidden="true">→</span></a></div>
       </article>
       <article class="card moment cap">
@@ -137,14 +137,11 @@ index_body = f"""<main id="main">
       <h2 id="build-title">Faire entrer les bonnes personnes, vite et sans rogner sur la qualité.</h2>
       <p class="lead">Pour les startups, scale-ups et entreprises tech qui recrutent des profils techniques ou stratégiques, et qui veulent alléger la charge de leurs managers sans baisser leur niveau d'exigence.</p>
     </div>
-    {OFFERS}
-    {COMPARE}
-    <h3 class="compare-title">Le RPO hybride&nbsp;: le meilleur du RPO et de la mission au succès</h3>
-    <p class="muted" style="max-width:70ch">Un RPO qui ne facture pas seulement du temps de recrutement.</p>
-    {HYBRID}
-    {FORFAIT}
-    <p class="note">Exemple fictif&nbsp;: 8 recrutements en 4 mois en RPO hybride, 35&nbsp;000&nbsp;€&nbsp;HT au maximum si tous les objectifs sont atteints, contre environ 48&nbsp;000&nbsp;€ pour un RPO classique à temps plein. <a class="link-arrow build" href="/build-rh.html#exemple">Voir l'exemple détaillé</a></p>
-    <div class="section-foot cta-row">{CTA_BUILD}<a class="link-arrow" href="/build-rh.html">Tout sur BUILD RH</a></div>
+    <h3 class="compare-title mt-0">RPO Impact&nbsp;: recruter maintenant, renforcer durablement</h3>
+    <p class="muted" style="max-width:70ch;margin-top:-6px">{SIGNATURE}</p>
+    {DIMENSIONS_SHORT}
+    <p class="note">Un forfait global construit autour de trois éléments&nbsp;: le dispositif mis en place, les recrutements réalisés, les impacts et l'ancrage obtenus. <a class="link-arrow build" href="/build-rh.html#forfait">Comment le forfait est construit</a> · <a class="link-arrow build" href="/build-rh.html#exemple">Voir l'exemple</a></p>
+    <div class="section-foot cta-row">{CTA_BUILD}<a class="link-arrow" href="/build-rh.html">Découvrir le RPO Impact</a></div>
   </div>
 </section>
 
@@ -248,24 +245,72 @@ index_body = f"""<main id="main">
 build_body = f"""<main id="main">
 <section class="page-hero">
   <div class="wrap">
-    <span class="eyebrow">BUILD RH · la stratégie à l'entrée</span>
-    <h1>Faire entrer les bonnes personnes, <em>vite et sans rogner sur la qualité.</em></h1>
-    <p class="lead">Recrutement de profils techniques et stratégiques pour les startups, scale-ups et entreprises tech. En RPO hybride, sur la structuration du process, l'exécution, ou les deux.</p>
-    <div class="cta-row">{CTA_BUILD}<a class="link-arrow build" href="#forfait">Le RPO hybride&nbsp;: le modèle de facturation <span aria-hidden="true">↓</span></a></div>
+    <span class="eyebrow">BUILD RH · RPO Impact</span>
+    <h1>RPO Impact&nbsp;: <em>recruter maintenant, renforcer durablement.</em></h1>
+    <p class="lead">{SIGNATURE}</p>
+    <div class="cta-row">{CTA_BUILD}<a class="link-arrow build" href="#forfait">Comment le forfait est construit <span aria-hidden="true">↓</span></a></div>
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="rpo-title">
+<!-- 1. CE QU'EST LE RPO IMPACT -->
+<section class="section" aria-labelledby="quoi-title">
+  <div class="wrap two-col">
+    <div>
+      <span class="kicker">L'offre</span>
+      <h2 id="quoi-title" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Recruter maintenant, sans simplement ajouter une ressource.</h2>
+      <p class="lead mt-s">Vous avez besoin de recruter maintenant, mais vous ne voulez pas simplement ajouter une ressource pendant quelques mois.</p>
+    </div>
+    <div>
+      <p class="mt-0"><strong>RPO Impact combine&nbsp;:</strong></p>
+      <ul class="checklist">
+        <li>l'<strong>immersion</strong> dans votre environnement et vos équipes&nbsp;;</li>
+        <li>le <strong>delivery</strong> des recrutements prioritaires&nbsp;;</li>
+        <li>le <strong>build</strong> d'un process plus solide&nbsp;;</li>
+        <li>l'<strong>ancrage</strong> des pratiques auprès de vos managers.</li>
+      </ul>
+      <p class="mt-s"><strong>Les recrutements avancent pendant que votre dispositif se renforce.</strong></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <blockquote class="pull-quote">Vous ne financez pas des jours de recrutement. Vous financez une capacité à recruter, qui produit des résultats et laisse quelque chose derrière elle.</blockquote>
+  </div>
+</section>
+
+<!-- 2. LES QUATRE DIMENSIONS -->
+<section class="section alt" id="dimensions" aria-labelledby="dims-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">Le RPO hybride</span>
-      <h2 id="rpo-title">Un RPO qui ne facture pas seulement du temps de recrutement.</h2>
-      <p class="lead">Le RPO BUILD RH marie les deux formats&nbsp;: l'intégration et la structuration d'un RPO, l'alignement sur les résultats d'une mission au succès. On part du problème à résoudre, pas d'un volume de temps à remplir.</p>
+      <span class="kicker">Ce que fait Shirley, concrètement</span>
+      <h2 id="dims-title">Immersion, Delivery, Build, Ancrage</h2>
+      <p class="lead">Quatre dimensions menées ensemble&nbsp;: on comprend, on recrute, on renforce le process, et on transmet.</p>
     </div>
-    {HYBRID}
+    {DIMENSIONS}
+  </div>
+</section>
+
+<!-- 3. CE QUI DOIT AVOIR CHANGÉ -->
+<section class="section" id="impact" aria-labelledby="change-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">L'impact</span>
+      <h2 id="change-title">Ce qui doit avoir changé à la fin</h2>
+      <p class="lead">Les objectifs sont définis ensemble au démarrage. Trois dimensions comptent dans la plupart des missions&nbsp;:</p>
+    </div>
+    {CHANGE}
+    {BILAN}
+  </div>
+</section>
+
+<!-- 4. LE FORFAIT -->
+<section class="section alt" id="forfait" aria-labelledby="forfait-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Comment le forfait est construit</span>
+      <h2 id="forfait-title">Le forfait découle du dispositif, pas d'un nombre de jours.</h2>
+    </div>
     {FORFAIT}
     {EXAMPLE}
-    <h3 class="compare-title">Comment fonctionne un RPO</h3>
+    <h3 class="compare-title">Comment se déroule un RPO Impact</h3>
     {RPO_STEPS}
   </div>
 </section>
@@ -275,7 +320,7 @@ build_body = f"""<main id="main">
     <div>
       <span class="kicker">Pour qui</span>
       <h2 id="sit-title" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Vous reconnaissez-vous&nbsp;?</h2>
-      <p class="lead mt-s">BUILD RH intervient quand le recrutement devient un sujet de vitesse pour toute l'équipe.</p>
+      <p class="lead mt-s">Le RPO Impact s'adresse aux équipes pour qui le recrutement est devenu un sujet de vitesse.</p>
     </div>
     <ul class="checklist">
       <li>La roadmap attend des recrutements qui n'avancent pas.</li>
@@ -288,19 +333,7 @@ build_body = f"""<main id="main">
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="offres-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Ce que BUILD RH prend en charge</span>
-      <h2 id="offres-title">Structurer, exécuter, ou les deux.</h2>
-      <p class="lead">Sourcing, entretiens, expérience candidat et closing sont sécurisés quelle que soit la formule.</p>
-    </div>
-    {OFFERS}
-    {COMPARE}
-  </div>
-</section>
-
-<section class="section" aria-labelledby="bcas-title">
+<section class="section alt" aria-labelledby="bcas-title">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Preuves</span>
@@ -311,19 +344,21 @@ build_body = f"""<main id="main">
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="bfaq-title">
+<section class="section" aria-labelledby="bfaq-title">
   <div class="wrap narrow">
     <div class="section-head"><span class="kicker">Questions fréquentes</span><h2 id="bfaq-title">Avant de se parler</h2></div>
     <div class="faq">
-      <details><summary>Pourquoi un RPO hybride plutôt qu'un RPO classique ou une mission au succès&nbsp;?</summary><p>Un RPO classique facture du temps, quels que soient les résultats. Une mission au succès aligne la rémunération sur les recrutements, mais sans intégration ni structuration du process. Le RPO hybride combine les deux&nbsp;: un socle pour l'intégration et la structuration, une part liée à chaque recrutement signé, et une part liée aux impacts.</p></details>
-      <details><summary>Comment le forfait RPO est-il construit&nbsp;?</summary><p>Nous définissons ensemble le problème à résoudre, les objectifs à atteindre et les impacts attendus. Le forfait est ensuite construit autour de ce cadre&nbsp;: contexte, nombre et criticité des recrutements, niveau de structuration nécessaire, autonomie des équipes, durée et périmètre.</p></details>
+      <details><summary>Qu'est-ce qui distingue le RPO Impact&nbsp;?</summary><p>Vous ne financez pas des jours de recrutement&nbsp;: vous financez une capacité à recruter. Les recrutements avancent pendant que le process se renforce, et la mission se termine par l'ancrage des pratiques et un bilan d'impact partagé.</p></details>
+      <details><summary>Comment le forfait est-il construit&nbsp;?</summary><p>Nous définissons ensemble le problème à résoudre, les résultats attendus et les impacts souhaités. Le forfait tient compte du contexte de l'entreprise, du nombre et de la criticité des recrutements, du niveau de structuration nécessaire, de l'autonomie des équipes, de la durée et du périmètre de l'intervention.</p></details>
+      <details><summary>L'immersion se fait-elle sur site&nbsp;?</summary><p>Lorsque c'est pertinent, oui. L'objectif est d'être au plus près de vos équipes et de votre environnement de travail pour comprendre comment les décisions se prennent réellement.</p></details>
+      <details><summary>Que contient le bilan d'impact&nbsp;?</summary><p>Les objectifs définis au démarrage, les recrutements réalisés, les améliorations apportées, les outils transmis, les indicateurs observés et les prochaines recommandations.</p></details>
       <details><summary>Peut-on faire appel à BUILD RH uniquement pour le process&nbsp;?</summary><p>Oui. C'est l'intervention Build&nbsp;: conception, amélioration ou audit du process de recrutement, et accompagnement des managers et des équipes.</p></details>
       <details><summary>Quels profils recrutez-vous&nbsp;?</summary><p>Des profils tech et produit&nbsp;: développeurs backend, frontend, fullstack et mobile, DevOps, sécurité (RSSI, Head of Security), data (Analytics Engineer), Product Owners et Product Managers, Engineering Managers.</p></details>
     </div>
   </div>
 </section>
 
-{cta_band("Un recrutement à lancer, un process à remettre d'aplomb&nbsp;?", "Décrivez le contexte en quelques lignes. Le premier échange sert à comprendre le besoin et à choisir la bonne formule.", ("Parler d'un recrutement ou d'un besoin de structuration", "/contact.html?besoin=recrutement"))}
+{cta_band("Un recrutement à lancer, un process à remettre d'aplomb&nbsp;?", "Décrivez le contexte en quelques lignes. Le premier échange sert à comprendre le besoin et à définir ensemble les objectifs.", ("Parler d'un recrutement ou d'un besoin de structuration", "/contact.html?besoin=recrutement"))}
 </main>"""
 
 # =====================================================================
@@ -655,8 +690,8 @@ PAGES = [
     ("index", "Recrutement tech &amp; transitions professionnelles | BUILD RH",
      "BUILD RH aide les startups et scale-ups à recruter les bons profils tech, structurer leur recrutement et traiter les situations professionnelles sensibles avec CAP Bascule.",
      index_body, ld(ORG), "", False),
-    ("build-rh", "Recrutement tech en RPO hybride | BUILD RH",
-     "Recruter des profils tech et stratégiques sans ralentir la roadmap : un RPO hybride qui marie RPO et mission au succès, structuration du process (Build) et exécution (Delivery).",
+    ("build-rh", "RPO Impact, recrutement tech en immersion | BUILD RH",
+     "RPO Impact : un dispositif de recrutement en immersion, orienté résultats et conçu pour laisser une capacité durable. Immersion, Delivery, Build et Ancrage, pour un forfait construit autour de vos objectifs.",
      build_body, crumbs("BUILD RH", "/build-rh.html"), "", False),
     ("cap-bascule", "CAP Bascule, transitions professionnelles sensibles | BUILD RH",
      "CAP Bascule : un accompagnement externe et confidentiel, financé par l'entreprise, pour clarifier une situation professionnelle sensible, décider et traverser la transition.",

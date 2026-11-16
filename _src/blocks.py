@@ -93,7 +93,7 @@ COMPARE = """<h3 class="compare-title" id="formules">Un seul format d'engagement
   <div class="matrix-col">
     <span class="kicker">Le format d'engagement</span>
     <div class="matrix-item">
-      <h4>RPO hybride</h4>
+      <h4>RPO impact</h4>
       <p class="sub">Un dispositif intégré, orienté objectifs et impacts</p>
       <p>Un bras armé recrutement intégré à votre équipe, sur la durée, avec un forfait qui marie les deux formats&nbsp;: un socle pour l'intégration et la structuration, une part liée à chaque recrutement signé, comme une mission au succès.</p>
     </div>
@@ -119,58 +119,52 @@ COMPARE = """<h3 class="compare-title" id="formules">Un seul format d'engagement
   </div>
 </div>"""
 
-HYBRID = """<div class="hybrid" aria-label="Le RPO hybride combine le RPO et la mission au succès">
+HYBRID = """<div class="hybrid" aria-label="Le RPO impact combine le RPO et la mission au succès">
   <div class="hy-part">
     <span class="hy-label">Du RPO</span>
     <strong>L'intégration</strong>
     <p>Un bras armé recrutement dans votre équipe&nbsp;: structuration du process, pilotage, accompagnement des managers.</p>
     <span class="hy-pay">→ rémunéré par un <b>socle</b></span>
   </div>
-  <span class="hy-op" aria-hidden="true">+</span>
   <div class="hy-part">
     <span class="hy-label">De la mission au succès</span>
     <strong>L'alignement sur les résultats</strong>
     <p>Une part du forfait n'est due qu'à chaque recrutement signé, et pèse davantage sur les postes critiques.</p>
     <span class="hy-pay">→ rémunéré <b>par recrutement</b></span>
   </div>
-  <span class="hy-op" aria-hidden="true">+</span>
   <div class="hy-part">
-    <span class="hy-label">En plus</span>
-    <strong>Les impacts durables</strong>
-    <p>Des recrutements rapides, les bonnes personnes dans le pipe, un process repris par l'équipe, des managers moins sollicités.</p>
+    <span class="hy-label">Vos objectifs</span>
+    <strong>Les impacts obtenus</strong>
+    <p>Une part importante du forfait, liée aux objectifs définis ensemble&nbsp;: délais de recrutement, charge des managers, appropriation du process.</p>
     <span class="hy-pay">→ une <b>part impact</b></span>
   </div>
-  <span class="hy-op" aria-hidden="true">=</span>
   <div class="hy-part hy-result">
-    <span class="hy-label">Le RPO hybride BUILD RH</span>
-    <strong>Socle + recrutements + impact</strong>
-    <p>Un seul forfait, défini ensemble au démarrage et adossé à vos objectifs.</p>
+    <span class="hy-label">Le RPO impact BUILD RH</span>
+    <strong>Un forfait global construit autour de trois éléments&nbsp;:</strong>
+    <ul class="hy-list"><li>le dispositif mis en place&nbsp;;</li><li>les recrutements réalisés&nbsp;;</li><li>les impacts obtenus.</li></ul>
   </div>
 </div>"""
 
-FORFAIT = """<div class="forfait" id="forfait">
+FORFAIT = """<div class="forfait">
   <div class="forfait-main">
-    <span class="kicker">Le modèle RPO hybride</span>
-    <h3>Un forfait construit sur vos objectifs, pas sur un nombre de jours à consommer.</h3>
-    <p>Nous définissons ensemble le problème à résoudre, les objectifs à atteindre et les impacts attendus. Le forfait est ensuite construit autour de ce cadre.</p>
-    <p class="forfait-note">Le niveau d'intervention, la durée, le périmètre, les indicateurs de suivi et le forfait sont clarifiés au démarrage. Le dispositif est suivi régulièrement et ajusté lorsque le contexte évolue.</p>
+    <span class="kicker">Le forfait RPO Impact</span>
+    <h3>Un forfait global, construit ensemble autour de vos objectifs.</h3>
+    <p>Nous définissons le problème à résoudre, les résultats attendus et les impacts souhaités. Le périmètre, les indicateurs de suivi et le forfait sont ensuite précisés au démarrage.</p>
+    <p class="forfait-note">Le dispositif est suivi régulièrement et ajusté lorsque le contexte évolue.</p>
   </div>
   <div class="forfait-factors">
-    <p class="factors-title">Le forfait tient compte&nbsp;:</p>
-    <ul>
-      <li>du contexte de l'entreprise&nbsp;;</li>
-      <li>du nombre et de la criticité des recrutements&nbsp;;</li>
-      <li>des objectifs à atteindre&nbsp;;</li>
-      <li>des impacts attendus sur l'organisation&nbsp;;</li>
-      <li>du niveau de structuration nécessaire&nbsp;;</li>
-      <li>de l'autonomie des équipes&nbsp;;</li>
-      <li>de la durée et du périmètre de l'intervention.</li>
+    <p class="factors-title">Un forfait global construit autour de trois éléments&nbsp;:</p>
+    <ul class="forfait-three">
+      <li><strong>Le dispositif mis en place</strong><span>Un socle d'immersion, de cadrage, de structuration et de pilotage.</span></li>
+      <li><strong>Les recrutements réalisés</strong><span>Une part liée aux recrutements effectivement signés.</span></li>
+      <li class="key"><strong>Les impacts et l'ancrage obtenus</strong><span>Une part importante, liée aux objectifs définis ensemble.</span></li>
     </ul>
+    <p class="forfait-formula">Socle d'immersion + recrutements + impact et ancrage</p>
   </div>
 </div>"""
 
 RPO_STEPS = """<ol class="method">
-  <li><strong>Comprendre le contexte</strong><p>L'entreprise, l'équipe, la roadmap, le marché visé et ce qui freine aujourd'hui.</p></li>
+  <li><strong>Comprendre le contexte</strong><p>Immersion au sein de vos équipes&nbsp;: l'entreprise, la roadmap, les rôles à recruter et ce qui freine aujourd'hui.</p></li>
   <li><strong>Définir les objectifs et les impacts attendus</strong><p>Ce qui doit avoir changé à la fin&nbsp;: postes pourvus, délais, charge des managers, qualité du process.</p></li>
   <li><strong>Construire le périmètre du dispositif</strong><p>Build, Delivery ou les deux&nbsp;; rôles de chacun, rituels, outils, niveau d'autonomie visé.</p></li>
   <li><strong>Définir le forfait et les indicateurs de suivi</strong><p>Un forfait adossé aux objectifs, et des indicateurs partagés pour suivre l'avancement.</p></li>
@@ -297,48 +291,96 @@ PERSON_CORALIE = f"""<article class="card person cap-person">
 # Exemple chiffré FICTIF (validé par Shirley comme illustration, montants indicatifs).
 EXAMPLE = """<div class="example" id="exemple">
   <div class="example-head">
-    <span class="tag tag-fictif">Exemple fictif · à titre d'illustration</span>
-    <h3>Concrètement, à quoi ressemble ce forfait&nbsp;?</h3>
-    <p><strong>« Nova »</strong>, une scale-up qui vient de lever des fonds, doit recruter <strong>8 profils tech en 4 mois</strong>, dont 2 postes critiques (Staff Engineer, Head of Data). Ses managers sont saturés d'entretiens et le process varie selon qui recrute.</p>
+    <span class="tag tag-fictif">Exemple fictif</span>
+    <h3>Exemple concret</h3>
+    <p><strong>Nova</strong>, une scale-up qui vient de lever des fonds, doit recruter <strong>8 profils tech en 4 mois</strong>. Ses managers sont très sollicités et son process de recrutement doit être fiabilisé.</p>
   </div>
-
   <div class="example-block">
-    <h4>1. Les objectifs et les indicateurs, fixés ensemble au démarrage</h4>
-    <ul class="ex-objectives">
-      <li><strong>8 recrutements signés</strong>, dont les 2 postes critiques <span>Indicateur&nbsp;: signatures par type de poste</span></li>
-      <li><strong>Les bonnes personnes dans le pipe</strong> <span>Indicateur&nbsp;: taux de transformation final, des candidats présentés aux recrutements signés</span></li>
-      <li><strong>Des recrutements rapides</strong> <span>Indicateur&nbsp;: délai pour pourvoir les postes, par exemple un poste difficile pourvu en deux semaines</span></li>
-      <li><strong>Moins de charge pour les managers</strong> <span>Indicateur&nbsp;: 2 entretiens maximum par candidat côté manager</span></li>
-      <li><strong>Un process qui tient après la mission</strong> <span>Indicateur&nbsp;: grilles d'entretien et kit managers repris par l'équipe</span></li>
-      <li><strong>Une bonne expérience candidat</strong> <span>Indicateur&nbsp;: taux d'acceptation des offres</span></li>
+    <h4>Nous définissons ensemble un forfait composé de trois éléments&nbsp;:</h4>
+    <div class="ex-parts ex-parts-3">
+      <div class="ex-part"><span class="ex-label">Le socle</span><strong class="ex-amount">12&nbsp;000&nbsp;€&nbsp;HT</strong><span class="ex-detail">Pour l'immersion au sein des équipes, le cadrage du besoin, la structuration du process et le pilotage de la mission.</span></div>
+      <div class="ex-part"><span class="ex-label">Les recrutements</span><strong class="ex-sub">Une part par recrutement signé</strong>
+        <span class="ex-rate"><strong class="ex-amount">2&nbsp;000&nbsp;€&nbsp;HT</strong> par poste standard</span>
+        <span class="ex-rate"><strong class="ex-amount">4&nbsp;000&nbsp;€&nbsp;HT</strong> par poste stratégique ou critique pour l'organisation</span></div>
+      <div class="ex-part ex-key"><span class="ex-label">L'impact et l'ancrage</span><strong class="ex-amount">jusqu'à 8&nbsp;000&nbsp;€&nbsp;HT</strong><span class="ex-detail">Une part liée aux objectifs définis ensemble&nbsp;: délais de recrutement, réduction de la charge des managers et appropriation du process par l'équipe.</span></div>
+    </div>
+    <p class="ex-rule">Le niveau de chaque poste est défini ensemble au démarrage selon sa criticité pour l'organisation. La part correspondante est due uniquement lorsqu'un recrutement est signé. Si un recrutement est suspendu ou supprimé, la part correspondante n'est pas due.</p>
+    <div class="ex-calc">
+      <p class="ex-calc-title">Pour Nova&nbsp;:</p>
+      <ul>
+        <li><span>6 postes standards × 2&nbsp;000&nbsp;€&nbsp;HT</span><strong>12&nbsp;000&nbsp;€&nbsp;HT</strong></li>
+        <li><span>2 postes stratégiques ou critiques × 4&nbsp;000&nbsp;€&nbsp;HT</span><strong>8&nbsp;000&nbsp;€&nbsp;HT</strong></li>
+        <li class="sum"><span>Total possible lié aux recrutements</span><strong>20&nbsp;000&nbsp;€&nbsp;HT</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="example-block">
+    <ul class="ex-outcomes">
+      <li>Si les 8 recrutements sont réalisés et que les impacts attendus sont atteints, le forfait maximum est de <strong>40&nbsp;000&nbsp;€&nbsp;HT</strong>.</li>
+      <li>Si le nombre de recrutements ou les priorités évoluent, le périmètre et les objectifs sont réajustés ensemble lors des points de suivi.</li>
     </ul>
+    <blockquote class="ex-quote">Le forfait est construit autour du dispositif mis en place, des recrutements réalisés et des impacts obtenus — pas autour d'un nombre de jours à consommer.</blockquote>
   </div>
+  <p class="ex-disclaimer"><strong>Exemple fictif, montants indicatifs. Chaque forfait est construit au cas par cas selon le contexte, les objectifs et le périmètre de l'intervention.</strong></p>
+</div>"""
 
-  <div class="example-block">
-    <h4>2. Le forfait construit autour de ces objectifs</h4>
-    <div class="ex-parts">
-      <div class="ex-part"><span class="ex-label">Socle · côté RPO</span><strong class="ex-amount">12&nbsp;000&nbsp;€</strong><span class="ex-detail">Cadrage, structuration du process, pilotage et suivi sur 4 mois. Réglé 3&nbsp;000&nbsp;€ par mois.</span></div>
-      <div class="ex-part"><span class="ex-label">Recrutements · côté succès</span><strong class="ex-amount">jusqu'à 20&nbsp;000&nbsp;€</strong><span class="ex-detail">2&nbsp;000&nbsp;€ par poste standard (×6), 4&nbsp;000&nbsp;€ par poste critique (×2). Dû à chaque recrutement signé.</span></div>
-      <div class="ex-part"><span class="ex-label">Impact</span><strong class="ex-amount">3&nbsp;000&nbsp;€</strong><span class="ex-detail">Si les recrutements vont vite (par exemple un poste difficile pourvu en deux semaines), si le taux de transformation final est atteint et si le process est repris par l'équipe.</span></div>
-      <div class="ex-part ex-total"><span class="ex-label">Total maximum</span><strong class="ex-amount">35&nbsp;000&nbsp;€&nbsp;HT</strong><span class="ex-detail">Lorsque tous les objectifs sont atteints.</span></div>
-    </div>
-    <p class="ex-callout"><strong>Pourquoi la rapidité fait partie de l'impact&nbsp;?</strong> Parce qu'un RPO facturé au temps n'a aucun intérêt à aller vite. Ici, c'est l'inverse&nbsp;: la part impact récompense un recrutement rapide. Nous n'avons aucune raison de faire durer le processus de recrutement pour faire durer le RPO.</p>
-  </div>
 
-  <div class="example-block">
-    <h4>3. Ce que Nova paie, selon ce qui se passe</h4>
-    <p class="ex-intro">Le socle est toujours dû. Le reste dépend des recrutements signés et des impacts obtenus. En face, un RPO classique à temps plein sur 4 mois coûterait environ <strong>48&nbsp;000&nbsp;€</strong>, quoi qu'il arrive.</p>
-    <div class="table-scroll" role="region" aria-label="Ce que Nova paie selon trois scénarios" tabindex="0">
-      <table class="ex-table">
-        <thead><tr><th scope="col">Ce qui se passe</th><th scope="col">Socle</th><th scope="col">Recrutements signés</th><th scope="col">Impact</th><th scope="col">Nova paie</th><th scope="col">Économie vs RPO classique</th></tr></thead>
-        <tbody>
-          <tr><th scope="row"><b>Tout se passe comme prévu</b><span>8 recrutements, dont les 2 critiques, rapides et avec un bon taux de transformation</span></th><td data-label="Socle">12&nbsp;000&nbsp;€</td><td data-label="Recrutements signés">+&nbsp;20&nbsp;000&nbsp;€<small>6&nbsp;×&nbsp;2&nbsp;000 + 2&nbsp;×&nbsp;4&nbsp;000</small></td><td data-label="Impact">+&nbsp;3&nbsp;000&nbsp;€</td><td data-label="Nova paie" class="total">35&nbsp;000&nbsp;€</td><td data-label="Économie vs RPO classique" class="gain">13&nbsp;000&nbsp;€ de moins</td></tr>
-          <tr><th scope="row"><b>Objectifs partiellement atteints</b><span>6 recrutements sur 8, et les objectifs d'impact ne sont pas atteints</span></th><td data-label="Socle">12&nbsp;000&nbsp;€</td><td data-label="Recrutements signés">+&nbsp;16&nbsp;000&nbsp;€<small>4&nbsp;×&nbsp;2&nbsp;000 + 2&nbsp;×&nbsp;4&nbsp;000</small></td><td data-label="Impact">0&nbsp;€</td><td data-label="Nova paie" class="total">28&nbsp;000&nbsp;€</td><td data-label="Économie vs RPO classique" class="gain">20&nbsp;000&nbsp;€ de moins</td></tr>
-          <tr><th scope="row"><b>Le contexte change</b><span>Au 3<sup>e</sup>&nbsp;mois, Nova revoit ses priorités et suspend 2 recrutements. Les 6 autres sont pourvus vite, impact atteint</span></th><td data-label="Socle">12&nbsp;000&nbsp;€</td><td data-label="Recrutements signés">+&nbsp;16&nbsp;000&nbsp;€<small>4&nbsp;×&nbsp;2&nbsp;000 + 2&nbsp;×&nbsp;4&nbsp;000</small></td><td data-label="Impact">+&nbsp;3&nbsp;000&nbsp;€</td><td data-label="Nova paie" class="total">31&nbsp;000&nbsp;€</td><td data-label="Économie vs RPO classique" class="gain">17&nbsp;000&nbsp;€ de moins</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="ex-foot">Un RPO classique à temps plein se règle en totalité, quels que soient les résultats. Une mission au succès seule n'inclut ni l'intégration ni la structuration du process. Ici, au-delà du socle, chaque euro correspond à un objectif atteint. Si le contexte change, par exemple si l'entreprise suspend des recrutements, le périmètre est revu au point d'étape mensuel.</p>
+# ---------------- RPO Impact ----------------
+SIGNATURE = "Un dispositif de recrutement en immersion, orienté résultats et conçu pour laisser une capacité durable."
+
+def _dim(n, name, title, intro, items, key=False):
+    lis = "".join(f"<li>{x}</li>" for x in items)
+    cls = "card dim dim-key" if key else "card dim"
+    tag = '<span class="tag tag-build dim-flag">Ce qui reste après la mission</span>' if key else ""
+    return f"""<article class="{cls}">
+  <span class="dim-num">{n}</span>
+  <h3>{name}</h3>{tag}
+  <p class="dim-title">{title}</p>
+  <p>{intro}</p>
+  <ul>{lis}</ul>
+</article>"""
+
+DIMENSIONS = '<div class="dims">\n' + "\n".join([
+  _dim("01", "Immersion", "Comprendre avant de recruter.",
+       "L'intervention commence par une immersion au sein de vos équipes et dans votre environnement de travail, sur site lorsque cela est pertinent.",
+       ["Le contexte de l'entreprise et sa culture", "La roadmap et les équipes", "Les rôles à recruter", "Les modes de décision", "Les difficultés et les blocages du recrutement"]),
+  _dim("02", "Delivery", "Les recrutements avancent tout de suite.",
+       "Les postes prioritaires avancent dès le début de la mission.",
+       ["Sourcing et chasse", "Qualification et entretiens", "Coordination avec les managers", "Suivi candidat", "Closing"]),
+  _dim("03", "Build", "Le process se renforce en même temps.",
+       "Le process est amélioré sur le terrain, au contact des recrutements réels, et pas uniquement dans un document théorique.",
+       ["Structuration ou refonte du process", "Annonces et grilles d'entretien", "Répartition des rôles et rituels de décision", "Suivi des indicateurs", "Expérience candidat et accompagnement des managers"]),
+  _dim("04", "Ancrage", "Une capacité qui reste.",
+       "À la fin de la mission, votre équipe conserve une capacité durable à recruter.",
+       ["Transmission des outils et des pratiques", "Autonomie progressive des managers", "Un process réutilisable après la mission", "Des recommandations pour la suite", "Les points de vigilance clarifiés"], key=True),
+]) + "\n</div>"
+
+DIMENSIONS_SHORT = """<div class="dims dims-short">
+  <div class="card dim"><span class="dim-num">01</span><h3>Immersion</h3><p>Au sein de vos équipes, pour comprendre le contexte, la culture et les blocages.</p></div>
+  <div class="card dim"><span class="dim-num">02</span><h3>Delivery</h3><p>Les recrutements prioritaires avancent dès le début&nbsp;: sourcing, entretiens, closing.</p></div>
+  <div class="card dim"><span class="dim-num">03</span><h3>Build</h3><p>Le process se renforce sur le terrain, au contact des recrutements réels.</p></div>
+  <div class="card dim dim-key"><span class="dim-num">04</span><h3>Ancrage</h3><p>Outils et pratiques transmis&nbsp;: votre équipe garde une capacité durable à recruter.</p></div>
+</div>"""
+
+CHANGE = """<div class="change">
+  <div class="change-item"><span class="dim-num">01</span><strong>Recrutements réalisés</strong><p>Les postes prioritaires sont pourvus, au niveau d'exigence défini ensemble.</p></div>
+  <div class="change-item"><span class="dim-num">02</span><strong>Managers moins sollicités</strong><p>Ils interviennent là où leur regard compte, plutôt qu'à chaque étape.</p></div>
+  <div class="change-item"><span class="dim-num">03</span><strong>Process réutilisable par l'équipe</strong><p>Outils, pratiques et rituels restent en place après la mission.</p></div>
+</div>
+<p class="note">Selon les objectifs définis ensemble, l'impact peut aussi porter sur la vitesse d'avancement des processus, la qualité du pipe candidat, la qualité des décisions d'entretien ou l'autonomie de l'équipe.</p>"""
+
+BILAN = """<div class="bilan" id="bilan">
+  <div class="bilan-main">
+    <span class="kicker">Fin de mission</span>
+    <h3>Le bilan d'impact</h3>
+    <p>Chaque mission se termine par un bilan d'impact partagé&nbsp;: ce qui a été recruté, ce qui a été amélioré, ce qui a été transmis et ce que l'équipe peut désormais continuer à faire seule.</p>
   </div>
-  <p class="ex-disclaimer">Exemple fictif, montants HT indicatifs. Chaque forfait est construit au cas par cas, selon votre contexte, vos objectifs et le périmètre de l'intervention.</p>
+  <ul class="bilan-list">
+    <li>Les objectifs définis au démarrage</li>
+    <li>Les recrutements réalisés</li>
+    <li>Les améliorations apportées</li>
+    <li>Les outils transmis</li>
+    <li>Les indicateurs observés</li>
+    <li>Les prochaines recommandations</li>
+  </ul>
 </div>"""

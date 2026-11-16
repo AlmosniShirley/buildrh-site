@@ -91,7 +91,7 @@ FOOTER = """<footer class="site-footer">
         <h2>BUILD RH</h2>
         <ul>
           <li><a href="/build-rh.html">Recrutement tech</a></li>
-          <li><a href="/build-rh.html#forfait">Le RPO hybride</a></li>
+          <li><a href="/build-rh.html#forfait">Le RPO Impact</a></li>
           <li><a href="/cas-clients.html">Cas clients</a></li>
         </ul>
       </div>
@@ -192,7 +192,7 @@ def contact_form(fid):
           <option value="">Choisir…</option>
           <optgroup label="Recrutement et structuration · BUILD RH" data-parcours="recrutement">
             <option>Recruter un ou plusieurs profils tech</option>
-            <option>Mettre en place un RPO hybride sur plusieurs mois</option>
+            <option>Mettre en place un RPO Impact</option>
             <option>Structurer, améliorer ou auditer le process de recrutement</option>
             <option>Je ne sais pas encore</option>
           </optgroup>
