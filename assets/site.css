@@ -862,3 +862,19 @@ body[data-a11y-motion="reduced"] *, body[data-a11y-motion="reduced"] *::before, 
 .step-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .steps-linked .step-key { border-color: var(--build); box-shadow: inset 0 0 0 1px var(--build); }
 .people { grid-template-columns: repeat(2, minmax(0, 1fr)); } @media (max-width: 860px) { .people { grid-template-columns: 1fr; } }
+
+/* engagement neuroatypie */
+.engage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+@media (max-width: 860px) { .engage { grid-template-columns: 1fr; } }
+.videos { display: grid; gap: 16px; }
+.video { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 16px; align-items: center; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.video:hover { border-color: var(--build); }
+.video:hover .t { color: var(--build); }
+.video .thumb { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; background: var(--surface-alt); }
+.video .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.video .play { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; background: rgba(0,0,0,0.65); }
+.video .play::after { content: ""; position: absolute; left: 17px; top: 13px; border-left: 14px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent; }
+.video .meta { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.video .t { font-weight: 600; line-height: 1.35; }
+.video .d { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+@media (max-width: 480px) { .video { grid-template-columns: 1fr; } }

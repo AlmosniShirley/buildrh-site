@@ -223,6 +223,42 @@ index_body = f"""<main id="main">
   </div>
 </section>
 
+<!-- 8 bis. ARTICLES -->
+<section class="section" id="articles" aria-labelledby="articles-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Prompt Humain, le blog</span>
+      <h2 id="articles-title">Derniers articles</h2>
+      <p class="lead">Des entretiens avec des leaders tech sur l'IA, les métiers et l'organisation.</p>
+    </div>
+    __POSTS_HOME__
+    <div class="section-foot"><a class="link-arrow build" href="https://prompt-humain.ghost.io/" rel="noopener">Tous les articles <span aria-hidden="true">↗</span></a></div>
+  </div>
+</section>
+
+<!-- 8 ter. ENGAGEMENT NEUROATYPIE -->
+<section class="section alt" id="engagement" aria-labelledby="engagement-title">
+  <div class="wrap engage">
+    <div>
+      <span class="kicker">Notre engagement</span>
+      <h2 id="engagement-title" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Inclure les personnes neuroatypiques</h2>
+      <p class="lead mt-s">Près de 15 à 20&nbsp;% de la population présente un fonctionnement neurologique atypique. Pourtant, le monde du travail reste encore largement pensé pour un modèle unique.</p>
+      <p>Les talents ne rentrent pas tous dans les mêmes cases, et c'est une chance. Sur la chaîne YouTube <strong>TDArH</strong>, nous partageons des décryptages concrets, des retours d'expérience et des conseils pratiques pour les recruteurs et les managers&nbsp;: lever les freins invisibles et créer un environnement de travail où chaque cerveau peut s'épanouir.</p>
+      <p><a class="link-arrow build" href="https://www.youtube.com/@TDArHH" rel="noopener">Voir la chaîne TDArH <span aria-hidden="true">↗</span></a></p>
+    </div>
+    <div class="videos">
+      <a class="video" href="https://www.youtube.com/watch?v=iFMWrAi9kXc" rel="noopener">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/iFMWrAi9kXc/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></span>
+        <span class="meta"><span class="t">Pourquoi j'ai créé cette chaîne et ce que vous allez y trouver</span><span class="d">16 nov. 2026 · YouTube</span></span>
+      </a>
+      <a class="video" href="https://www.youtube.com/watch?v=NdwOnmA5jk0" rel="noopener">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/NdwOnmA5jk0/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></span>
+        <span class="meta"><span class="t">Recrutement&nbsp;: vous éliminez peut-être les bons profils&nbsp;!</span><span class="d">15 nov. 2026 · YouTube</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- 9. CONTACT -->
 <section class="section" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
@@ -549,6 +585,10 @@ POSTS = [
 posts_html = '<div class="posts">\n' + "\n".join(
     f'<a class="post" href="https://prompt-humain.ghost.io/{u}" rel="noopener"><img src="/assets/blog/{img}" alt="" loading="lazy" decoding="async"><span class="meta"><span class="t">{t}</span><span class="d">{d}</span></span></a>'
     for u, img, t, d in POSTS) + "\n</div>"
+posts_home = '<div class="posts">\n' + "\n".join(
+    f'<a class="post" href="https://prompt-humain.ghost.io/{u}" rel="noopener"><img src="/assets/blog/{img}" alt="" loading="lazy" decoding="async"><span class="meta"><span class="t">{t}</span><span class="d">{d}</span></span></a>'
+    for u, img, t, d in POSTS[:4]) + "\n</div>"
+index_body = index_body.replace("__POSTS_HOME__", posts_home)
 
 about_body = f"""<main id="main">
 <section class="page-hero">
